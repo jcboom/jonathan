@@ -30,6 +30,16 @@ a {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
+.hover {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
 a:hover, a:active, a:focus {
   color: #8dc63f;
   outline: none;
@@ -606,7 +616,7 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-#fh5co-projects .fh5co-project-item:hover, #fh5co-projects .fh5co-project-item:focus {
+#fh5co-projects .fh5co-project-item:hover, #fh5co-projects .fh5co-project-item.hover_effect, #fh5co-projects .fh5co-project-item:focus {
   -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
