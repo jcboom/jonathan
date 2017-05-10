@@ -625,7 +625,9 @@ body {
   box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
   text-decoration: none;
 }
-
+#fh5co-projects .fh5co-project-item:hover img, #fh5co-projects .fh5co-project-item:focus img {
+  opacity: .7;
+}
 #fh5co-projects .fh5co-project-item:hover h2, #fh5co-projects .fh5co-project-item:hover span, #fh5co-projects .fh5co-project-item:focus h2, #fh5co-projects .fh5co-project-item:focus span {
   text-decoration: none !important;
 }
