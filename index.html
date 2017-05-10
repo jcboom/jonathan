@@ -743,7 +743,10 @@
 					/* e.preventDefault(); Commented this out because it prevents user from scrolling. */
 					$(this).toggleClass('hover_effect');
 			});
-						$(this).toggleClass('hovered');
+
+			$('.hover').bind('touchend', function(e) {
+					$(this).toggleClass('hover_effect');
+			});
 	});
 	</script>
 
