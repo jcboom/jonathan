@@ -745,8 +745,9 @@
 					$(this).addClass('hover_effect');
 			});
 
-			$('.hover').bind('touchend', function(e) {
+			$('.hover').bind('touchend focusout', function(e) {
 				  $(this).removeClass('hover_effect');
+					alert('jonathan');
 					// $(this).toggleClass('fh5co-project-item img');
 			});
 	});
