@@ -741,12 +741,13 @@
 	$(document).ready(function() {
 			$('.hover').bind('touchstart', function(e) { /* OLD: $('.hover').bind('touchstart touchend', function(e) { */
 					/* e.preventDefault(); Commented this out because it prevents user from scrolling. */
-					$(this).toggleClass('hover_effect');
+					/*$(this).toggleClass('hover_effect');*/
+					$(this).addClass('hover_effect');
 			});
 
 			$('.hover').bind('touchend', function(e) {
 				  $(this).removeClass('hover_effect');
-					$(this).toggleClass('col-md-3 col-sm-6 col-xxs-12 animate-box hover');
+					// $(this).toggleClass('fh5co-project-item img');
 			});
 	});
 	</script>
