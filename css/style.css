@@ -569,7 +569,7 @@ body {
   display: block;
   width: 100%;
   position: relative;
-  background: #F9F9F9; /* OLD: background: #fff; */
+  background: #f9f9f9;
   overflow: hidden;
   z-index: 9;
   margin-bottom: 30px;
