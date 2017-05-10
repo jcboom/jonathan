@@ -133,7 +133,7 @@ SOFTWARE.
 		 * {Object} jQuery reference to <link> tag for swapping CSS
 		 */
 		$themeCss: null,
-
+		
 		/**
 		 * {String} default theme page was loaded with
 		 */
@@ -165,15 +165,15 @@ SOFTWARE.
 				this.defaultTheme = this.$themeCss.attr('href');
 			}
 		},
-
+		
 		resetStyle: function() {
 			this.updateStyle(this.defaultTheme);
 		},
-
+		
 		updateStyle: function(newStyle) {
 			this.$themeCss.attr('href', newStyle);
 		},
-
+		
 		getFullAssetPath: function(asset) {
 			return this.config.fullPath + asset + '.css';
 		},
