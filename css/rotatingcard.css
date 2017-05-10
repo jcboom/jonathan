@@ -5,18 +5,8 @@ body {
 	font-family: 'Arima Madurai', cursive;
 	background-color: #E5E9ED;
 }
-/* To stop the browser asking you to copy/save/select the image or whatever. */
-.hover {
--webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-}
 
 .btn:hover,
-.btn.hover_effect, /* when you start or end a touch, turn the class hover_effect on or off. */
 .btn:focus,
 .btn:active{
     outline: 0 !important;
@@ -31,8 +21,6 @@ user-select: none;
 }
 /* flip the pane when hovered */
 .card-container:not(.manual-flip):hover .card,
-.card-container:not(.manual-flip).hover_effect,
-.card-container.hover_effect,
 .card-container.hover.manual-flip .card{
 	-webkit-transform: rotateY( 180deg );
 -moz-transform: rotateY( 180deg );
