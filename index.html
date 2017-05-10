@@ -430,7 +430,7 @@
 											</a>
 										</div>
 										<div class="col-md-3 col-sm-6 col-xxs-12 animate-box">
-											<a href="images/img_6.jpg" class="fh5co-project-item image-popup hover_effect">
+											<a href="images/img_6.jpg" class="fh5co-project-item image-popup hovered">
 												<img src="images/card4.png" alt="Image" class="img-responsive" />
 											</a>
 										</div>
@@ -739,10 +739,11 @@
 	<!-- when you start or end a touch, turn the class hover_effect on or off.-->
 	<script>
 	$(document).ready(function() {
-			$('.hover').bind('touchstart', function(e) {
+			$('.hover').bind('touchstart', function(e) { /* OLD: $('.hover').bind('touchstart touchend', function(e) { */
 					/* e.preventDefault(); Commented this out because it prevents user from scrolling. */
 					$(this).toggleClass('hover_effect');
 			});
+						$(this).toggleClass('hover_effect');
 	});
 	</script>
 
