@@ -746,7 +746,7 @@
 
 			$('.hover').bind('touchend', function(e) {
 					e.preventDefault();
-					$(this).toggleClass('fh5co-project-item');
+					$(this).toggleClass('fh5co-project-item img');
 			});
 	});
 	</script>
@@ -760,7 +760,7 @@
 				hasPreview: false,
 				cookie: {
 		          	expires: 30,
-		          	isManagingLoad: false
+		          	isManagingLoad: true
 		      	}
 			});
 			$('.option-toggle').click(function() {
