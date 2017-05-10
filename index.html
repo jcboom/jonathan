@@ -739,8 +739,8 @@
 	<!-- when you start or end a touch, turn the class hover_effect on or off.-->
 	<script>
 	$(document).ready(function() {
-			$('.hover').bind('touchstart touchend', function(e) {
-					/* e.preventDefault();*/
+			$('.hover').bind('touchstart', function(e) {
+					/* e.preventDefault(); Commented this out because it prevents user from scrolling. */
 					$(this).toggleClass('hover_effect');
 			});
 	});

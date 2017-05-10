@@ -31,6 +31,7 @@ a {
   transition: 0.5s;
 }
 
+/* Added to stop the browser asking you to copy/save/select the image or whatever. -Jonathan Calzada*/
 .hover {
 -webkit-touch-callout: none;
 -webkit-user-select: none;
