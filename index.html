@@ -19,6 +19,15 @@
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 <link href="css/rotatingcard.css" rel="stylesheet" />
 <script src="js/rotatingcard.js"></script>
+<script>
+$(document).ready(function() {
+		$('.hover').bind('touchstart touchend', function(e) {
+				e.preventDefault();
+				$(this).toggleClass('hover_effect');
+		});
+});
+</script>
+
 <!-- Bootstrap - Add the line below if not present elsewhere in this file
 <link rel="stylesheet" href="css/bootstrap.css" />
 -->
