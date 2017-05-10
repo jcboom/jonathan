@@ -741,15 +741,16 @@
 	$(document).ready(function() {
 			$('.hover').bind('touchstart', function(e) { /* OLD: $('.hover').bind('touchstart touchend', function(e) { */
 					/* e.preventDefault(); Commented this out because it prevents user from scrolling. */
-					$(this).toggleClass('fh5co-project-item:hover img');
+					$(this).toggleClass('fh5co-project-item:hover');
 					/* $(this).addClass('hover_effect');*/
 			});
-/*
+
 			$('.hover').bind('touchend focusout', function(e) {
-					$(this).addClass('fh5co-project-item img');
+					$(this).addClass('fh5co-project-item:focusout');
+						$(this).addClass('fh5co-project-item:hovered');
 					// $(this).toggleClass('fh5co-project-item img');
 			});
-*/
+
 	});
 	</script>
 
