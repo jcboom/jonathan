@@ -10,6 +10,15 @@
 
               <!-- jQuery -->
             	<script src="js/jquery.min.js"></script>
+              <script>
+              $(document).ready(function() {
+                  $('.hover').bind('touchstart touchend', function(e) {
+                      e.preventDefault();
+                      $(this).toggleClass('hover_effect');
+                  });
+              });
+              </script>
+
 
 </head>
 <body>
