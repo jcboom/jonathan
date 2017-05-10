@@ -12,7 +12,7 @@ body {
 }
 
 .btn:hover,
-.btn:hover_effect; /* when you start or end a touch, turn the class hover_effect on or off. */
+.btn.hover_effect, /* when you start or end a touch, turn the class hover_effect on or off. */
 .btn:focus,
 .btn:active{
     outline: 0 !important;
@@ -27,6 +27,8 @@ body {
 }
 /* flip the pane when hovered */
 .card-container:not(.manual-flip):hover .card,
+.card-container:not(.manual-flip).hover_effect,
+.card-container.hover_effect,
 .card-container.hover.manual-flip .card{
 	-webkit-transform: rotateY( 180deg );
 -moz-transform: rotateY( 180deg );
