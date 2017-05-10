@@ -745,6 +745,7 @@
 			});
 
 			$('.hover').bind('touchend', function(e) {
+					e.preventDefault();
 					$(this).toggleClass('fh5co-project-item');
 			});
 	});
