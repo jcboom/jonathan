@@ -19,14 +19,7 @@
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 <link href="css/rotatingcard.css" rel="stylesheet" />
 <script src="js/rotatingcard.js"></script>
-<script>
-$(document).ready(function() {
-		$('.hover').bind('touchstart touchend', function(e) {
-				e.preventDefault();
-				$(this).toggleClass('hover_effect');
-		});
-});
-</script>
+
 
 <!-- Bootstrap - Add the line below if not present elsewhere in this file
 <link rel="stylesheet" href="css/bootstrap.css" />
@@ -742,6 +735,16 @@ $(document).ready(function() {
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- when you start or end a touch, turn the class hover_effect on or off.-->
+	<script>
+	$(document).ready(function() {
+			$('.hover').bind('touchstart touchend', function(e) {
+					e.preventDefault();
+					$(this).toggleClass('hover_effect');
+			});
+	});
+	</script>
 
 	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
 	<script src="js/jquery.style.switcher.js"></script>
