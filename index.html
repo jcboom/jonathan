@@ -744,8 +744,9 @@
 					$(this).toggleClass('hover_effect');
 			});
 
-			$('.hover').bind('touchend focusout', function(e) {
+			$('.hover').bind('touchend', function(e) {
 				  $(this).removeClass('hover_effect');
+					alert('h');
 			});
 	});
 	</script>
