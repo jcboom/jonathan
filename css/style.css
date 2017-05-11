@@ -92,13 +92,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Adding circle buttons by Jonathan Calzada */
 
 .btn-circle {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   text-align: center;
   padding: 6px 0;
-  font-size: 12px;
+  font-size: 20px;
   line-height: 1.428571429;
-  border-radius: 15px;
+  border-radius: 35px;
   color: #fff;
 }
 .btn-circle.btn-lg {
@@ -113,9 +113,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 70px;
   height: 70px;
   padding: 10px 16px;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 1.33;
   border-radius: 35px;
+  font-weight:300;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
 .btn-circle.btn-an {
@@ -127,6 +133,51 @@ h1, h2, h3, h4, h5, h6 {
 .btn-circle.btn-ph {
   background-color: #0197B2;
 }
+.btn-circle.btn-hx {
+  background-color: #242424;
+}
+
+@media screen and (min-width: 1900px) {
+  .btn-circle, .btn-circle.btn-an, .btn-circle.btn-ux, .btn-circle.btn-ph, .btn-circle.btn-hx {
+    margin: 0px 0px 0px 70px;
+    width: 100px;
+    height: 100px;
+    padding: 10px 16px;
+    font-size:50px;
+    line-height: 1.33;
+    border-radius: 100px;
+    font-weight:400;
+  }
+}
+
+
+@media screen and (max-width: 1800px) {
+  .btn-circle {
+    margin: 0px 0px 0px 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .btn-circle {
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .btn-circle {
+    margin: 0px 0px 0px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn-circle {
+    margin: 0 0 0 0;
+  }
+}
+
+
+
+/* not sure I need this - Jonathan Calzada *
 @media screen and (max-width: 680px) {
   #fh5co-hero .fh5co-intro > div h2 {
     font-size: 12px;
@@ -135,11 +186,9 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
   }
 }
+*/
 
 
-.btn-circle.btn-hx {
-  background-color: #242424;
-}
 .btn-circle.btn-an:focus {
   color: #8B7C6D;
   background-color: #e6e6e6;
@@ -489,7 +538,7 @@ body {
   margin: 0 auto;
 }
 @media screen and (max-width: 992px) {
-  #fh5co-hero .fh5co-intro > div .fh5co-center-position {
+  #fh5co-hero .fh5co-intro > div .fh5co-center-position, {
     width: 100%;
     text-align: center;
   }
@@ -513,7 +562,7 @@ body {
 }
 @media screen and (max-width: 992px) {
   #fh5co-hero .fh5co-intro > div h2 {
-    font-size: 40px;
+    font-size: 50px;
     line-height: 57px;
     text-align: center;
   }
