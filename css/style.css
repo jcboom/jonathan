@@ -496,7 +496,8 @@ body {
 
 @media screen and (max-width: 480px) {
   #fh5co-hero {
-    height: 450px; /* origintal height: 450px; */
+    height: 100px; /* origintal height: 450px; */
+
   }
 }
 #fh5co-hero .fh5co-overlay {
@@ -641,12 +642,6 @@ body {
 @media screen and (max-width: 768px) {
   .no-js-fullheight {
     height: inherit;
-    padding: 3em 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  .no-js-fullheight {
-    height: 300px;
     padding: 3em 0;
   }
 }
