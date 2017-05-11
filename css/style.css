@@ -559,6 +559,11 @@ body {
     text-align: left;
   }
 }
+@media screen and (max-width: 480px) {
+  #fh5co-hero .fh5co-intro > div .fh5co-right-position {
+    margin-top:75px;
+  }
+}
 #fh5co-hero .fh5co-intro > div h2 {
   font-size: 70px;
   line-height: 87px;
@@ -579,7 +584,6 @@ body {
     font-size: 30px;
     line-height: 37px;
     text-align: center;
-    margin-top:100px;
   }
 }
 
@@ -609,13 +613,9 @@ body {
 @media screen and (max-width: 480px) {
   #first-name::after {
    content: "Jonny";
-   position:inherit;
   }
   #last-name::after {
    content: "Cal";
-   margin-top:100px;
-   position:inherit;
-
   }
 }
 
