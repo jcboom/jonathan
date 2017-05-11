@@ -518,6 +518,7 @@ body {
 @media screen and (max-width: 480px) {
   #fh5co-hero .fh5co-intro {
     height: 450px;
+    background-size: 80px 60px; /* resizing background image */
   }
 }
 #fh5co-hero .fh5co-intro > div {
@@ -900,7 +901,6 @@ body {
 @media screen and (max-width: 480px) {
   #fh5co-features-2 .fh5co-btn-action > a, #fh5co-features-3 .fh5co-btn-action > a, #fh5co-features-4 .fh5co-btn-action > a {
     margin-left: 0;
-    width:100px;
   }
 }
 @media screen and (max-width: 992px) {
