@@ -565,11 +565,21 @@ body {
   font-weight: 100;
   color: white;
 }
+
 @media screen and (max-width: 992px) {
   #fh5co-hero .fh5co-intro > div h2 {
     font-size: 50px;
     line-height: 57px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #fh5co-hero .fh5co-intro > div h2 {
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+
   }
 }
 #fh5co-hero .fh5co-intro > div h3 {
