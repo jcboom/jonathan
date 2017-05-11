@@ -121,7 +121,7 @@
 
 		width: 140px;
 		position: fixed;
-		left: 0;
+		right: 0;
 		top: 100px;
 		z-index: 999999;
 		background: #fff;
@@ -173,27 +173,41 @@
 
 	#colour-variations li a[data-theme="style"] {
 		background: #8dc63f;
+		width:100px;
+
+		border-top-right-radius: 5px; /* Old value: 4 */
+		border-bottom-right-radius: 5px; /* Old value: 4*/
 	}
 	#colour-variations li a[data-theme="red"] {
 		background: #FA5555;
+		width:100px;
 	}
 	#colour-variations li a[data-theme="turquoise"] {
 		background: #27E1CE;
+		width: 100px;
+		border-top-right-radius: 5px; /* Old value: 4 */
+		border-bottom-right-radius: 5px; /* Old value: 4*/
+
 	}
 	#colour-variations li a[data-theme="blue"] {
 		background: #2772DB;
+		width: 100px;
 	}
 	#colour-variations li a[data-theme="orange"] {
 		background: #FF7844;
+		width: 100px;
 	}
 	#colour-variations li a[data-theme="yellow"] {
 		background: #FCDA05;
+		width: 100px;
 	}
 	#colour-variations li a[data-theme="pink"] {
 		background: #F64662;
+		width: 100px;
 	}
 	#colour-variations li a[data-theme="purple"] {
 		background: #7045FF;
+		width: 100px;
 	}
 
 	#colour-variations a[data-layout="boxed"],
@@ -238,7 +252,7 @@
 		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
 
 		opacity: .2;
-		transition: 3s; /* How fast the Cheat Sheet opens and closes */
+		transition: 1s; /* How fast the Cheat Sheet opens and closes */
 
 	}
     /* Gear position on Cheat Sheet */
@@ -275,10 +289,10 @@
 		<body class="boxed">
 	-->
 	<body>
-
 	<!-- Loader -->
 	<div class="fh5co-loader"></div>
 
+	<!-- Mobile Menu -->
 	<div id="fh5co-page">
 		<section id="fh5co-header">
 			<div class="container">
@@ -300,6 +314,9 @@
 
 		<section id="fh5co-hero" class="js-fullheight" style="background-image: url(images/hero_bg.jpg);" data-next="yes">
 			<div class="fh5co-overlay"></div>
+			<!--Added the following layer to hide right-menu when hero image doesn't take up the whole screen. Uncomment this line to see problem on mobile. -Jonathan Calzada -->
+			<div style="background-color:#f9f9f9; width:100%; height:100%; position:relative; top:-100px; left:0px; z-index:-1;"></div>
+
 			<div class="container">
 				<div class="fh5co-intro js-fullheight">
 					<div class="fh5co-intro-text">
@@ -721,7 +738,7 @@
 
 	<!-- For demo purposes Only ( You may delete this anytime :-) -->
 	<div id="colour-variations">
-		<a class="option-toggle"><i class="icon-gear"></i></a>
+		<a class="option-toggle"><i class="icon-list"></i></a>
 		<h3>Cheat Sheet</h3>
 		<ul>
 			<li><a href="anthro.html" data-theme="style" title="Anthropologist"></a></li>
