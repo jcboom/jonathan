@@ -496,7 +496,7 @@ body {
 
 @media screen and (max-width: 480px) {
   #fh5co-hero {
-    height: 500px; /* origintal height: 450px; simply pulls up fold.*/
+    height: 470px; /* origintal height: 450px; simply pulls up fold.*/
   }
 }
 #fh5co-hero .fh5co-overlay {
@@ -900,6 +900,7 @@ body {
 @media screen and (max-width: 480px) {
   #fh5co-features-2 .fh5co-btn-action > a, #fh5co-features-3 .fh5co-btn-action > a, #fh5co-features-4 .fh5co-btn-action > a {
     margin-left: 0;
+    width:100px;
   }
 }
 @media screen and (max-width: 992px) {
