@@ -496,8 +496,7 @@ body {
 
 @media screen and (max-width: 480px) {
   #fh5co-hero {
-    height: 100px; /* origintal height: 450px; */
-
+    height: 500px; /* origintal height: 450px; simply pulls up fold.*/
   }
 }
 #fh5co-hero .fh5co-overlay {
