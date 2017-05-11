@@ -519,6 +519,7 @@ body {
   #fh5co-hero .fh5co-intro {
     height: 450px;
     background-size: 80px 60px; /* resizing background image */
+    background-image: url('http://jonathancalzada.com/images/cardface6.jpg');
   }
 }
 #fh5co-hero .fh5co-intro > div {
