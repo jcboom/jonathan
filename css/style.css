@@ -87,6 +87,92 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
+
+/* Adding circle buttons by Jonathan Calzada */
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  color: #fff;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+.btn-circle.btn-an {
+  background-color: #8B7C6D;
+}
+.btn-circle.btn-ux {
+  background-color: #5A0AA1;
+}
+.btn-circle.btn-ph {
+  background-color: #0197B2;
+}
+.btn-circle.btn-hx {
+  background-color: #242424;
+}
+.btn-circle.btn-an:focus {
+  color: #8B7C6D;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.btn-circle.btn-an:hover {
+  color: #8B7C6D;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-circle.btn-ux:focus {
+  color: #5A0AA1;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.btn-circle.btn-ux:hover {
+  color: #5A0AA1;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-circle.btn-ph:focus {
+  color: #0197B2;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.btn-circle.btn-ph:hover {
+  color: #0197B2;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-circle.btn-hx:focus {
+  color: #242424;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.btn-circle.btn-hx:hover {
+  color: #242424;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+/* End of Jonny's edits for this section */
+
+
 .btn.btn-md {
   padding: 10px 20px !important;
 }
@@ -347,7 +433,8 @@ body {
 }
 @media screen and (max-width: 480px) {
   #fh5co-hero {
-    height: 450px;
+    height: 250px; /* origintal height: 450px;
+    width: auto; /* Jonathan Calzada */
   }
 }
 #fh5co-hero .fh5co-overlay {
