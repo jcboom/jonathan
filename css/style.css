@@ -579,7 +579,10 @@ body {
     font-size: 30px;
     line-height: 37px;
     text-align: center;
-
+    opacity: .7;
+  }
+  .fh5co-intro > div h2{
+    content: "email" !important;
   }
 }
 #fh5co-hero .fh5co-intro > div h3 {
