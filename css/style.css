@@ -518,8 +518,10 @@ body {
 @media screen and (max-width: 480px) {
   #fh5co-hero .fh5co-intro {
     height: 450px;
-    background-size: 80px 60px; /* resizing background image */
-    background-image: url('http://jonathancalzada.com/images/cardface6.jpg');
+    /*
+    //background-size: 80px 60px; /* resizing background image
+    //background-image: url('http://jonathancalzada.com/images/cardface6.jpg');
+    */
   }
 }
 #fh5co-hero .fh5co-intro > div {
@@ -640,6 +642,14 @@ body {
 .no-js-fullheight {
   height: 620px;
 }
+
+@media screen and (max-width: 480px) {
+  .no-js-fullheight {
+    height: inherit;
+    padding: 3em 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .no-js-fullheight {
     height: inherit;
