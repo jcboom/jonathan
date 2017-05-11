@@ -40,7 +40,7 @@
 		/* Added by Jonathan Calzada to cope with image not working on iphone */
 		else {
 
-			$('.js-fullheight').css('background-size', 'auto 300px');
+			$('.js-fullheight').css('background-size', 'auto 350px');
 		}
 		/* end add */
 	};
