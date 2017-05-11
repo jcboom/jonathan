@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #242424;
 }
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1801px) {
   .btn-circle, .btn-circle.btn-an, .btn-circle.btn-ux, .btn-circle.btn-ph, .btn-circle.btn-hx {
     margin: 0px 0px 0px 70px;
     width: 100px;
@@ -149,7 +149,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight:400;
   }
 }
-
 
 @media screen and (max-width: 1800px) {
   .btn-circle {
@@ -175,19 +174,21 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
-
-/* not sure I need this - Jonathan Calzada *
-@media screen and (max-width: 680px) {
-  #fh5co-hero .fh5co-intro > div h2 {
-    font-size: 12px;
-    line-height: 87px;
-    font-weight: 100;
-    color: white;
-  }
+.nav_buttons.button_text {
+  display: none;
 }
-*/
-
+#id_an,
+#id_ux,
+#id_ph,
+#id_hx {
+  display: none;
+  position:absolute;
+  text-align:left;
+  font-size: 40px;
+  font-weight:100;
+  bottom: 0px;
+  right: 0px;
+}
 
 .btn-circle.btn-an:focus {
   color: #8B7C6D;
