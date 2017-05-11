@@ -581,8 +581,40 @@ body {
     text-align: center;
     opacity: .7;
   }
-  .fh5co-intro > div h2{
-    content: "email" !important;
+}
+
+/* Adding content with my name */
+#first-name::after {
+  content: "JONATHAN";
+  text-transform: uppercase;
+}
+#last-name::after {
+  content: "CALZADA";
+  font-weight:500;
+}
+
+
+@media screen and (max-width: 992px) {
+  #first-name::after {
+   content: "Jonny";
+   text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 992px) {
+  #last-name::after {
+   content: "Calzada";
+   text-transform: uppercase;
+
+  }
+}
+@media screen and (max-width: 480px) {
+  #first-name::after {
+   content: "Jonny";
+  }
+}
+@media screen and (max-width: 480px) {
+  #last-name::after {
+   content: "Cal";
   }
 }
 #fh5co-hero .fh5co-intro > div h3 {
