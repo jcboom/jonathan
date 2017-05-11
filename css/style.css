@@ -127,6 +127,16 @@ h1, h2, h3, h4, h5, h6 {
 .btn-circle.btn-ph {
   background-color: #0197B2;
 }
+@media screen and (max-width: 680px) {
+  #fh5co-hero .fh5co-intro > div h2 {
+    font-size: 12px;
+    line-height: 87px;
+    font-weight: 100;
+    color: white;
+  }
+}
+
+
 .btn-circle.btn-hx {
   background-color: #242424;
 }
@@ -436,8 +446,7 @@ body {
 
 @media screen and (max-width: 480px) {
   #fh5co-hero {
-    height: 450px; /* origintal height: 450px;
-    width: auto; /* Jonathan Calzada */
+    height: 450px; /* origintal height: 450px; */
   }
 }
 #fh5co-hero .fh5co-overlay {
