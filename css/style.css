@@ -579,7 +579,7 @@ body {
     font-size: 30px;
     line-height: 37px;
     text-align: center;
-    opacity: .7;
+    margin-top:100px;
   }
 }
 
@@ -593,30 +593,32 @@ body {
   font-weight:500;
 }
 
-
+/* BEGIN: Make my name responive */
 @media screen and (max-width: 992px) {
   #first-name::after {
    content: "Jonny";
    text-transform: uppercase;
   }
-}
-@media screen and (max-width: 992px) {
   #last-name::after {
    content: "Calzada";
    text-transform: uppercase;
 
   }
 }
+
 @media screen and (max-width: 480px) {
   #first-name::after {
    content: "Jonny";
+   position:inherit;
   }
-}
-@media screen and (max-width: 480px) {
   #last-name::after {
    content: "Cal";
+   margin-top:100px;
+   position:inherit;
+
   }
 }
+
 #fh5co-hero .fh5co-intro > div h3 {
   font-weight: 100;
   font-size: 30px;
@@ -630,6 +632,8 @@ body {
     text-align: center;
   }
 }
+/* END: Make my name responsive */
+
 #fh5co-hero .fh5co-intro > div .btn-outline, #fh5co-hero .fh5co-intro > div .btn-primary {
   padding: 20px 30px !important;
   min-width: 200px;
