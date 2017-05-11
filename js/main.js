@@ -40,15 +40,10 @@
 		/* Added by Jonathan Calzada to cope with image not working on iphone */
 		else {
 
-			$('.js-fullheight').css('background-size', 'auto 700px');
+			$('.js-fullheight').css('background-size', 'auto 900px');
 		}
 		/* end add */
 	};
-
-
-
-
-
 
 
 	var toggleBtnColor = function() {
