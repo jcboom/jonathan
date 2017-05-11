@@ -36,7 +36,7 @@
 			$(window).resize(function(){
 				$('.js-fullheight').css('height', $(window).height() - 49);
 				/* Added by Jonathan Calzada to cope with image not working on iphone */
-				$('.js-fullheight').css('background-size', 'auto 100%');
+				$('.js-fullheight').css('background-size', '480px auto');
 			})
 		}
 	};
