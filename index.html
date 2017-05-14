@@ -851,15 +851,11 @@
  			//(navigator.platform.indexOf("iPod") != -1)
  	    );
  	};
-
-	$(".btn-an").click(function(){
-		location.href="anthro.html";
-	});
+/*
 	alert("isipad: "+!isiPad() +"  isiPhone: "+!isiPhone());
 	alert(isiPad() || isiPhone());
-
+*/
 	if( !isiPad() && !isiPhone()){
-
 		$(".btn-an").mouseenter(function(){
 			$("#id_an").show();
 		})
@@ -869,6 +865,9 @@
 	};
 
 
+	$(".btn-an").click(function(){
+		location.href="anthro.html";
+	});
 	$(".btn-ux").click(function(){
 		 location.href="anthro.html";
 	});
