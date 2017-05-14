@@ -766,30 +766,6 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
 
-	<!-- Button Navigation Behavior by JC.-->
- <script>
- $(document).ready(function(){
-
-	 $(".btn-an").click(function(){
-			 location.href="anthro.html";
-	 }).mouseover(function() {
-			 $("#id_an").show();
-	 }).mouseout(function() {
-			 $("#id_an").hide();
-	 });
-
-	 $(".btn-ux").click(function(){
-			 location.href="anthro.html";
-	 });
-	 $(".btn-ph").click(function(){
-			 location.href="anthro.html";
-	 });
-	 $(".btn-hx").click(function(){
-			 location.href="anthro.html";
-	 });
-});
- </script>
-<!-- END of script -->
 	<!-- when you start or end a touch, turn the class hover_effect on or off.-->
 	<script>
 	$(document).ready(function() {
@@ -860,6 +836,43 @@
 		});
 	</script>
 
+	<!-- Button Navigation Behavior by Jonathan Calzada.  Using main.js.-->
+ <script>
+ $(document).ready(function(){
+	 // iPad and iPod detection
+ 	var isiPad = function(){
+ 		return (navigator.platform.indexOf("iPad") != -1);
+ 	};
+
+ 	var isiPhone = function(){
+ 	    return (
+ 			(navigator.platform.indexOf("iPhone") != -1) ||
+ 			(navigator.platform.indexOf("iPod") != -1)
+ 	    );
+ 	};
+	alert(isiPhone());
+
+	 $(".btn-an").click(function(){
+			 //location.href="anthro.html";
+
+
+	 if ( !isiPad() || !isiPhone() ) {
+		 alert('l');
+		 }
+	 });
+
+	 $(".btn-ux").click(function(){
+			 location.href="anthro.html";
+	 });
+	 $(".btn-ph").click(function(){
+			 location.href="anthro.html";
+	 });
+	 $(".btn-hx").click(function(){
+			 location.href="anthro.html";
+	 });
+});
+ </script>
+<!-- END of script -->
 
 	</body>
 </html>
