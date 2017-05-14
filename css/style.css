@@ -200,7 +200,9 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0px;
   right: 0px;
 }
-
+#id_ux.display_block {
+  display: block;
+}
 .btn-circle.btn-an:focus {
   color: #8B7C6D;
   background-color: #e6e6e6;
