@@ -100,6 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.428571429;
   border-radius: 35px;
   color: #fff;
+  text-transform: uppercase;
 }
 .btn-circle.btn-lg {
   width: 50px;
@@ -113,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 70px;
   height: 70px;
   padding: 10px 16px;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.33;
   border-radius: 35px;
   font-weight:300;
@@ -122,6 +123,10 @@ h1, h2, h3, h4, h5, h6 {
   -ms-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
   -o-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.btn-xl::first-letter {
+  font-size: 30px;
+
 }
 
 .btn-circle.btn-an {
@@ -138,15 +143,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width: 1801px) {
-  .btn-circle, .btn-circle.btn-an, .btn-circle.btn-ux, .btn-circle.btn-ph, .btn-circle.btn-hx {
+  .btn-circle.btn-xl {
     margin: 0px 0px 0px 70px;
     width: 100px;
     height: 100px;
     padding: 10px 16px;
-    font-size:50px;
+    font-size:40px;
     line-height: 1.33;
     border-radius: 100px;
     font-weight:400;
+  }
+  .btn-circle.btn-xl::first-letter {
+    font-size: 50px;
   }
 }
 
