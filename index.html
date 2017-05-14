@@ -863,13 +863,13 @@
 			$("#id_an").hide();
 		})
 	} else {
-		$('.hover').bind('touchstart', function() { /* OLD: $('.hover').bind('touchstart touchend', function(e) { */
+		$('.btn-an').bind('touchstart', function() { /* OLD: $('.hover').bind('touchstart touchend', function(e) { */
 				/* e.preventDefault(); Commented this out because it prevents user from scrolling. */
 				/* $(this).addClass('hover_effect');*/
 				alert("touchstart");
 				$("#id_an").show();
 		});
-		$('.hovered').bind('touchend focusout', function() {
+		$('.btn-an').bind('touchend focusout', function() {
 			$("#id_an").hide();
 				// $(this).toggleClass('fh5co-project-item img');
 		});
