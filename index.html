@@ -878,7 +878,8 @@
 		})
 	} else {
 		$('.btn-an').bind('touchstart', function() {
-				$("#id_an").show();
+			$(this).css("background-color", "#e6e6e6");
+			$("#id_an").show();
 		});
 		$('.btn-an').bind('touchend focusout', function() {
 			$(this).css("background-color", "#8B7C6D");
@@ -888,8 +889,8 @@
 		});
 
 		$('.btn-ux').bind('touchstart', function() {
+				$(this).css("background-color", "#e6e6e6");
 				$("#id_ux").show();
-				$(this).css("background-color", "#FFFFFF");
 		});
 		$('.btn-ux').bind('touchend focusout', function() {
 		  $(this).css("background-color", "#5A0AA1");
@@ -899,6 +900,7 @@
 		});
 
 		$('.btn-ph').bind('touchstart', function() {
+				$(this).css("background-color", "#e6e6e6");
 				$("#id_ph").show();
 		});
 		$('.btn-ph').bind('touchend focusout', function() {
@@ -909,6 +911,7 @@
 		});
 
 		$('.btn-hx').bind('touchstart', function() {
+				$(this).css("background-color", "#e6e6e6");
 				$("#id_hx").show();
 		});
 		$('.btn-hx').bind('touchend focusout', function() {
