@@ -882,8 +882,9 @@
 		});
 		$('.btn-an').bind('touchend focusout', function() {
 			$("#id_an").hide();
-			$(this).toggleClass("btn-an");
-			$(this).toggleClass("btn-circle.btn-xl");
+			//$(this).toggleClass("btn-an");
+			//$(this).toggleClass("btn-circle.btn-xl");
+			$(this).removeClass("btn-circle.btn-an:focus");
 		});
 
 		$('.btn-ux').bind('touchstart', function() {
