@@ -206,42 +206,42 @@ h1, h2, h3, h4, h5, h6 {
 .btn-circle.btn-an:focus {
   color: #8B7C6D;
   background-color: #e6e6e6;
-  border-color: #8c8c8c;
+  border-color: #8B7C6D;
 }
 .btn-circle.btn-an:hover {
   color: #8B7C6D;
   background-color: #e6e6e6;
-  border-color: #adadad;
+  border-color: #8B7C6D;
 }
 .btn-circle.btn-ux:focus {
   color: #5A0AA1;
   background-color: #e6e6e6;
-  border-color: #8c8c8c;
+  border-color: #5A0AA1;
 }
 .btn-circle.btn-ux:hover {
   color: #5A0AA1;
   background-color: #e6e6e6;
-  border-color: #adadad;
+  border-color: #5A0AA1;
 }
 .btn-circle.btn-ph:focus {
   color: #0197B2;
   background-color: #e6e6e6;
-  border-color: #8c8c8c;
+  border-color: #0197B2;
 }
 .btn-circle.btn-ph:hover {
   color: #0197B2;
   background-color: #e6e6e6;
-  border-color: #adadad;
+  border-color: #0197B2;
 }
 .btn-circle.btn-hx:focus {
   color: #242424;
   background-color: #e6e6e6;
-  border-color: #8c8c8c;
+  border-color: #242424;
 }
 .btn-circle.btn-hx:hover {
   color: #242424;
   background-color: #e6e6e6;
-  border-color: #adadad;
+  border-color: #242424;
 }
 /* End of Jonny's edits for this section */
 

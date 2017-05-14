@@ -881,11 +881,10 @@
 				$("#id_an").show();
 		});
 		$('.btn-an').bind('touchend focusout', function() {
+			$(this).css("background-color", "#8B7C6D");
+			$(this).css("border-color", "#8B7C6D");
+		  $(this).css("color", "#e6e6e6");
 			$("#id_an").hide();
-			//$(this).toggleClass("btn-an");
-			//$(this).toggleClass("btn-circle.btn-xl");
-			$(this).removeClass("btn-an:focus");
-			$(this).removeClass("btn-an:hover");
 		});
 
 		$('.btn-ux').bind('touchstart', function() {
@@ -893,16 +892,19 @@
 				$(this).css("background-color", "#FFFFFF");
 		});
 		$('.btn-ux').bind('touchend focusout', function() {
-			$("#id_ux").hide();
 		  $(this).css("background-color", "#5A0AA1");
 			$(this).css("border-color", "#5A0AA1");
-		  $(this).css("color", "#ffffff");
+		  $(this).css("color", "#e6e6e6");
+			$("#id_ux").hide();
 		});
 
 		$('.btn-ph').bind('touchstart', function() {
 				$("#id_ph").show();
 		});
 		$('.btn-ph').bind('touchend focusout', function() {
+			$(this).css("background-color", "#0197B2");
+			$(this).css("border-color", "#0197B2");
+		  $(this).css("color", "#e6e6e6");
 			$("#id_ph").hide();
 		});
 
@@ -910,6 +912,9 @@
 				$("#id_hx").show();
 		});
 		$('.btn-hx').bind('touchend focusout', function() {
+			$(this).css("background-color", "#242424");
+			$(this).css("border-color", "#242424");
+		  $(this).css("color", "#e6e6e6");
 			$("#id_hx").hide();
 		});
 
