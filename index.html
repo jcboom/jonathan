@@ -890,6 +890,8 @@
 		});
 		$('.btn-ux').bind('touchend focusout', function() {
 			$("#id_ux").hide();
+			$(this).toggleClass("btn-circle.btn-ux");
+
 		});
 
 		$('.btn-ph').bind('touchstart', function() {
