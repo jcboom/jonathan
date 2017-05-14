@@ -839,37 +839,45 @@
 	<!-- Button Navigation Behavior by Jonathan Calzada.  Using main.js.-->
  <script>
  $(document).ready(function(){
-	 // iPad and iPod detection
+
+	// iPad and iPod detection
  	var isiPad = function(){
  		return (navigator.platform.indexOf("iPad") != -1);
  	};
 
  	var isiPhone = function(){
  	    return (
- 			(navigator.platform.indexOf("iPhone") != -1) ||
- 			(navigator.platform.indexOf("iPod") != -1)
+ 			(navigator.platform.indexOf("iPhone") != -1)
+ 			//(navigator.platform.indexOf("iPod") != -1)
  	    );
  	};
-	alert(isiPhone());
 
-	 $(".btn-an").click(function(){
-			 //location.href="anthro.html";
+	$(".btn-an").click(function(){
+		location.href="anthro.html";
+	});
+	alert("isipad: "+!isiPad() +"  isiPhone: "+!isiPhone());
+	alert(isiPad() || isiPhone());
+
+	if( !isiPad() && !isiPhone()){
+
+		$(".btn-an").mouseenter(function(){
+			$("#id_an").show();
+		})
+		$(".btn-an").mouseleave(function(){
+			$("#id_an").hide();
+		})
+	};
 
 
-	 if ( !isiPad() || !isiPhone() ) {
-		 alert('l');
-		 }
-	 });
-
-	 $(".btn-ux").click(function(){
-			 location.href="anthro.html";
-	 });
-	 $(".btn-ph").click(function(){
-			 location.href="anthro.html";
-	 });
-	 $(".btn-hx").click(function(){
-			 location.href="anthro.html";
-	 });
+	$(".btn-ux").click(function(){
+		 location.href="anthro.html";
+	});
+	$(".btn-ph").click(function(){
+		 location.href="anthro.html";
+	});
+	$(".btn-hx").click(function(){
+		 location.href="anthro.html";
+	});
 });
  </script>
 <!-- END of script -->
