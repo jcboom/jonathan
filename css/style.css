@@ -128,7 +128,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-xl::first-letter {
   font-size: 30px;
-
 }
 
 .btn-circle.btn-an {
@@ -185,6 +184,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.hero_quote {
+  display: none;
+  position:relative;
+  text-align:right;
+  font-family:serif;
+  font-size: 30px;
+  font-weight:300;
+
+}
 .nav_buttons.button_text {
   display: none;
 }
@@ -742,6 +750,7 @@ body {
 #fh5co-features-3,
 #fh5co-features-4,
 #fh5co-projects,
+#jcboom-projects,
 #fh5co-testimonials,
 #fh5co-about,
 #fh5co-subscribe,
@@ -758,6 +767,7 @@ body {
   #fh5co-features-3,
   #fh5co-features-4,
   #fh5co-projects,
+  #jcboom-projects,
   #fh5co-testimonials,
   #fh5co-about,
   #fh5co-subscribe,
@@ -769,10 +779,20 @@ body {
   }
 }
 
+/* START PROJECTS SECTION */
 #fh5co-projects {
   background: #f9f9f9;
 }
+#jcboom-projects {
+  background: #f9f9f9;
+}
 #fh5co-projects .fh5co-lead {
+  font-size: 50px;
+  font-weight: 300;
+  color: #484c50;
+  margin-bottom: 10px;
+}
+#jcboom-projects .jcboom-lead {
   font-size: 50px;
   font-weight: 300;
   color: #484c50;
@@ -783,7 +803,17 @@ body {
     font-size: 35px;
   }
 }
+@media screen and (max-width: 768px) {
+  #jcboom-projects .jcboom-lead {
+    font-size: 35px;
+  }
+}
 #fh5co-projects .fh5co-sub-lead {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300;
+}
+#jcboom-projects .jcboom-sub-lead {
   font-size: 18px;
   line-height: 32px;
   font-weight: 300;
@@ -809,10 +839,68 @@ body {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+#jcboom-projects .jcboom-project-item {
+  display: block;
+  width: 100%;
+  position: relative;
+  background: #f9f9f9; /* OLD: background: #fff; */
+  overflow: hidden;
+  z-index: 9;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  border-radius: 11px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#jcboom-projects .jcboom-project-item .jcboom-card-corner-text {
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 12px;
+  font-weight:300;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  left:50%;
+  top:50%;
+  margin-top:-50;
+  margin-left:-50;
+  transform: translate(-50%, -50%); /*If you don't know, or are thinking it might change and want to be future proof, try this.*/
+  color:white;
+  padding: 0px 0px 0px 0px;
+}
+#jcboom-projects .jcboom-project-item .jcboom-card-ribbon .jcboom-card-ribbon-text {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 12px;
+  font-weight:400;
+  color:#FFFFFF;
+  text-transform: uppercase;
+  width:100%;
+  text-align: right;
+  top: 50%;
+  top:50%;
+}
+#jcboom-projects .jcboom-project-item .jcboom-card-corner .jcboom-card-corner-text::first-letter {
+  font-size:15px;
+}
 #fh5co-projects .fh5co-project-item img {
   z-index: 8;
   opacity: 1;
-  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#jcboom-projects .jcboom-project-item img {
+  z-index: 8;
+  opacity: 1;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
@@ -820,11 +908,102 @@ body {
   padding: 30px 10px 10px 20px;
   text-align: center;
 }
+#jcboom-projects .jcboom-project-item .jcboom-text {
+  //padding: 30px 10px 10px 20px;
+  text-align: center;
+  top:0px;
+  position: absolute;
+}
+#jcboom-projects .jcboom-project-item .jcboom-img-corner {
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  top:0px;
+  position: absolute;
+  width:10%;
+}
+#jcboom-projects .jcboom-project-item .jcboom-card-corner {
+  height:12%;
+  width:10%;
+  position:absolute;
+  top:0px;
+  left:0px;
+  background:#0197B2; /* need to fix to be dynamic */
+  overflow: hidden;
+  border-radius:0px 0px 15px;
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 0px;
+
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 11px;
+  -moz-border-radius-bottomleft: 0px;
+
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 0px;
+
+  <!-- [horizontal offset] [vertical offset] [blur radius] [spread radius] [color] [options]-->
+  -webkit-box-shadow: 10px 33px 20px 10px rgba(0, 0, 0, 1) inset;
+  -moz-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 1) inset;
+  -ms-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 1) inset;
+  -o-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 1) inset;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .2) inset;
+  text-decoration: none;
+
+
+}
+
+#jcboom-projects .jcboom-project-item .jcboom-card-ribbon {
+  height:10%;
+  width:90%;
+  position:absolute;
+  top:50%;
+  left:0px;
+  background:#0197B2; /* need to fix to be dynamic */
+  overflow: hidden;
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 0px;
+
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 11px;
+  -moz-border-radius-bottomleft: 0px;
+
+  border-top-left-radius: 0px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 0px;
+  opacity:.7;
+/*
+  <!-- [horizontal offset] [vertical offset] [blur radius] [spread radius] [color] [options]-->
+  -webkit-box-shadow: 10px 33px 20px 10px rgba(0, 0, 0, 1) inset;
+  -moz-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 1) inset;
+  -ms-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 1) inset;
+  -o-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 1) inset;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .2) inset;
+  text-decoration: none;
+*/
+
+}
 #fh5co-projects .fh5co-project-item .fh5co-text h2, #fh5co-projects .fh5co-project-item .fh5co-text span {
   text-decoration: none !important;
 }
+#jcboom-projects .jcboom-project-item .jcboom-text h2, #jcboom-projects .jcboom-project-item .jcboom-text span {
+  //text-decoration: none !important;
+}
 #fh5co-projects .fh5co-project-item .fh5co-text h2 {
   font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: #484c50;
+}
+#jcboom-projects .jcboom-project-item .jcboom-text h2 {
+  font-size: 10px;
   font-weight: bold;
   margin: 0 0 10px 0;
   color: #484c50;
@@ -834,13 +1013,35 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
+/* No span content currently in cards */
+#jcboom-projects .jcboom-project-item .jcboom-text span {
+  color: #b3b3b3;
+  font-size: 36px;
+  font-weight: 400;
+}
 #fh5co-projects .fh5co-project-item .fh5co-text p {
   color: #85919d;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+#jcbom-projects .jcboom-project-item .jcboom-text p {
+  /*
+  color: #85919d;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  */
+}
 #fh5co-projects .fh5co-project-item:hover, #fh5co-projects, #fh5co-projects .fh5co-project-item:focus {
+  -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+#jcboom-projects .jcboom-project-item:hover, #jcboom-projects, #jcboom-projects .jcboom-project-item:focus {
   -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
@@ -851,13 +1052,23 @@ body {
 #fh5co-projects .fh5co-project-item:hover img, #fh5co-projects .fh5co-project-item:focus img {
   opacity: .7;
 }
+/* Add flip card here */
+#jcboom-projects .jcboom-project-item:hover img, #jcboom-projects .jcboom-project-item:focus img {
+  opacity: .7;
+}
 #fh5co-projects .fh5co-project-item:hover h2, #fh5co-projects .fh5co-project-item:hover span, #fh5co-projects .fh5co-project-item:focus h2, #fh5co-projects .fh5co-project-item:focus span {
   text-decoration: none !important;
 }
-#fh5co-projects .fh5co-project-item:hover p, #fh5co-projects .fh5co-project-item:focus p {
-  color: #484c50;
+#jcboom-projects .jcboom-project-item:hover h2, #jcboom-projects .jcboom-project-item:hover span, #jcboom-projects .jcboom-project-item:focus h2, #jcboom-projects .jcboom-project-item:focus span {
+  //text-decoration: none !important;
 }
-
+#fh5co-projects .fh5co-project-item:hover p, #fh5co-projects .fh5co-project-item:focus p {
+  //color: #484c50;
+}
+#jcboom-projects .jcboom-project-item:hover p, #jcboom-projects .jcboom-project-item:focus p {
+  //color: #484c50;
+}
+/* END PROJECTS SECTION */
 #fh5co-features .fh5co-devices {
   margin-bottom: 40px;
 }
