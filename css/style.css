@@ -970,7 +970,7 @@ body {
 #jcboom-projects .jcboom-project-item .jcboom-card-ribbon .jcboom-card-ribbon-text {
   font-family: "Lato", "Roboto", Arial, sans-serif;
   font-size: 14px;
-  //font-size: calc(1em + .5vw);
+  /*//font-size: calc(1em + .5vw);*/
   font-size: 4vw;
   font-weight:400;
   text-rendering:optimizeSpeed;
