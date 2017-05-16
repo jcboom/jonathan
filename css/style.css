@@ -841,17 +841,18 @@ body {
 }
 #jcboom-projects .jcboom-project-item {
   display: block;
-  width: 100%;
+  width: 98%;
+  //height:230px;
   position: relative;
-  background: #f9f9f9; /* OLD: background: #fff; */
+  background: #f9f9f9;  /* OLD: background: #fff; */
   overflow: hidden;
   z-index: 9;
   margin-bottom: 30px;
-  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 7px 8px 8px 0px rgba(0, 0, 0, 0.5);
   -webkit-border-radius: 11px;
   -moz-border-radius: 11px;
   -ms-border-radius: 11px;
@@ -877,17 +878,6 @@ body {
   transform: translate(-50%, -50%); /*If you don't know, or are thinking it might change and want to be future proof, try this.*/
   color:white;
   padding: 0px 0px 0px 0px;
-}
-#jcboom-projects .jcboom-project-item .jcboom-card-ribbon .jcboom-card-ribbon-text {
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 12px;
-  font-weight:400;
-  color:#FFFFFF;
-  text-transform: uppercase;
-  width:100%;
-  text-align: right;
-  top: 50%;
-  top:50%;
 }
 #jcboom-projects .jcboom-project-item .jcboom-card-corner .jcboom-card-corner-text::first-letter {
   font-size:15px;
@@ -946,14 +936,12 @@ body {
   border-bottom-left-radius: 0px;
 
   <!-- [horizontal offset] [vertical offset] [blur radius] [spread radius] [color] [options]-->
-  -webkit-box-shadow: 10px 33px 20px 10px rgba(0, 0, 0, 1) inset;
-  -moz-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 1) inset;
-  -ms-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 1) inset;
-  -o-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 1) inset;
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .2) inset;
+  -moz-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .2) inset;
+  -ms-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .2) inset;
+  -o-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .2) inset;
   box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .2) inset;
   text-decoration: none;
-
-
 }
 
 #jcboom-projects .jcboom-project-item .jcboom-card-ribbon {
@@ -962,7 +950,7 @@ body {
   position:absolute;
   top:50%;
   left:0px;
-  background:#0197B2; /* need to fix to be dynamic */
+  background-color: rgba(1,151,178,0.7); //background:#0197B2; /* need to fix to be dynamic */
   overflow: hidden;
   -webkit-border-top-left-radius: 0px;
   -webkit-border-top-right-radius: 15px;
@@ -978,18 +966,22 @@ body {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 0px;
-  opacity:.7;
-/*
-  <!-- [horizontal offset] [vertical offset] [blur radius] [spread radius] [color] [options]-->
-  -webkit-box-shadow: 10px 33px 20px 10px rgba(0, 0, 0, 1) inset;
-  -moz-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 1) inset;
-  -ms-box-shadow: 0px 3px 20px 10px rgba(0, 0, 0, 1) inset;
-  -o-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 1) inset;
-  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .2) inset;
-  text-decoration: none;
-*/
-
 }
+#jcboom-projects .jcboom-project-item .jcboom-card-ribbon .jcboom-card-ribbon-text {
+  font-family: "Lato", "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  //font-size: calc(1em + .5vw);
+  font-size: 4vw;
+  font-weight:400;
+  text-rendering:optimizeSpeed;
+  color:#FFFFFF;
+  text-transform: uppercase;
+  line-height: calc(1em + 1.9vw); /* May not be supported in all browsers */
+  position:absolute;
+  vertical-align: middle;
+  right:2%;
+}
+
 #fh5co-projects .fh5co-project-item .fh5co-text h2, #fh5co-projects .fh5co-project-item .fh5co-text span {
   text-decoration: none !important;
 }
