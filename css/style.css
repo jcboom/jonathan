@@ -517,7 +517,7 @@ body {
 
 @media screen and (max-width: 480px) {
   #fh5co-hero {
-    height: 470px; /* origintal height: 450px; simply pulls up fold.*/
+    height: 470px; /* origintal height: 450px; simply pulls up fold on mobile screen sizes.*/
   }
 }
 #fh5co-hero .fh5co-overlay {
@@ -860,9 +860,10 @@ body {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 767px){
   #jcboom-projects .jcboom-project-item {
-    height:230px;
+    height: calc(50vw + 3em);
+    overflow:hidden;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -881,21 +882,16 @@ body {
   }
 }
 .img-card-responsive {
-  /* Settings from bootstrap.css
   display: block;
   max-width: 100%;
-  height: auto;
-  */
-  display: block;
-  max-width: 100%;
-  max-height: auto;
   min-height: 100%;
+  max-height: auto;
+  /*
   background-size: cover;
-  background-repeat: repeat-y;
-
+  background-image: url("https://source.unsplash.com/random?water:");
+  */
 }
 #jcboom-projects .jcboom-project-item .jcboom-card-corner-text {
-
   font-family: "Roboto", Arial, sans-serif;
   font-size: 12px;
   font-weight:300;
@@ -912,8 +908,21 @@ body {
   color:white;
   padding: 0px 0px 0px 0px;
 }
-#jcboom-projects .jcboom-project-item .jcboom-card-corner .jcboom-card-corner-text::first-letter {
-  font-size:15px;
+@media screen and (max-width: 767px){
+  #jcboom-projects .jcboom-project-item .jcboom-card-corner-text {
+    font-size: 3vw; /* May not be supported in all browsers */
+    line-height: calc(1em + 3.5vw); /* May not be supported in all browsers */
+
+  }
+  #jcboom-projects .jcboom-project-item .jcboom-card-corner .jcboom-card-corner-text::first-letter {
+    font-size:4vw;
+    line-height: calc(1em + 3.5vw); /* May not be supported in all browsers */
+  }
+}
+@media screen and (min-width: 768px){
+  #jcboom-projects .jcboom-project-item .jcboom-card-corner .jcboom-card-corner-text::first-letter {
+    font-size:15px;
+  }
 }
 #fh5co-projects .fh5co-project-item img {
   z-index: 8;
