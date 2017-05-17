@@ -880,6 +880,20 @@ body {
     height:240px;
   }
 }
+.img-card-responsive {
+  /* Settings from bootstrap.css
+  display: block;
+  max-width: 100%;
+  height: auto;
+  */
+  display: block;
+  max-width: 100%;
+  max-height: auto;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: repeat-y;
+
+}
 #jcboom-projects .jcboom-project-item .jcboom-card-corner-text {
 
   font-family: "Roboto", Arial, sans-serif;
