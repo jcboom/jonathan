@@ -347,7 +347,7 @@
 			</div>
 			<div class="fh5co-learn-more animate-box">
 				<a href="#" class="scroll-btn">
-					<!--//<span class="text">Scroll on! Scroll on!</span>-->
+					<span class="text">Scroll on! Scroll on!</span>
 					<span class="arrow"><i class="icon-chevron-down"></i></span>
 				</a>
 			</div>
@@ -407,8 +407,8 @@
 						</a>
 					</div>
 					<div id="card-ph" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-						<a href="https://source.unsplash.com/random?photography" class="jcboom-project-item">
-							<img src="https://images.unsplash.com/photo-1470145318698-cb03732f5ddf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=db2de9cd93a9cd75d82587b166e9f9e5" alt="Image" class="img-card-responsive" />
+						<a href="images/lavender_forest.jpg" class="jcboom-project-item">
+							<img src="images/lavender_forest.jpg" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
 							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Series 1 - Photography</span></div>
 						</a>
@@ -423,6 +423,13 @@
 					</div>
 
 					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+						<a href="images/sunset.jpg" class="jcboom-project-item">
+							<img src="images/sunset.jpg" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
+							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
 						<a href="https://source.unsplash.com/random?school" class="jcboom-project-item">
 							<img src="https://source.unsplash.com/random?school" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-an" class="jcboom-card-corner"><p class="jcboom-card-corner-text">An</p></div>
@@ -435,13 +442,6 @@
 							<img src="https://source.unsplash.com/random?architecture" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
 							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">UX Design Work @ YinzCam</span></div>
-						</a>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-						<a href="https://source.unsplash.com/random?images" class="jcboom-project-item">
-							<img src="https://source.unsplash.com/random?images" alt="Image" class="img-card-responsive" />
-							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
-							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
 						</a>
 					</div>
 
@@ -781,9 +781,7 @@
 		<h3>Filter</h3>
 		<ul>
 			<li><a href="index.html" data-theme="style" title="Home">HOME</a></li>
-			<li><a href="anthro.html#jcboom-projects
-
-				" data-theme="brown" title="Anthropologist"></a></li>
+			<li><a href="#jcboom-projects" data-theme="brown" title="Anthropologist"></a></li>
 			<li><a href="javascript: void(0);" data-theme="purple"></a>#An</li>
 			<li><a href="javascript: void(0);" data-theme="turquoise"></a></li>
 			<li><a href="javascript: void(0);" data-theme="black"></a></li>
@@ -974,23 +972,37 @@
 
 	/* Nav Button Locations */
 	$(".btn-an").click(function(){
-		location.href="anthro.html#jcboom-projects";
+		$('html, body').animate({
+			scrollTop: $("#jcboom-projects").offset().top
+		}, 300);
 	});
 	$(".btn-ux").click(function(){
-		location.href="ux.html#jcboom-projects";
+		$('html, body').animate({
+			scrollTop: $("#jcboom-projects").offset().top
+		}, 300);
 	});
 	$(".btn-ph").click(function(){
-		location.href="ph.html#jcboom-projects";
+		$('html, body').animate({
+			scrollTop: $("#jcboom-projects").offset().top
+		}, 300);
 	});
 	$(".btn-hx").click(function(){
-		location.href="hx.html#jcboom-projects";
+		$('html, body').animate({
+			scrollTop: $("#jcboom-projects").offset().top
+		}, 300);
 	});
 });
 /* End Nav Button Locations */
 
  </script>
+
  <!-- Filter Functionality -->
  <script>
+ /*******************************************************************************
+ * Author: Jonathan Calzada
+ * Purpose: This handles the filter and switch functionality
+ * Date:
+ *******************************************************************************/
  function toggleFilter(filter, color) {
  		if( $("#"+filter).prop('className').indexOf(filter+"-deco") != -1) {
  			$("."+filter+"-button").html("&plus;");
@@ -1017,28 +1029,49 @@
 		}
  }
 
- $(document).ready(function() {
+$(document).ready(function() {
+	//alert($("#filter-an").prop("className"));
 
-	 $("#filter-all").click(function() {
-		 //alert('me');
-			 //var checkBoxes = $("input[name=chk\\[\\]]");
-			 //checkBoxes.prop("checked", !checkBoxes.prop("checked"));
+	/* Need to simplify the function below and create veriables so its not DRY (Don't Repeat Yourself) */
+	$("#slider-mech").click(function() {
+		if( $("#slider-mech").prop("checked") ) { //When swtich is turned on
+			$(".closebtn").html("&times;"); //Changes + to x sign on buttons
 
-				 //alert(checkBoxes.prop("checked"));
-	 });
-/*
-		 $('.hover').bind('touchstart', function(e) { /* OLD: $('.hover').bind('touchstart touchend', function(e) { */
-				 /* e.preventDefault(); Commented this out because it prevents user from scrolling.
-				 /* $(this).addClass('hover_effect');
-		 });
+			$("#filter-an").removeClass('cards-filter-item-disabled');
+			$("#filter-an").addClass('filter-an-deco');
+			$(".filter-an-button").css("color", "#8B7C6D");
 
-		 $('.hovered').bind('touchend focusout', function(e) {
-			 $(this).toggleClass('fh5co-project-item');
+			$("#filter-ux").removeClass('cards-filter-item-disabled');
+			$("#filter-ux").addClass('filter-ux-deco');
+			$(".filter-ux-button").css("color", "#5A0AA1");
 
-				 // $(this).toggleClass('fh5co-project-item img');
-		 });
-*/
- });
+			$("#filter-ph").removeClass('cards-filter-item-disabled');
+			$("#filter-ph").addClass('filter-ph-deco');
+			$(".filter-ph-button").css("color", "#0197B2");
+
+			$("#filter-hx").removeClass('cards-filter-item-disabled');
+			$("#filter-hx").addClass('filter-hx-deco');
+			$(".filter-hx-button").css("color", "#272727");
+		} else { //When swtich is turned off
+
+			$(".closebtn").css("color", "#AAAAAA"); //Makes all close buttons gray
+			$(".closebtn").html("&plus;"); //Changes all buttons to Plus signs
+
+			$("#filter-an").removeClass('filter-an-deco');
+			$("#filter-an").addClass('cards-filter-item-disabled');
+
+			$("#filter-ux").removeClass('filter-ux-deco');
+			$("#filter-ux").addClass('cards-filter-item-disabled');
+
+			$("#filter-ph").removeClass('filter-ph-deco');
+			$("#filter-ph").addClass('cards-filter-item-disabled');
+
+			$("#filter-hx").removeClass('filter-hx-deco');
+			$("#filter-hx").addClass('cards-filter-item-disabled');
+
+		}
+	});
+});
 
  </script>
 <!-- END of script -->
