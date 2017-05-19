@@ -360,17 +360,38 @@
 		<!--BEGIN JCBOOM CARDS -->
 		<section id="jcboom-projects">
 			<div class="container">
-				<div class="row row-bottom-padded-md">
+				<div class="row row-bottom-padded-sm">
 					<div class="col-md-6 col-md-offset-3 text-center">
-						<h2 class="jcboom-lead animate-box">Portfolio of an </h2>#Anthropologist #UX Designer #Photographer #The Whole Human #Me
-						<!--//<p class="fh5co-sub-lead animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>-->
+						<h2 class="jcboom-lead animate-box">Portfolio of an </h2>
+						<!--
+						<p class="fh5co-sub-lead animate-box">I embrace the idea that “the future needs the whole [wo]man," as a person is the whole of their experience <small>(Moholy-Nagy 1938)</small>. </p>
+					-->
 					</div>
 				</div>
+<!--
+				<div class="cards-filter animate-box">
+					<div class="chip"><img src="images/an_button.png" alt="Person" width="96" height="96">#Anthropologist  <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></div>
+					<div class="chip"><img src="images/ux_button.png" alt="Person" width="96" height="96">#UX Designer  <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></div>
+					<div class="chip"><img src="images/ph_button.png" alt="Person" width="96" height="96">#Photographer  <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></div>
+					<div class="chip"><img src="images/hx_button.png" alt="Person" width="96" height="96">#Haxor  <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></div>
+					<div class="chip"><img src="images/ux_button.png" alt="Person" width="96" height="96">The Whole Man  <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></div>
+				</div>
+-->
+
 
 				<div class="row">
+					<div id="main" class="cards-filter animate-box">
+						<div id="filter-an" class="cards-filter-item filter-an-deco" onclick="toggleFilter('filter-an','#8B7C6D')">#Anthropologist<span class="closebtn filter-an-button">&times;</span></div>
+						<div id="filter-ux" class="cards-filter-item filter-ux-deco" onclick="toggleFilter('filter-ux','#5A0AA1')">#UX Designer  <span class="closebtn filter-ux-button">&times;</span></div>
+						<div id="filter-ph" class="cards-filter-item filter-ph-deco" onclick="toggleFilter('filter-ph','#0197B2')">#Photographer  <span class="closebtn filter-ph-button">&times;</span></div>
+						<div id="filter-hx" class="cards-filter-item filter-hx-deco" onclick="toggleFilter('filter-hx','#272727')">#Haxor  <span class="closebtn filter-hx-button">&times;</span></div>
+						<!--<div class="chip"><img src="images/ux_button.png" alt="Person" width="96" height="96">The Whole Man  <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></div>-->
+						<label class="switch"><!--<fieldset id="filter-all">--><input type="checkbox" id="slider-mech" checked="checked"><div class="slider round"><span class="slider-text">The Whole Man</span><!--</fieldset>--></div></label>
+					</div>
+					<br />
 
-<!--CARDS use: https://source.unsplash.com/random for random content -->
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<!--CARDS use: https://source.unsplash.com/random for random content -->
+					<div id="card-an" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
 						<a href="images/alley.png" class="jcboom-project-item">
 							<img src="images/alley.png" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-an" class="jcboom-card-corner"><p class="jcboom-card-corner-text">An</p></div>
@@ -378,14 +399,14 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div id="card-ux" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
 						<a href="images/design.png" class="jcboom-project-item">
 							<img src="images/design.png" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
 							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Design Anthropology @ SAP</span></div>
 						</a>
 					</div>
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div id="card-ph" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
 						<a href="https://source.unsplash.com/random?photography" class="jcboom-project-item">
 							<img src="https://images.unsplash.com/photo-1470145318698-cb03732f5ddf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=db2de9cd93a9cd75d82587b166e9f9e5" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
@@ -393,7 +414,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div id="card-hx" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
 						<a href="https://source.unsplash.com/random?hacker" class="jcboom-project-item">
 							<img src="https://source.unsplash.com/random?hacker" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-hx" class="jcboom-card-corner"><p class="jcboom-card-corner-text">Hx</p></div>
@@ -801,6 +822,13 @@
 					// $(this).toggleClass('fh5co-project-item img');
 			});
 */
+			$("#filter-all").click(function() {
+				//alert('me');
+					var checkBoxes = $("input[name=chk\\[\\]]");
+					checkBoxes.prop("checked", !checkBoxes.prop("checked"));
+
+						//alert(checkBoxes.prop("checked"));
+			});
 	});
 	</script>
 <!-- END of script -->
@@ -958,6 +986,60 @@
 		location.href="hx.html#jcboom-projects";
 	});
 });
+/* End Nav Button Locations */
+
+ </script>
+ <!-- Filter Functionality -->
+ <script>
+ function toggleFilter(filter, color) {
+ 		if( $("#"+filter).prop('className').indexOf(filter+"-deco") != -1) {
+ 			$("."+filter+"-button").html("&plus;");
+ 			$("."+filter+"-button").css("color", "#AAAAAA");
+ 		} else {
+ 			$("."+filter+"-button").html("&times;");
+ 			$("."+filter+"-button").css("color", color);
+ 		}
+ 	  $("#"+filter).toggleClass(filter+'-deco');
+ 		$("#"+filter).toggleClass('cards-filter-item-disabled');
+
+		/* SWITCH MECHANISM */
+		var enableSwitch = true;
+		$('div','#main').each(function(){
+			if( $(this).prop('className').indexOf("disabled") != -1) {
+				enableSwitch = false;
+			}
+    });
+		if (enableSwitch == false) {
+			$('#slider-mech').prop('checked', false);
+		} else {
+			enableSwitch = true;
+			$('#slider-mech').prop('checked', true);
+		}
+ }
+
+ $(document).ready(function() {
+
+	 $("#filter-all").click(function() {
+		 //alert('me');
+			 //var checkBoxes = $("input[name=chk\\[\\]]");
+			 //checkBoxes.prop("checked", !checkBoxes.prop("checked"));
+
+				 //alert(checkBoxes.prop("checked"));
+	 });
+/*
+		 $('.hover').bind('touchstart', function(e) { /* OLD: $('.hover').bind('touchstart touchend', function(e) { */
+				 /* e.preventDefault(); Commented this out because it prevents user from scrolling.
+				 /* $(this).addClass('hover_effect');
+		 });
+
+		 $('.hovered').bind('touchend focusout', function(e) {
+			 $(this).toggleClass('fh5co-project-item');
+
+				 // $(this).toggleClass('fh5co-project-item img');
+		 });
+*/
+ });
+
  </script>
 <!-- END of script -->
 

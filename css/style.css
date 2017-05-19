@@ -89,10 +89,186 @@ h1, h2, h3, h4, h5, h6 {
   cursor:pointer;
 
 }
+/* BEGIN Filter Functionality Section - Added by Jonathan Calzada */
+.cards-filter {
+  width: 100%;
+  border: 0px solid black; /* border jc */
+  /* white-space:nowrap; NOT COMPATIBLE WITH FIREFOX */
+  /*overflow:hidden;*/
+  text-align: center;
+  vertical-align: middle;
+  top:0;
+}
+.cards-filter-item {
+    font-family: "Roboto", Arial, sans-serif;
+    display: inline-block;
+    padding: 10px 15px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 15px;
+    border-radius: 10px;
+    /*background-color: #f1f1f1;*/
+    border: 2px solid #AAAAAA;
+    cursor: pointer;
+}
+.cards-filter-item-disabled {
+    font-family: "Roboto", Arial, sans-serif;
+    display: inline-block;
+    padding: 10px 15px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 15px;
+    border-radius: 10px;
+    /*background-color: #f1f1f1;*/
+    border: 2px solid #AAAAAA;
+    color: #AAAAAA;
+    cursor: pointer;
+}
+.cards-filter-item.filter-an:hover, .cards-filter-item.filter-ux:hover, .cards-filter-item.filter-ph:hover, .cards-filter-item.filter-hx:hover {
+  color: #AAAAAA;
+  border: 2px solid #AAAAAA;
+}
+.cards-filter-item.filter-an-deco {
+  border: 2px solid #8B7C6D;
+  color:#8B7C6D;
+}
+.cards-filter-item.filter-ux-deco {
+  border: 2px solid #5A0AA1;
+  color: #5A0AA1;
+}
+.cards-filter-item.filter-ph-deco {
+  border: 2px solid #0197B2;
+  color: #0197B2;
+}
+.cards-filter-item.filter-hx-deco {
+  border: 2px solid #272727;
+  color: #272727;
+}
 
+/* BEGIN CHIPS Not used for now */
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+/* End Chips */
+.closebtn {
+    padding-left: 20px;
+    color: #AAAAAA;
+    font-weight:400;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+.closebtn.filter-an {
+  color: #8B7C6D;
+}
+.closebtn.filter-ux {
+  color: #5A0AA1;
+}
+.closebtn.filter-ph {
+  color: #0197B2;
+}
+.closebtn.filter-hx {
+  color: #272727;
+}
+
+.closebtn:hover {
+    color: #000;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 34px;
+  padding-left: 1%;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: relative;
+  cursor: pointer;
+  top: 15px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #AAAAAA;
+  -webkit-transition: .4s;
+  transition: .4s;
+  width: 170px;
+  height:40px;
+  color: #FFFFFF;
+  overflow: hidden;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  text-align:right;
+  padding-right: 15px;
+  line-height: 37px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 35px;
+  width: 35px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+input:checked + .slider {
+  /* Original color: background-color: #2196F3; */
+  background-color: #8AC731;
+  text-align: left;
+  padding-left: 15px;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider::before {
+  -webkit-transform: translateX(129px);
+  -ms-transform: translateX(129px);
+  transform: translateX(129px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+/* END Filter Functionality Section */
 
 /* Adding circle buttons by Jonathan Calzada */
-
 .btn-circle {
   width: 60px;
   height: 60px;
