@@ -391,7 +391,7 @@
 					<br />
 
 					<!--CARDS use: https://source.unsplash.com/random for random content -->
-					<div id="card-an" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div id="card-an"  class="col-md-4 col-sm-6 col-xxs-12 animate-box">
 						<a href="images/alley.png" class="jcboom-project-item">
 							<img src="images/alley.png" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-an" class="jcboom-card-corner"><p class="jcboom-card-corner-text">An</p></div>
@@ -422,7 +422,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div id="card-ph" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
 						<a href="images/sunset.jpg" class="jcboom-project-item">
 							<img src="images/sunset.jpg" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
@@ -437,7 +437,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div card="ux" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
 						<a href="https://source.unsplash.com/random?architecture" class="jcboom-project-item">
 							<img src="https://source.unsplash.com/random?architecture" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
@@ -476,7 +476,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div card="ux" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
 						<a href="https://source.unsplash.com/random?buildings" class="jcboom-project-item">
 							<img src="https://source.unsplash.com/random?buildings" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
@@ -1007,9 +1007,11 @@
  		if( $("#"+filter).prop('className').indexOf(filter+"-deco") != -1) {
  			$("."+filter+"-button").html("&plus;");
  			$("."+filter+"-button").css("color", "#AAAAAA");
+			$("#"+"card-ux").css("display","none"); //!!!!!! Need to fix for all cards
  		} else {
  			$("."+filter+"-button").html("&times;");
  			$("."+filter+"-button").css("color", color);
+			$("#card-ux").css("display","block"); //!!!! Need to fix for all cards
  		}
  	  $("#"+filter).toggleClass(filter+'-deco');
  		$("#"+filter).toggleClass('cards-filter-item-disabled');
