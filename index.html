@@ -386,12 +386,13 @@
 						<div id="filter-ph" class="cards-filter-item filter-ph-deco" onclick="toggleFilter('filter-ph','#0197B2')">#Photographer  <span class="closebtn filter-ph-button">&times;</span></div>
 						<div id="filter-hx" class="cards-filter-item filter-hx-deco" onclick="toggleFilter('filter-hx','#272727')">#Haxor  <span class="closebtn filter-hx-button">&times;</span></div>
 						<!--<div class="chip"><img src="images/ux_button.png" alt="Person" width="96" height="96">The Whole Man  <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></div>-->
-						<label class="switch"><!--<fieldset id="filter-all">--><input type="checkbox" id="slider-mech" checked="checked"><div class="slider round"><span class="slider-text">The Whole Man</span><!--</fieldset>--></div></label>
+						<label class="switch"><!--<fieldset id="filter-all">--><input type="checkbox" id="slider-mech" checked="checked"><div class="slider round"><span class="slider-text"><i>The Whole Man</i></span><!--</fieldset>--></div></label>
 					</div>
 					<br />
 
 					<!--CARDS use: https://source.unsplash.com/random for random content -->
-					<div id="card-an"  class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div id="cards">
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-an">
 						<a href="images/alley.png" class="jcboom-project-item">
 							<img src="images/alley.png" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-an" class="jcboom-card-corner"><p class="jcboom-card-corner-text">An</p></div>
@@ -399,45 +400,15 @@
 						</a>
 					</div>
 
-					<div id="card-ux" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
 						<a href="images/design.png" class="jcboom-project-item">
 							<img src="images/design.png" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
 							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Design Anthropology @ SAP</span></div>
 						</a>
 					</div>
-					<div id="card-ph" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-						<a href="images/lavender_forest.jpg" class="jcboom-project-item">
-							<img src="images/lavender_forest.jpg" alt="Image" class="img-card-responsive" />
-							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
-							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Series 1 - Photography</span></div>
-						</a>
-					</div>
 
-					<div id="card-hx" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-						<a href="https://source.unsplash.com/random?hacker" class="jcboom-project-item">
-							<img src="https://source.unsplash.com/random?hacker" alt="Image" class="img-card-responsive" />
-							<div id="jcboom-card-corner-hx" class="jcboom-card-corner"><p class="jcboom-card-corner-text">Hx</p></div>
-							<div id="jcboom-card-ribbon-hx" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">haxor</span></div>
-						</a>
-					</div>
-
-					<div id="card-ph" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-						<a href="images/sunset.jpg" class="jcboom-project-item">
-							<img src="images/sunset.jpg" alt="Image" class="img-card-responsive" />
-							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
-							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
-						</a>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-						<a href="https://source.unsplash.com/random?school" class="jcboom-project-item">
-							<img src="https://source.unsplash.com/random?school" alt="Image" class="img-card-responsive" />
-							<div id="jcboom-card-corner-an" class="jcboom-card-corner"><p class="jcboom-card-corner-text">An</p></div>
-							<div id="jcboom-card-ribbon-an" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
-						</a>
-					</div>
-
-					<div card="ux" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
 						<a href="https://source.unsplash.com/random?architecture" class="jcboom-project-item">
 							<img src="https://source.unsplash.com/random?architecture" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
@@ -445,22 +416,56 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
 						<a href="https://source.unsplash.com/random?color" class="jcboom-project-item">
 							<img src="https://source.unsplash.com/random?color" alt="Image" class="img-card-responsive" />
-							<div id="jcboom-card-corner-hx" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
-							<div id="jcboom-card-ribbon-hx" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
-						</a>
-					</div>
-
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
-						<a href="https://source.unsplash.com/random?code" class="jcboom-project-item">
-							<img src="https://source.unsplash.com/random?code" alt="Image" class="img-card-responsive" />
-							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">Hx</p></div>
+							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
 							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
 						</a>
 					</div>
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
+						<a href="images/lavender_forest.jpg" class="jcboom-project-item">
+							<img src="images/lavender_forest.jpg" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
+							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Series 1 - Photography</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-hx">
+						<a href="https://source.unsplash.com/random?hacker" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?hacker" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-hx" class="jcboom-card-corner"><p class="jcboom-card-corner-text">Hx</p></div>
+							<div id="jcboom-card-ribbon-hx" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">haxor</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
+						<a href="images/sunset.jpg" class="jcboom-project-item">
+							<img src="images/sunset.jpg" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
+							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-an">
+						<a href="https://source.unsplash.com/random?school" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?school" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-an" class="jcboom-card-corner"><p class="jcboom-card-corner-text">An</p></div>
+							<div id="jcboom-card-ribbon-an" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+
+
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-hx">
+						<a href="https://source.unsplash.com/random?code" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?code" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-hx" class="jcboom-card-corner"><p class="jcboom-card-corner-text">Hx</p></div>
+							<div id="jcboom-card-ribbon-hx" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
 						<a href="https://source.unsplash.com/random?cars" class="jcboom-project-item">
 							<img src="https://source.unsplash.com/random?cars" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
@@ -468,7 +473,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-hx">
 						<a href="https://source.unsplash.com/random?people" class="jcboom-project-item">
 							<img src="https://source.unsplash.com/random?people" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-hx" class="jcboom-card-corner"><p class="jcboom-card-corner-text">hx</p></div>
@@ -476,14 +481,14 @@
 						</a>
 					</div>
 
-					<div card="ux" class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
 						<a href="https://source.unsplash.com/random?buildings" class="jcboom-project-item">
 							<img src="https://source.unsplash.com/random?buildings" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
 							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
 						</a>
 					</div>
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
 						<a href="https://source.unsplash.com/random?landscape" class="jcboom-project-item">
 							<img src="https://source.unsplash.com/random?landscape" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
@@ -491,7 +496,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-hx">
 						<a href="https://source.unsplash.com/random?nature" class="jcboom-project-item">
 							<img src="https://source.unsplash.com/random?nature" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-hx" class="jcboom-card-corner"><p class="jcboom-card-corner-text">hx</p></div>
@@ -499,14 +504,14 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
 						<a href="https://source.unsplash.com/random?marketing" class="jcboom-project-item">
 							<img src="https://source.unsplash.com/random?marketing" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
 							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
 						</a>
 					</div>
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
 						<a href="https://source.unsplash.com/random?water" class="jcboom-project-item">
 							<img src="https://source.unsplash.com/random?water" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
@@ -514,14 +519,15 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box">
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
 						<a href="https://source.unsplash.com/random?design" class="jcboom-project-item">
 							<img src="https://source.unsplash.com/random?design" alt="Image" class="img-card-responsive" />
-							<div id="jcboom-card-corner-hx" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
-							<div id="jcboom-card-ribbon-hx" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
+							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
 						</a>
 					</div>
 
+				</div>
 <!--END CARDS -->
 
 				</div>
@@ -972,28 +978,44 @@
 
 	/* Nav Button Locations */
 	$(".btn-an").click(function(){
+		//toggleFilter('filter-an','#8B7C6D');
+		toggleFilter('filter-ux','#5A0AA1');
+		toggleFilter('filter-ph','#0197B2');
+		toggleFilter('filter-hx','#272727');
 		$('html, body').animate({
-			scrollTop: $("#jcboom-projects").offset().top
-		}, 300);
+			scrollTop: $('#jcboom-projects').offset().top
+		}, 2000, 'easeOutElastic'); //http://easings.net/
+		return false;
 	});
 	$(".btn-ux").click(function(){
 		$('html, body').animate({
 			scrollTop: $("#jcboom-projects").offset().top
-		}, 300);
+		}, 500, 'easeOutBounce');
+		toggleFilter('filter-an','#8B7C6D');
+		//toggleFilter('filter-ux','#5A0AA1');
+		toggleFilter('filter-ph','#0197B2');
+		toggleFilter('filter-hx','#272727');
 	});
 	$(".btn-ph").click(function(){
 		$('html, body').animate({
 			scrollTop: $("#jcboom-projects").offset().top
-		}, 300);
+		}, 500, 'easeOutBounce');
+		toggleFilter('filter-an','#8B7C6D');
+		toggleFilter('filter-ux','#5A0AA1');
+		//toggleFilter('filter-ph','#0197B2');
+		toggleFilter('filter-hx','#272727');
 	});
 	$(".btn-hx").click(function(){
 		$('html, body').animate({
 			scrollTop: $("#jcboom-projects").offset().top
-		}, 300);
+		}, 500, 'easeOutBounce');
+		toggleFilter('filter-an','#8B7C6D');
+		toggleFilter('filter-ux','#5A0AA1');
+		toggleFilter('filter-ph','#0197B2');
+		//toggleFilter('filter-hx','#272727');
 	});
 });
 /* End Nav Button Locations */
-
  </script>
 
  <!-- Filter Functionality -->
@@ -1004,19 +1026,21 @@
  * Date:
  *******************************************************************************/
  function toggleFilter(filter, color) {
- 		if( $("#"+filter).prop('className').indexOf(filter+"-deco") != -1) {
+	 var strCards=".card-"+filter.substring(filter.lastIndexOf("-")+1,filter.lastIndexOf(""));
+		if( $("#"+filter).prop('className').indexOf(filter+"-deco") != -1) {
  			$("."+filter+"-button").html("&plus;");
  			$("."+filter+"-button").css("color", "#AAAAAA");
-			$("#"+"card-ux").css("display","none"); //!!!!!! Need to fix for all cards
- 		} else {
+			$(strCards).hide();
+		} else {
  			$("."+filter+"-button").html("&times;");
  			$("."+filter+"-button").css("color", color);
-			$("#card-ux").css("display","block"); //!!!! Need to fix for all cards
+			$("#cards").show(); //Displays cards section
+			$(strCards).show(); //Displays card types
  		}
  	  $("#"+filter).toggleClass(filter+'-deco');
  		$("#"+filter).toggleClass('cards-filter-item-disabled');
 
-		/* SWITCH MECHANISM */
+		/* SWITCH MECHANISM OFF/ON POSITION */
 		var enableSwitch = true;
 		$('div','#main').each(function(){
 			if( $(this).prop('className').indexOf("disabled") != -1) {
@@ -1032,11 +1056,20 @@
  }
 
 $(document).ready(function() {
-	//alert($("#filter-an").prop("className"));
 
 	/* Need to simplify the function below and create veriables so its not DRY (Don't Repeat Yourself) */
 	$("#slider-mech").click(function() {
+		$('#cards').children('div').each(function () {
+			var strClass = $(this).prop("className")
+			var strCardType=strClass.substring(strClass.lastIndexOf("card-")+5,strClass.lastIndexOf("card-")+7);
+			var strCard=strClass.substring(strClass.lastIndexOf("card-"),strClass.lastIndexOf("card-")+7);
+			//toggleFilter("filter-"+strCard,"red");
+			$("."+strCard).show();
+		});
+
 		if( $("#slider-mech").prop("checked") ) { //When swtich is turned on
+			//$("#cards").show();
+
 			$(".closebtn").html("&times;"); //Changes + to x sign on buttons
 
 			$("#filter-an").removeClass('cards-filter-item-disabled');
@@ -1055,9 +1088,21 @@ $(document).ready(function() {
 			$("#filter-hx").addClass('filter-hx-deco');
 			$(".filter-hx-button").css("color", "#272727");
 		} else { //When swtich is turned off
+			//$("#cards").hide();
 
+			// Checks card container for cards and disables want is found
+			$('#cards').children('div').each(function () {
+				var strClass = $(this).prop("className")
+				var strCardType=strClass.substring(strClass.lastIndexOf("card-")+5,strClass.lastIndexOf("card-")+7);
+				var strCard=strClass.substring(strClass.lastIndexOf("card-"),strClass.lastIndexOf("card-")+7);
+				//toggleFilter("filter-"+strCard,"red");
+				$("."+strCard).hide();
+			});
+			/* alert($("#cards").children().length); //Total Number of cards */
 			$(".closebtn").css("color", "#AAAAAA"); //Makes all close buttons gray
 			$(".closebtn").html("&plus;"); //Changes all buttons to Plus signs
+
+
 
 			$("#filter-an").removeClass('filter-an-deco');
 			$("#filter-an").addClass('cards-filter-item-disabled');
