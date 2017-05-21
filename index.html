@@ -13,6 +13,9 @@
 	<meta name="keywords" content="user experience research, user experience designer, anthropologist, academic" />
 	<meta name="author" content="FREEHTML5.CO modified by Jonathan Calzada" />
 
+	<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />-->
+
+
 <!-- From Bootsnip (Rotating Card) -->
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:100,200,300,400,500,700,800,900" rel="stylesheet">
@@ -289,6 +292,8 @@
 		<body class="boxed">
 	-->
 	<body>
+	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
 	<!-- Loader -->
 	<div class="fh5co-loader"></div>
 
@@ -385,7 +390,9 @@
 					<!--CARDS use: https://source.unsplash.com/random for random content -->
 					<div id="cards">
 					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-an">
-						<a href="#portfolioModal1" class="jcboom-project-item" data-toggle="modal">
+						<!--<a href="#portfolioModal1" class="jcboom-project-item" data-toggle="modal">-->
+						<a href="lab6.html" data-toggle="modal" data-target="#portfolioModal1" class="jcboom-project-item">
+				<!--<a href="Lab6.html" data-toggle="modal" data-target="#theModal" >Lab 6</a>-->
 							<img src="images/alley.png" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-an" class="jcboom-card-corner"><p class="jcboom-card-corner-text">An</p></div>
 							<div id="jcboom-card-ribbon-an" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Urban Anthropology Project</span></div>
@@ -1118,17 +1125,20 @@ $(document).ready(function() {
 
 <!-- Portfolio Modals -->
 <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog">
 		<div class="modal-content">
+			<!--
 				<div class="close-modal" data-dismiss="modal">
 						<div class="lr">
 								<div class="rl">
 								</div>
 						</div>
 				</div>
+
 				<div class="container">
 						<div class="row">
 								<div class="col-lg-8 col-lg-offset-2">
-										<div class="modal-body">
+										<div id="modal-body" class="modal-body">
 												<h2>Project Title</h2>
 												<hr class="star-primary">
 												<img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
@@ -1147,11 +1157,22 @@ $(document).ready(function() {
 																</strong>
 														</li>
 												</ul>
+											<script>
+											//$(document).ready(function(){
+
+												//$('#modal-body').load('anthro.html');
+												//document.getElementById("modal-body").innerHTML='<object type="text/html" data="anthro.html" ></object>';
+
+											//});
+											</script>
+
 												<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
 										</div>
 								</div>
 						</div>
 				</div>
+			-->
+		</div>
 		</div>
 </div>
 <!-- End Modals -->
