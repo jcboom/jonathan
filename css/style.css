@@ -90,6 +90,14 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 /* BEGIN Filter Functionality Section - Added by Jonathan Calzada */
+#fh5co-page-blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  background-color: #ccc;
+}
 .cards-filter {
   width: 100%;
   border: 0px solid black; /* border jc */
@@ -98,6 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   vertical-align: middle;
   top:0;
+
 }
 .cards-filter-item {
     font-family: "Roboto", Arial, sans-serif;
