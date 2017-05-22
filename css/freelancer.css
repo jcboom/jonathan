@@ -48,7 +48,7 @@ hr.star-primary:after {
   border: none;
   min-height: 100%;
   padding: 100px 0;
-  text-align: center;
+  /*text-align: center;*/
   //background-color:red;
   //opacity: .9;
   /* change opacity to make window transparent */
@@ -67,33 +67,133 @@ hr.star-primary:after {
   position: absolute;
   width: 75px;
   height: 75px;
-  background-color: transparent;
   top: 25px;
   right: 25px;
   cursor: pointer;
+  z-index: 1049;
 }
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
+#modal-hero {
+  /*
+  background: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.7);
+  */
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position:100% 100%;
+  width: 100%;
+  height:300px;
+  z-index: 0;
+  top:-100px;
+  overflow: hidden;
+}
+#modal-hero .modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #8B7C6D;
+  opacity: .85;
+  z-index: -1;
+}
+/*#modal-hero .modal-hero-content {
 
+  display: table;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+
+}*/
+#modal-hero .modal-title {
+  /*position: absolute;*/
+  position: relative;
+  top: 30px;
+  left: 30px;
+  color: #fff;
+  margin-right: 1em;
+  font-family: "Lato", "Roboto", Arial, sans-serif;
+  font-size: 36px;
+  font-size: calc(1em + 1.3vw);
+  line-height: calc(.8em + 1vw);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#modal-hero .modal-title-description {
+  position: relative;
+  color: #FFEDDC; /*#FFDFBE;*/
+  top: 50px;
+  left: 30px;
+  margin-right: calc(5em + .1vw);
+  z-index: 133;
+  font-family:  "Andale Mono", "Menlo Regular", "Lato", "Roboto", Arial, sans-serif;
+  font-size: 12pt;
+  font-size: calc(.6em + .5vw);
+  line-height: calc(.7em + 1vw);
+  font-weight: 100;
+  text-align: justify;
+  text-justify: inter-cluster;
+}
+
+.modal-container {
+top: 0;
+left:0;
+z-index: 0;
+}
+/*
+.portfolio-modal .modal-hero {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: transparent;
+  top: -115px;
+  left: 0px;
+  overflow: hidden;
+  background-image: url("cards/an_design_anthro/IMG_0493.JPG");
+  z-index: 0;
+}
+*/
+.modal-body .jcboom {
+  position:relative;
+  top:0px;
+}
+/*.hero-image {
+  width:100%;
+  image-resolution: snap;
+  -webkit-filter: opacity(1);
+  filter:opacity(1);
+  overflow:hidden;
+}*/
 .portfolio-modal .close-modal .lr {
-  height: 75px;
-  width: 1px;
+  height: 55px;
+  width: 6px;
   margin-left: 35px;
-  background-color: #2C3E50;
+  background-color: #ffffff;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  -ms-border-radius: 20%;
+  border-radius: 20%;
   /* IE 9 */
   -webkit-transform: rotate(45deg);
   /* Safari and Chrome */
   z-index: 1051;
 }
 .portfolio-modal .close-modal .lr .rl {
-  height: 75px;
-  width: 1px;
-  background-color: #2C3E50;
+  height: 55px;
+  width: 6px;
+  background-color: #ffffff;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  -ms-border-radius: 20%;
+  border-radius: 20%;
   /* IE 9 */
   -webkit-transform: rotate(90deg);
   /* Safari and Chrome */
@@ -103,3 +203,38 @@ hr.star-primary:after {
   opacity: 0;
   display: none;
 }
+
+/* START typewriter effect */
+.var-highlight{
+	color: #C0AD60;
+}
+.string-highlight{
+	color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter{
+		font-size: 2em;
+		margin: 0;
+		font-family: "Courier New";
+
+		&:after{
+			content: "|";
+			animation: blink 500ms linear infinite alternate;
+		}
+}
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+/* END typewriter effect */

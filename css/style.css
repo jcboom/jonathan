@@ -698,8 +698,6 @@ body {
   width: 100%;
 }
 
-
-
 @media screen and (max-width: 480px) {
   #fh5co-hero {
     height: 470px; /* origintal height: 450px; simply pulls up fold on mobile screen sizes.*/
