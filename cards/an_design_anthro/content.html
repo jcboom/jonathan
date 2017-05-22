@@ -1,84 +1,27 @@
+<!-- Typewritter Effect -->
+<script src="js/typewriter-effect.js"></script>
 
-<script>
-function setupTypewriter(t) {
-    var HTML = t.innerHTML;
-
-    t.innerHTML = "";
-
-    var cursorPosition = 0,
-        tag = "",
-        writingTag = false,
-        tagOpen = false,
-        typeSpeed = 100,
-      tempTypeSpeed = 0;
-
-    var type = function() {
-
-        if (writingTag === true) {
-            tag += HTML[cursorPosition];
-        }
-
-        if (HTML[cursorPosition] === "<") {
-            tempTypeSpeed = 0;
-            if (tagOpen) {
-                tagOpen = false;
-                writingTag = true;
-            } else {
-                tag = "";
-                tagOpen = true;
-                writingTag = true;
-                tag += HTML[cursorPosition];
-            }
-        }
-        if (!writingTag && tagOpen) {
-            tag.innerHTML += HTML[cursorPosition];
-        }
-        if (!writingTag && !tagOpen) {
-            if (HTML[cursorPosition] === " ") {
-                tempTypeSpeed = 0;
-            }
-            else {
-                tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-            }
-            t.innerHTML += HTML[cursorPosition];
-        }
-        if (writingTag === true && HTML[cursorPosition] === ">") {
-            tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-            writingTag = false;
-            if (tagOpen) {
-                var newSpan = document.createElement("span");
-                t.appendChild(newSpan);
-                newSpan.innerHTML = tag;
-                tag = newSpan.firstChild;
-            }
-        }
-
-        cursorPosition += 1;
-        if (cursorPosition < HTML.length - 1) {
-            setTimeout(type, tempTypeSpeed);
-        }
-
-    };
-
-    return {
-        type: type
-    };
-}
-
-var typer = document.getElementById('typewriter');
-
-typewriter = setupTypewriter(typewriter);
-
-typewriter.type();
-</script>
 <section id="modal-hero" style="background-image: url(cards/an_design_anthro/modal-hero.jpg);">
+  <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+          <div class="rl">
+          </div>
+      </div>
+  </div>
   <div class="modal-overlay"></div>
-  <div class="modal-title">Ethnographic Research in Ecuador & User Experience Research</div>
-  <div class="modal-title-description">
-    Jonny$ █ As the role of anthropology in the 21st century expands, product design companies are increasingly employing anthropological methodologies in an atempt to innovate new products and improve their consumers' experiences. As an anthropologist I study these methods in corporate environments because they prove to reveal deeper and more meaninful human insights.
+  <div class="modal-title">Ethnographic Research in Ecuador &amp; User Experience Research</div>
+  <div id="typewriter" class="modal-title-description">
+    <span class="string-highlight">The role of anthropology in the 21st century expands, product design companies are increasingly employing anthropological methodologies in an atempt to innovate new products and improve their consumers' experiences. As an anthropologist I study these methods in corporate environments because they prove to reveal deeper and more meaninful human insights.</span>
+  </div>
+  <div class="project-meta-data">
+    <span class="meta-data1">Organization: Foothill College</span>
+    <span class="meta-data2">Date: Summer 2014 </span>
+    <span class="meta-data3">Activity: Ethnography</span>
   </div>
 </section>
+
 <div>
+  <!--
 <pre id="typewriter">
 <span class="var-highlight">var</span> object = {
     name: <span class="string-highlight">'Foo'</span>,
@@ -89,3 +32,4 @@ typewriter.type();
                 <span class="string-highlight">'CSS'</span>];
 }; </pre>
 </div>
+-->

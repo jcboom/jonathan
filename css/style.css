@@ -1848,7 +1848,7 @@ body {
 .fh5co-person .fh5co-bio {
   text-align: left;
 }
-
+/*
 #fh5co-offcanvas, .fh5co-nav-toggle, #fh5co-page {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -2014,7 +2014,7 @@ body {
     display: block;
     top: 20px;
   }
-}
+}*/
 
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
