@@ -97,18 +97,22 @@ hr.star-primary:after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #8B7C6D;
   opacity: .85;
+  background: #272727; /* Needs to be dynamic */
   z-index: -1;
 }
-/*#modal-hero .modal-hero-content {
-
-  display: table;
-  width: 100%;
-  z-index: 2;
-  position: absolute;
-
-}*/
+#modal-hero .modal-overlay.type-an {
+  background: #8B7C6D; /* Needs to be dynamic */
+}
+#modal-hero .modal-overlay.type-ux {
+  background: #5A0AA1; /* Needs to be dynamic */
+}
+#modal-hero .modal-overlay.type-ph {
+  background: #0197B2; /* Needs to be dynamic */
+}
+#modal-hero .modal-overlay.type-hx {
+  background: #272727; /* Needs to be dynamic */
+}
 #modal-hero .modal-title {
   /*position: absolute;*/
   position: relative;
@@ -130,14 +134,27 @@ hr.star-primary:after {
   left: 30px;
   margin-right: calc(5em + .1vw);
   z-index: 133;
-  font-family:  "Andale Mono", "Menlo Regular", "Courier New", "Lato", "Roboto", Arial, sans-serif;
+  font-family:  "Cutive Mono", monospace, "Andale Mono", "Menlo Regular", "Courier New", "Lato", "Roboto", Arial, sans-serif;
   font-size: 12pt;
   font-size: calc(.6em + .5vw);
   line-height: calc(.7em + .7vw);
-  font-weight: 100;
+  font-weight: 400;
   text-align: justify;
   text-justify: inter-cluster;
 }
+#modal-hero .modal-title-description.type-an {
+  color: #FFEDDC;
+}
+#modal-hero .modal-title-description.type-ux {
+  color: #D1A1FD; /* Needs to be dynamic */
+}
+#modal-hero .modal-title-description.type-ph {
+  color: white;
+}
+#modal-hero .modal-title-description.type-hx {
+  color: white; /* Needs to be dynamic */
+}
+
 #modal-hero .project-meta-data {
   position: absolute;
   left:30px;
@@ -145,7 +162,7 @@ hr.star-primary:after {
   bottom: 0px;
   margin-right: calc(1em + .1vw);
   z-index: 133;
-  font-family:  "Andale Mono", "Menlo Regular", "Courier New", "Lato", "Roboto", Arial, sans-serif;
+  font-family:  "Cutive Mono", monospace, "Andale Mono", "Menlo Regular", "Courier New", "Lato", "Roboto", Arial, sans-serif;
   font-size: 8pt;
   font-size: calc(.4em + .5vw);
   line-height: calc(.7em + 1vw);

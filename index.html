@@ -65,7 +65,9 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
+	<!-- Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -203,12 +205,12 @@
 					<!--CARDS use: https://source.unsplash.com/random for random content -->
 					<div id="cards">
 
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-an">
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
 						<!--<a href="#portfolioModal1" class="jcboom-project-item" data-toggle="modal"> For content in this page -->
-						<a href="lab6.html" data-toggle="modal" data-target="#portfolioModal1" class="jcboom-project-item">
-							<img src="images/alley.png" alt="Image" class="img-card-responsive" />
-							<div id="jcboom-card-corner-an" class="jcboom-card-corner"><p class="jcboom-card-corner-text">An</p></div>
-							<div id="jcboom-card-ribbon-an" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Urban Anthropology Project</span></div>
+						<a href="cards/ux_yinzcam/content.html" data-toggle="modal" data-target="#portfolioModal1" tabindex="-1" data-keyboard="true" class="jcboom-project-item">
+							<img src="cards/ux_yinzcam/yinzcam_team.jpg" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">Ux</p></div>
+							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">UX Design @ YinzCam</span></div>
 						</a>
 					</div>
 
@@ -222,7 +224,7 @@
 
 					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
 						<a href="images/design.png" class="jcboom-project-item">
-							<img src="images/design.png" alt="Image" class="img-card-responsive" />
+							<img src="https://cnt-00.content-na.drive.amazonaws.com/cdproxy/templink/CoCC84pRNnZov6G807tkhi5jNRIJbCMnpF0Ax-YqrMIeJxFPc?viewBox=300%2C402" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
 							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Design Anthropology @ SAP</span></div>
 						</a>
@@ -603,6 +605,7 @@
 	<!-- END #fh5co-page -->
 
 	<!-- For demo purposes Only ( You may delete this anytime :-) -->
+	<!--
 	<div id="colour-variations">
 		<a class="option-toggle"><i class="icon-list"></i></a>
 		<h3>Filter</h3>
@@ -616,6 +619,7 @@
 		<a href="#" data-layout="boxed">All</a>
 		<a href="#" data-layout="wide">Clear</a>
 	</div>
+-->
 	<!-- End demo purposes only -->
 
 
@@ -945,8 +949,8 @@ $(document).ready(function() {
 <!-- END of script -->
 
 <!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-content">
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="true">
+		<div class="modal-content" tabindex="-1" data-keyboard="true">
 			<!-- http://getbootstrap.com/javascript/#modals (This option is deprecated since v3.3.0 and has been removed in v4. We recommend instead using client-side templating or a data binding framework, or calling jQuery.load yourself.-->
 		</div>
 </div>
