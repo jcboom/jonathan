@@ -252,7 +252,7 @@ hr.star-primary:after {
 #modal-hero .modal-title {
   position: absolute;
   top: 70px;
-  left: 15px; /* Resize for mobile (orig 30px) Jonathan Calzada */
+  left: 30px; /* Resize for mobile (orig 30px) Jonathan Calzada */
   text-align: right;
   color: #fff;
   font-family: "Lato", "Roboto", Arial, sans-serif;
@@ -268,7 +268,8 @@ hr.star-primary:after {
 }
 @media screen and (max-width: 480px) {
   #modal-hero .modal-title {
-    left:10 px;
+    left: 5px;
+    width:90%;
   }
 }
 #modal-hero .modal-title-description {
@@ -359,8 +360,9 @@ z-index: 0;
   position:relative;
   top: 30px;
   left: 30px;
-  margin-right: 30px;
-
+ padding-right: 30px;
+ margin-right: 30px;
+ text-align: center;
 }
 /*.hero-image {
   width:100%;
