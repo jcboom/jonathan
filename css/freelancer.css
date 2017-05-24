@@ -146,6 +146,11 @@ hr.star-primary:after {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 0px;
 }
+@media screen and (max-width: 480px) {
+  #modal-hero .jcboom-card-modal-ribbon {
+    width:90%;
+  }
+}
 
 .jcboom-card-modal-ribbon-ux {
   background-color: rgba(255,255,255,1); /*background:#5A0AA1;  need to fix to be dynamic */
@@ -261,6 +266,11 @@ hr.star-primary:after {
   width:356px;
 
 }
+@media screen and (max-width: 480px) {
+  #modal-hero .modal-title {
+    left:10 px;
+  }
+}
 #modal-hero .modal-title-description {
   position: relative;
   color: #FFEDDC; /*#FFDFBE;*/
@@ -308,7 +318,7 @@ hr.star-primary:after {
   position: absolute;
   left:500px;
   color: #fff;
-  top: 60px;
+  top: 70px;
   z-index: 233;
   font-family:  "Lato", "Cutive Mono", monospace, "Andale Mono", "Menlo Regular", "Courier New", "Lato", "Roboto", Arial, sans-serif;
   font-size: 14px;
@@ -349,7 +359,7 @@ z-index: 0;
   position:relative;
   top: 30px;
   left: 30px;
-  right: 30px;
+  margin-right: 30px;
 
 }
 /*.hero-image {
