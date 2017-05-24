@@ -125,7 +125,7 @@ hr.star-primary:after {
 }
 #modal-hero .jcboom-card-modal-ribbon {
   height:10%;
-  width:386px;
+  width:376px;
   position:absolute;
   top:160px;
   left:0px;
@@ -249,7 +249,7 @@ hr.star-primary:after {
   /*position: relative;*/
   position: absolute;
   top: 70px;
-  left: 30px;
+  left: 20px;
   text-align: right;
   color: #fff;
   font-family: "Lato", "Roboto", Arial, sans-serif;
@@ -348,9 +348,12 @@ z-index: 0;
   z-index: 0;
 }
 */
-.modal-body .jcboom {
+#modal-body {
   position:relative;
-  top:0px;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+
 }
 /*.hero-image {
   width:100%;
