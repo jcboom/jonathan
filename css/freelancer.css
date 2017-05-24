@@ -125,7 +125,7 @@ hr.star-primary:after {
 }
 #modal-hero .jcboom-card-modal-ribbon {
   height:10%;
-  width:376px;
+  width:371px; /* Resize for mobile (orig: 386) Jonathan Calzada */
   position:absolute;
   top:160px;
   left:0px;
@@ -245,11 +245,9 @@ hr.star-primary:after {
   background: #272727; /* Needs to be dynamic */
 }
 #modal-hero .modal-title {
-  /*position: absolute;*/
-  /*position: relative;*/
   position: absolute;
   top: 70px;
-  left: 20px;
+  left: 15px; /* Resize for mobile (orig 30px) Jonathan Calzada */
   text-align: right;
   color: #fff;
   font-family: "Lato", "Roboto", Arial, sans-serif;
@@ -258,7 +256,6 @@ hr.star-primary:after {
   /*font-size: calc(1em + 1.3vw);
   line-height: calc(.8em + 1vw);
   */
-
   font-weight: regular;
   text-transform: uppercase;
   width:356px;
@@ -311,7 +308,7 @@ hr.star-primary:after {
   position: absolute;
   left:500px;
   color: #fff;
-  top: 75px;
+  top: 60px;
   z-index: 233;
   font-family:  "Lato", "Cutive Mono", monospace, "Andale Mono", "Menlo Regular", "Courier New", "Lato", "Roboto", Arial, sans-serif;
   font-size: 14px;
