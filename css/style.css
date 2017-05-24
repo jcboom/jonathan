@@ -1187,6 +1187,9 @@ body {
 #jcboom-card-ribbon-ux {
   background-color: rgba(90,10,161,0.7); //background:#5A0AA1; /* need to fix to be dynamic */
 }
+.jcboom-card-ribbon-ux {
+  background-color: rgba(90,10,161,0.7); //background:#5A0AA1; /* need to fix to be dynamic */
+}
 #jcboom-card-ribbon-ph {
   background-color: rgba(1,151,178,0.7); //background:#0197B2; /* need to fix to be dynamic */
 }
