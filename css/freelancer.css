@@ -296,15 +296,11 @@ hr.star-primary:after {
   z-index: 233;
   font-family:  "Lato", "Cutive Mono", monospace, "Andale Mono", "Menlo Regular", "Courier New", "Lato", "Roboto", Arial, sans-serif;
   font-size: 14px;
-  /*
-  font-size: calc(.4em + .5vw);
-  line-height: calc(.7em + 1vw);
-  */
   font-weight: 100;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   #modal-hero .project-meta-data-li {
-    left:400px;
+    left:450;
   }
 }
 .modal-container {
