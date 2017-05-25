@@ -361,15 +361,45 @@ z-index: 0;
 #modal-body .subsection {
   font-family: "Maven", "Roboto", Arial, sans-serif;
   position: relative;
-  /*padding-left:10px;*/
+  display:table;
+  margin: 0 auto;
   background-color: #fff;
   width: 90%;
   text-align: left;
 
 }
+.subsection-image-container {
+  vertical-align:middle;
+  max-width: 430px;
+  max-height: auto;
 
-.subsection img {
 }
+.subsection-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 480px) {
+  .subsection-image-container img {
+    //display:none;
+  }
+}
+.subsection-divider-container {
+  vertical-align:middle;
+  height:100%;
+}
+.subsection-text-container {
+  vertical-align:middle;
+  line-height: 20px;
+}
+.subsection-text-container h4 {
+  font-weight: bold;
+  text-transform:uppercase;
+  letter-spacing: .5px;
+}
+.subsection-text-container p {
+  font-weight: 400;
+}
+
 .divider {
   height:80%;
   left:0px;
