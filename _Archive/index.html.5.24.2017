@@ -1,0 +1,944 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jcboom.com &mdash; Jonathan Calzada</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Jonathan Calzada's Portfolio" />
+	<meta name="keywords" content="user experience research, user experience designer, anthropologist, academic" />
+	<meta name="author" content="FREEHTML5.CO modified by Jonathan Calzada" />
+
+	<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />-->
+
+
+<!-- From Bootsnip (Rotating Card) -->
+<link href="vendor/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:100,200,300,400,500,700,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+<!--<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script> //Not working -->
+<script src="https://raw.githubusercontent.com/google/code-prettify/master/js-modules/run_prettify.js"></script>
+<link href="css/rotatingcard.css" rel="stylesheet" />
+<script src="js/rotatingcard.js"></script>
+
+<!-- Theme CSS -->
+<link href="css/freelancer.css" rel="stylesheet">
+
+<!-- Bootstrap - Add the line below if not present elsewhere in this file
+<link rel="stylesheet" href="css/bootstrap.css" />
+-->
+
+
+<!-- Header End -->
+
+
+  <!--
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	THIS TEMPLATE HAS BEEN SIGNIFICANTLY MODIFIED BY JONATHAN CALZADA.
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!--
+	Default Theme Style
+	You can change the style.css (default color purple) to one of these styles
+	-->
+	<link rel="stylesheet" href="css/style.css">
+
+<!--INSERT STYLE SWITCHER HERE JONATHAN CALZADA -->
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+
+
+	<!--
+		INFO:
+		Add 'boxed' class to body element to make the layout as boxed style.
+		Example:
+		<body class="boxed">
+	-->
+	<body>
+	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+	<!-- Loader -->
+	<div class="fh5co-loader"></div>
+	<!-- Mobile Menu -->
+	<!-- <div id="fh5co-page">
+		<section id="fh5co-header">
+			<div class="container">
+				<nav role="navigation">
+					<ul class="pull-left left-menu">
+						<li><a href="anthro.html">Anthropologist</a></li>
+						<li><a href="tour.html">UX Designer</a></li>
+					</ul>
+					<h1 id="fh5co-logo"><a href="index.html">jcboom<span>.</span>com</a></h1>
+					<ul class="pull-right right-menu">
+						<li><a href="#">Photographer</a></li>
+                        <li><a href="#">Haxor</a></li>
+						<li class="fh5co-cta-btn"><a href="#">Sign up</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section> -->
+		<!-- #fh5co-header -->
+		<section id="fh5co-hero" class="js-fullheight" style="background-image: url(images/hero_bg.jpg);" data-next="yes">
+			<div class="fh5co-overlay"></div>
+
+			<!--Added the following layer to hide right-menu when hero image doesn't take up the whole screen. Uncomment this line to see problem on mobile. -Jonathan Calzada -->
+			<div style="background-color:#f9f9f9; width:100%; height:100%; position:absolute; top:-100px; left:0px; z-index:-1;"></div>
+			<div class="container">
+				<div class="fh5co-intro js-fullheight">
+					<div class=""><!--I'm not sure why this needs to be here, but it places the nav menu to the right.  NEED TO CLEAN UP: Jonathan Calzada-->
+						<!--
+							INFO:
+							Change the class to 'fh5co-right-position' or 'fh5co-center-position' to change the layout position
+							Example:
+							<div class="fh5co-right-position">
+						-->
+
+
+						<div class="fh5co-right-position">
+              <h2 class="animate-box"><span id="first-name"><!--Content being added in style.css --></span> <span id="last-name"><!--Content being added in style.css --></span></h2>
+							<h2>
+							<div id="id_nav_buttons"class="nav_buttons">
+								<button type="button" class="btn btn-an btn-circle btn-xl animate-box">An</button>
+							  <button type="button" class="btn btn-ux btn-circle btn-xl animate-box">Ux</button>
+							  <button type="button" class="btn btn-ph btn-circle btn-xl animate-box">Ph</button>
+							  <button type="button" class="btn btn-hx btn-circle btn-xl animate-box">Hx</button>
+							</div>
+							<div class="hero_quote"><q>The future needs the whole [wo]man. </q><br />--László Moholy-Nagy</div>
+							<div id="id_an" class="button_text"> #Anthropologist</div>
+							<div id="id_ux" class="button_text"> #UX Designer</div>
+							<div id="id_ph" class="button_text"> #Photographer</div>
+							<div id="id_hx" class="button_text"> #Haxor</div>
+						 </h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-learn-more animate-box">
+				<a href="#" class="scroll-btn">
+					<span class="text">Scroll on! Scroll on!</span>
+					<span class="arrow"><i class="icon-chevron-down"></i></span>
+				</a>
+			</div>
+		</section>
+		<!-- END #fh5co-hero -->
+
+
+
+
+		<!--BEGIN JCBOOM CARDS -->
+		<section id="jcboom-projects">
+			<div class="container">
+				<div class="row row-bottom-padded-sm">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<h2 class="jcboom-lead animate-box">Portfolio of an </h2>
+						<!--
+						<p class="fh5co-sub-lead animate-box">I embrace the idea that “the future needs the whole [wo]man," as a person is the whole of their experience <small>(Moholy-Nagy 1938)</small>. </p>
+					-->
+					</div>
+				</div>
+
+				<div class="row">
+					<div id="main" class="cards-filter animate-box">
+						<div id="filter-an" class="cards-filter-item filter-an-deco" onclick="toggleFilter('filter-an','#8B7C6D')">#Anthropologist<span class="closebtn filter-an-button">&times;</span></div>
+						<div id="filter-ux" class="cards-filter-item filter-ux-deco" onclick="toggleFilter('filter-ux','#5A0AA1')">#UX Designer  <span class="closebtn filter-ux-button">&times;</span></div>
+						<div id="filter-ph" class="cards-filter-item filter-ph-deco" onclick="toggleFilter('filter-ph','#0197B2')">#Photographer  <span class="closebtn filter-ph-button">&times;</span></div>
+						<div id="filter-hx" class="cards-filter-item filter-hx-deco" onclick="toggleFilter('filter-hx','#272727')">#Haxor  <span class="closebtn filter-hx-button">&times;</span></div>
+						<!--<div class="chip"><img src="images/ux_button.png" alt="Person" width="96" height="96">The Whole Man  <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></div>-->
+						<label class="switch"><!--<fieldset id="filter-all">--><input type="checkbox" id="slider-mech" checked="checked"><div class="slider round"><span class="slider-text"><i>The Whole Man</i></span><!--</fieldset>--></div></label>
+					</div>
+					<br />
+
+					<!--CARDS use: https://source.unsplash.com/random for random content -->
+					<div id="cards">
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
+						<!--<a href="#portfolioModal1" class="jcboom-project-item" data-toggle="modal"> For content in this page -->
+						<a href="cards/ux_yinzcam/content.html" data-toggle="modal" data-target="#portfolioModal1" tabindex="-1" data-keyboard="true" class="jcboom-project-item">
+							<img src="cards/ux_yinzcam/yinzcam_team.jpg" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">Ux</p></div>
+							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">UX Design @ YinzCam</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-an">
+						<a href="cards/an_design_anthro/content.html" data-toggle="modal" data-target="#portfolioModal2" class="jcboom-project-item">
+							<img src="cards/an_design_anthro/card.png" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-an" class="jcboom-card-corner"><p class="jcboom-card-corner-text">An</p></div>
+							<div id="jcboom-card-ribbon-an" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Design Anthropology</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
+						<a href="images/design.png" class="jcboom-project-item">
+							<img src="https://cnt-00.content-na.drive.amazonaws.com/cdproxy/templink/CoCC84pRNnZov6G807tkhi5jNRIJbCMnpF0Ax-YqrMIeJxFPc?viewBox=300%2C402" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
+							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Design Anthropology @ SAP</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
+						<a href="https://source.unsplash.com/random?architecture" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?architecture" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
+							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">UX Design Work @ YinzCam</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
+						<a href="https://source.unsplash.com/random?color" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?color" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
+							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
+						<a href="images/lavender_forest.jpg" class="jcboom-project-item">
+							<img src="images/lavender_forest.jpg" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
+							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Series 1 - Photography</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-hx">
+						<a href="https://source.unsplash.com/random?hacker" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?hacker" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-hx" class="jcboom-card-corner"><p class="jcboom-card-corner-text">Hx</p></div>
+							<div id="jcboom-card-ribbon-hx" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">haxor</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
+						<a href="images/sunset.jpg" class="jcboom-project-item">
+							<img src="images/sunset.jpg" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
+							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-an">
+						<a href="https://source.unsplash.com/random?school" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?school" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-an" class="jcboom-card-corner"><p class="jcboom-card-corner-text">An</p></div>
+							<div id="jcboom-card-ribbon-an" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+
+
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-hx">
+						<a href="https://source.unsplash.com/random?code" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?code" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-hx" class="jcboom-card-corner"><p class="jcboom-card-corner-text">Hx</p></div>
+							<div id="jcboom-card-ribbon-hx" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
+						<a href="https://source.unsplash.com/random?cars" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?cars" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
+							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-hx">
+						<a href="https://source.unsplash.com/random?people" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?people" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-hx" class="jcboom-card-corner"><p class="jcboom-card-corner-text">hx</p></div>
+							<div id="jcboom-card-ribbon-hx" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
+						<a href="https://source.unsplash.com/random?buildings" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?buildings" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
+							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
+						<a href="https://source.unsplash.com/random?landscape" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?landscape" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
+							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-hx">
+						<a href="https://source.unsplash.com/random?nature" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?nature" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-hx" class="jcboom-card-corner"><p class="jcboom-card-corner-text">hx</p></div>
+							<div id="jcboom-card-ribbon-hx" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
+						<a href="https://source.unsplash.com/random?marketing" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?marketing" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
+							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
+						<a href="https://source.unsplash.com/random?water" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?water" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
+							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
+						<a href="https://source.unsplash.com/random?design" class="jcboom-project-item">
+							<img src="https://source.unsplash.com/random?design" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
+							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
+						</a>
+					</div>
+
+				</div>
+<!--END CARDS -->
+
+				</div>
+			</div>
+		</section>
+
+
+		<section id="fh5co-features">
+			<div class="container">
+				<div class="row text-center row-bottom-padded-md">
+					<div class="col-md-8 col-md-offset-2">
+						<figure class="fh5co-devices animate-box"><img src="images/img_devices.png" alt="Free HTML5 Bootstrap Template" class="img-responsive"></figure>
+						<h2 class="fh5co-lead animate-box">View Portfolio by Profession</h2>
+						<p class="fh5co-sub-lead animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+						<div class="fh5co-feature">
+							<div class="fh5co-icon">
+								<i class="icon-power"></i>
+							</div>
+							<h3>Best For Startup</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right .</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+						<div class="fh5co-feature">
+							<div class="fh5co-icon">
+								<i class="icon-flag2"></i>
+							</div>
+							<h3>Easy To Use</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right .</p>
+						</div>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+					<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+						<div class="fh5co-feature">
+							<div class="fh5co-icon">
+								<i class="icon-anchor"></i>
+							</div>
+							<h3>Robust In Mind</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right .</p>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+						<div class="fh5co-feature">
+							<div class="fh5co-icon">
+								<i class="icon-paragraph"></i>
+							</div>
+							<h3>Beautiful Typography</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right .</p>
+						</div>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+					<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+						<div class="fh5co-feature">
+							<div class="fh5co-icon">
+								<i class="icon-umbrella"></i>
+							</div>
+							<h3>Eco Friendly</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right .</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+						<div class="fh5co-feature">
+							<div class="fh5co-icon">
+								<i class="icon-toggle"></i>
+							</div>
+							<h3>Wide and Boxed</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right .</p>
+						</div>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- END #fh5co-features -->
+
+
+		<section id="fh5co-features-2">
+			<div class="container">
+				<div class="col-md-6 col-md-push-6">
+					<figure class="fh5co-feature-image animate-box">
+						<img src="images/macbook.png" alt="Free HTML5 Bootstrap Template by FREEHTML5.co">
+					</figure>
+				</div>
+				<div class="col-md-6 col-md-pull-6">
+					<span class="fh5co-label animate-box">See Features</span>
+					<h2 class="fh5co-lead animate-box">Superb Features</h2>
+					<div class="fh5co-feature">
+						<div class="fh5co-icon animate-box"><i class="icon-check2"></i></div>
+						<div class="fh5co-text animate-box">
+							<h3>Beautiful Typography</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+						</div>
+					</div>
+					<div class="fh5co-feature">
+						<div class="fh5co-icon animate-box"><i class="icon-check2"></i></div>
+						<div class="fh5co-text animate-box">
+							<h3>Eco Friendly</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+						</div>
+					</div>
+					<div class="fh5co-feature">
+						<div class="fh5co-icon animate-box"><i class="icon-check2"></i></div>
+						<div class="fh5co-text animate-box">
+							<h3>Wide and Boxed</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+						</div>
+					</div>
+
+					<div class="fh5co-btn-action animate-box">
+						<a href="#" class="btn btn-primary btn-cta">More Features</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- END #fh5co-features-2 -->
+
+		<section id="fh5co-testimonials">
+			<div class="container">
+				<div class="row row-bottom-padded-sm">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<div class="fh5co-label animate-box">Testimonials</div>
+						<h2 class="fh5co-lead animate-box">Join the 1 Million Users using Our Products </h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center animate-box">
+						<div class="flexslider">
+					  		<ul class="slides">
+							   <li>
+							      <blockquote>
+							      	<p>&ldquo;Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while.&rdquo;</p>
+							      	<p><cite>&mdash; Steve Jobs</cite></p>
+							      </blockquote>
+							   </li>
+							   <li>
+							    	<blockquote>
+							      	<p>&ldquo;I think design would be better if designers were much more skeptical about its applications. If you believe in the potency of your craft, where you choose to dole it out is not something to take lightly.&rdquo;</p>
+							      	<p><cite>&mdash; Frank Chimero</cite></p>
+							      </blockquote>
+							   </li>
+							   <li>
+							    	<blockquote>
+							      	<p>&ldquo;Design must be functional and functionality must be translated into visual aesthetics, without any reliance on gimmicks that have to be explained.&rdquo;</p>
+							      	<p><cite>&mdash; Ferdinand A. Porsche</cite></p>
+							      </blockquote>
+							   </li>
+							</ul>
+						</div>
+						<div class="flexslider-controls">
+						   <ol class="flex-control-nav">
+						      <li class="animate-box"><img src="images/person4.jpg" alt="Free HTML5 Bootstrap Template by FREEHTML5.co"></li>
+						      <li class="animate-box"><img src="images/person2.jpg" alt="Free HTML5 Bootstrap Template by FREEHTML5.co"></li>
+						      <li class="animate-box"><img src="images/person3.jpg" alt="Free HTML5 Bootstrap Template by FREEHTML5.co"></li>
+						   </ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END #fh5co-testimonials -->
+
+		<section id="fh5co-subscribe">
+			<div class="container">
+
+				<h3 class="animate-box"><label for="email">Subscribe to our newsletter</label></h3>
+				<form action="#" method="post" class="animate-box">
+					<i class="fh5co-icon icon-paper-plane"></i>
+					<input type="email" class="form-control" placeholder="Enter your email" id="email" name="email">
+					<input type="submit" value="Send" class="btn btn-primary">
+				</form>
+
+			</div>
+		</section>
+		<!-- END #fh5co-subscribe -->
+
+		<footer id="fh5co-footer">
+			<div class="container">
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-3 col-sm-6 col-xs-12 animate-box">
+						<div class="fh5co-footer-widget">
+							<h3>Company</h3>
+							<ul class="fh5co-links">
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Feature Tour</a></li>
+								<li><a href="#">Pricing</a></li>
+								<li><a href="#">Team</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-12 animate-box">
+						<div class="fh5co-footer-widget">
+							<h3>Support</h3>
+							<ul class="fh5co-links">
+								<li><a href="#">Knowledge Base</a></li>
+								<li><a href="#">24/7 Call Support</a></li>
+								<li><a href="#">Video Demos</a></li>
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-12 animate-box">
+						<div class="fh5co-footer-widget">
+							<h3>Contact Us</h3>
+							<p>
+								<a href="mailto:info@freehtml5.co">info@freehtml5.co</a> <br>
+								198 West 21th Street, <br>
+								Suite 721 New York NY 10016 <br>
+								<a href="tel:+123456789">+12 34  5677 89</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-12 animate-box">
+						<div class="fh5co-footer-widget">
+							<h3>Follow Us</h3>
+							<ul class="fh5co-social">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-google-plus"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+								<li><a href="#"><i class="icon-youtube-play"></i></a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="fh5co-copyright animate-box">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="fh5co-left"><small>&copy; 2016 <a href="index.html">Guide</a> free html5. All Rights Reserved.</small></p>
+							<p class="fh5co-right"><small class="fh5co-right">Designed by <a href="http://freehtml5.co" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://unsplash.com" target="_blank">Unsplash</a></small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END #fh5co-footer -->
+	</div>
+	<!-- END #fh5co-page -->
+
+
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- when you start or end a touch, turn the class hover_effect on or off.-->
+	<script>
+	$(document).ready(function() {
+			$('.hover').bind('touchstart', function(e) { /* OLD: $('.hover').bind('touchstart touchend', function(e) { */
+					/* e.preventDefault(); Commented this out because it prevents user from scrolling. */
+					/* $(this).addClass('hover_effect');*/
+			});
+/*
+			$('.hovered').bind('touchend focusout', function(e) {
+				$(this).toggleClass('fh5co-project-item');
+
+					// $(this).toggleClass('fh5co-project-item img');
+			});
+*/
+			$("#filter-all").click(function() {
+				//alert('me');
+					var checkBoxes = $("input[name=chk\\[\\]]");
+					checkBoxes.prop("checked", !checkBoxes.prop("checked"));
+
+						//alert(checkBoxes.prop("checked"));
+			});
+	});
+	</script>
+<!-- END of script -->
+
+	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+	<script src="js/jquery.style.switcher.js"></script>
+	<script>
+		/* Close Cheat Sheet when loading page */
+		$(function(){
+			$('#colour-variations').toggleClass('sleep');
+			$('#colour-variations ul').styleSwitcher({
+				defaultThemeId: 'theme-switch',
+				hasPreview: false,
+				cookie: {
+		          	expires: 30,
+		          	isManagingLoad: true
+		      	}
+			});
+
+			$('.option-toggle').click(function() {
+				$('#colour-variations').toggleClass('sleep');
+			});
+		});
+	</script>
+	<!-- End demo purposes only -->
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	<!--
+	INFO:
+	jQuery Cookie for Demo Purposes Only.
+	The code below is to toggle the layout to boxed or wide
+	-->
+	<script src="js/jquery.cookie.js"></script>
+	<script>
+		$(function(){
+
+			if ( $.cookie('layoutCookie') != '' ) {
+				$('body').addClass($.cookie('layoutCookie'));
+			}
+
+			$('a[data-layout="boxed"]').click(function(event){
+				event.preventDefault();
+				$.cookie('layoutCookie', 'boxed', { expires: 7, path: '/'});
+				$('body').addClass($.cookie('layoutCookie')); // the value is boxed.
+			});
+
+			$('a[data-layout="wide"]').click(function(event){
+				event.preventDefault();
+				$('body').removeClass($.cookie('layoutCookie')); // the value is boxed.
+				$.removeCookie('layoutCookie', { path: '/' }); // remove the value of our cookie 'layoutCookie'
+			});
+		});
+	</script>
+
+	<!-- Button Navigation Behavior by Jonathan Calzada.  Using main.js.-->
+ <script>
+ $(document).ready(function(){
+
+	// iPad and iPod detection
+ 	var isiPad = function(){
+ 		return (navigator.platform.indexOf("iPad") != -1);
+ 	};
+
+ 	var isiPhone = function(){
+ 	    return (
+ 			(navigator.platform.indexOf("iPhone") != -1)
+ 			//(navigator.platform.indexOf("iPod") != -1)
+ 	    );
+ 	};
+/*
+	alert("isipad: "+!isiPad() +"  isiPhone: "+!isiPhone());
+	alert(isiPad() || isiPhone());
+*/
+	if( !isiPad() && !isiPhone()){
+		$(".btn-an").mouseenter(function(){
+			$("#id_an").show();
+		}).mouseleave(function(){
+			$("#id_an").hide();
+		})
+		$(".btn-ux").mouseenter(function(){
+			$("#id_ux").show();
+		}).mouseleave(function(){
+			$("#id_ux").hide();
+		})
+		$(".btn-ph").mouseenter(function(){
+			$("#id_ph").show();
+		}).mouseleave(function(){
+			$("#id_ph").hide();
+		})
+		$(".btn-hx").mouseenter(function(){
+			$("#id_hx").show();
+		}).mouseleave(function(){
+			$("#id_hx").hide();
+		})
+	} else {
+		$('.btn-an').bind('touchstart', function() {
+			$(this).css("background-color", "#e6e6e6");
+			$("#id_an").show();
+		});
+		$('.btn-an').bind('touchend focusout', function() {
+			$(this).css("background-color", "#8B7C6D");
+			$(this).css("border-color", "#8B7C6D");
+		  $(this).css("color", "#e6e6e6");
+			$("#id_an").hide();
+		});
+
+		$('.btn-ux').bind('touchstart', function() {
+				$(this).css("background-color", "#e6e6e6");
+				$("#id_ux").show();
+		});
+		$('.btn-ux').bind('touchend focusout', function() {
+		  $(this).css("background-color", "#5A0AA1");
+			$(this).css("border-color", "#5A0AA1");
+		  $(this).css("color", "#e6e6e6");
+			$("#id_ux").hide();
+		});
+
+		$('.btn-ph').bind('touchstart', function() {
+				$(this).css("background-color", "#e6e6e6");
+				$("#id_ph").show();
+		});
+		$('.btn-ph').bind('touchend focusout', function() {
+			$(this).css("background-color", "#0197B2");
+			$(this).css("border-color", "#0197B2");
+		  $(this).css("color", "#e6e6e6");
+			$("#id_ph").hide();
+		});
+
+		$('.btn-hx').bind('touchstart', function() {
+				$(this).css("background-color", "#e6e6e6");
+				$("#id_hx").show();
+		});
+		$('.btn-hx').bind('touchend focusout', function() {
+			$(this).css("background-color", "#242424");
+			$(this).css("border-color", "#242424");
+		  $(this).css("color", "#e6e6e6");
+			$("#id_hx").hide();
+		});
+
+	};
+
+	/* Nav Button Locations */
+	$(".btn-an").click(function(){
+		//toggleFilter('filter-an','#8B7C6D');
+		toggleFilter('filter-ux','#5A0AA1');
+		toggleFilter('filter-ph','#0197B2');
+		toggleFilter('filter-hx','#272727');
+		$('html, body').animate({
+			scrollTop: $('#jcboom-projects').offset().top
+		}, 2000, 'easeOutElastic'); //http://easings.net/
+		return false;
+	});
+	$(".btn-ux").click(function(){
+		$('html, body').animate({
+			scrollTop: $("#jcboom-projects").offset().top
+		}, 2000, 'easeOutElastic');
+		toggleFilter('filter-an','#8B7C6D');
+		//toggleFilter('filter-ux','#5A0AA1');
+		toggleFilter('filter-ph','#0197B2');
+		toggleFilter('filter-hx','#272727');
+	});
+	$(".btn-ph").click(function(){
+		$('html, body').animate({
+			scrollTop: $("#jcboom-projects").offset().top
+		}, 2000, 'easeOutElastic');
+		toggleFilter('filter-an','#8B7C6D');
+		toggleFilter('filter-ux','#5A0AA1');
+		//toggleFilter('filter-ph','#0197B2');
+		toggleFilter('filter-hx','#272727');
+	});
+	$(".btn-hx").click(function(){
+		$('html, body').animate({
+			scrollTop: $("#jcboom-projects").offset().top
+		}, 2000, 'easeOutElastic');
+		toggleFilter('filter-an','#8B7C6D');
+		toggleFilter('filter-ux','#5A0AA1');
+		toggleFilter('filter-ph','#0197B2');
+		//toggleFilter('filter-hx','#272727');
+	});
+});
+/* End Nav Button Locations */
+ </script>
+
+ <!-- Filter Functionality -->
+ <script>
+ /*******************************************************************************
+ * Author: Jonathan Calzada
+ * Purpose: This handles the filter and switch functionality
+ * Date:
+ *******************************************************************************/
+ function toggleFilter(filter, color) {
+	 var strCards=".card-"+filter.substring(filter.lastIndexOf("-")+1,filter.lastIndexOf(""));
+		if( $("#"+filter).prop('className').indexOf(filter+"-deco") != -1) {
+ 			$("."+filter+"-button").html("&plus;");
+ 			$("."+filter+"-button").css("color", "#AAAAAA");
+			$(strCards).hide();
+		} else {
+ 			$("."+filter+"-button").html("&times;");
+ 			$("."+filter+"-button").css("color", color);
+			$("#cards").show(); //Displays cards section
+			$(strCards).show(); //Displays card types
+ 		}
+ 	  $("#"+filter).toggleClass(filter+'-deco');
+ 		$("#"+filter).toggleClass('cards-filter-item-disabled');
+
+		/* SWITCH MECHANISM OFF/ON POSITION */
+		var enableSwitch = true;
+		$('div','#main').each(function(){
+			if( $(this).prop('className').indexOf("disabled") != -1) {
+				enableSwitch = false;
+			}
+    });
+		if (enableSwitch == false) {
+			$('#slider-mech').prop('checked', false);
+		} else {
+			enableSwitch = true;
+			$('#slider-mech').prop('checked', true);
+		}
+ }
+
+$(document).ready(function() {
+
+	/* Need to simplify the function below and create veriables so its not DRY (Don't Repeat Yourself) */
+	$("#slider-mech").click(function() {
+		$('#cards').children('div').each(function () {
+			var strClass = $(this).prop("className")
+			var strCardType=strClass.substring(strClass.lastIndexOf("card-")+5,strClass.lastIndexOf("card-")+7);
+			var strCard=strClass.substring(strClass.lastIndexOf("card-"),strClass.lastIndexOf("card-")+7);
+			//toggleFilter("filter-"+strCard,"red");
+			$("."+strCard).show();
+		});
+
+		if( $("#slider-mech").prop("checked") ) { //When swtich is turned on
+			//$("#cards").show();
+
+			$(".closebtn").html("&times;"); //Changes + to x sign on buttons
+
+			$("#filter-an").removeClass('cards-filter-item-disabled');
+			$("#filter-an").addClass('filter-an-deco');
+			$(".filter-an-button").css("color", "#8B7C6D");
+
+			$("#filter-ux").removeClass('cards-filter-item-disabled');
+			$("#filter-ux").addClass('filter-ux-deco');
+			$(".filter-ux-button").css("color", "#5A0AA1");
+
+			$("#filter-ph").removeClass('cards-filter-item-disabled');
+			$("#filter-ph").addClass('filter-ph-deco');
+			$(".filter-ph-button").css("color", "#0197B2");
+
+			$("#filter-hx").removeClass('cards-filter-item-disabled');
+			$("#filter-hx").addClass('filter-hx-deco');
+			$(".filter-hx-button").css("color", "#272727");
+		} else { //When swtich is turned off
+			//$("#cards").hide();
+
+			// Checks card container for cards and disables want is found
+			$('#cards').children('div').each(function () {
+				var strClass = $(this).prop("className")
+				var strCardType=strClass.substring(strClass.lastIndexOf("card-")+5,strClass.lastIndexOf("card-")+7);
+				var strCard=strClass.substring(strClass.lastIndexOf("card-"),strClass.lastIndexOf("card-")+7);
+				//toggleFilter("filter-"+strCard,"red");
+				$("."+strCard).hide();
+			});
+			/* alert($("#cards").children().length); //Total Number of cards */
+			$(".closebtn").css("color", "#AAAAAA"); //Makes all close buttons gray
+			$(".closebtn").html("&plus;"); //Changes all buttons to Plus signs
+
+
+
+			$("#filter-an").removeClass('filter-an-deco');
+			$("#filter-an").addClass('cards-filter-item-disabled');
+
+			$("#filter-ux").removeClass('filter-ux-deco');
+			$("#filter-ux").addClass('cards-filter-item-disabled');
+
+			$("#filter-ph").removeClass('filter-ph-deco');
+			$("#filter-ph").addClass('cards-filter-item-disabled');
+
+			$("#filter-hx").removeClass('filter-hx-deco');
+			$("#filter-hx").addClass('cards-filter-item-disabled');
+
+		}
+	});
+});
+
+ </script>
+<!-- END of script -->
+
+<!-- Portfolio Modals -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="true"><div class="modal-content" tabindex="-1" data-keyboard="true"></div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<!-- http://getbootstrap.com/javascript/#modals (This option is deprecated since v3.3.0 and has been removed in v4. We recommend instead using client-side templating or a data binding framework, or calling jQuery.load yourself.-->
+		</div>
+</div>
+<!-- End Modals -->
+	</body>
+</html>
