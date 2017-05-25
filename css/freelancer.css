@@ -298,9 +298,9 @@ hr.star-primary:after {
   font-size: 14px;
   font-weight: 100;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #modal-hero .project-meta-data-li {
-    left:450;
+    left:450px;
   }
 }
 .modal-container {
@@ -325,6 +325,11 @@ hr.star-primary:after {
   line-height: 55px;
   letter-spacing: 1px;
   position: relative;
+}
+@media screen and (max-width: 480px) {
+  #modal-body .project-body-title {
+    font-size: 32px;
+  }
 }
 #modal-body .project-body-description {
   font-family: "Roboto", Arial, sans-serif;
