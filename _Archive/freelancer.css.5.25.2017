@@ -133,7 +133,6 @@ hr.star-primary:after {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 0px;
-  line-height: -100px;
 }
 @media screen and (max-width: 480px) {
   #modal-hero .jcboom-card-modal-ribbon {
@@ -141,6 +140,11 @@ hr.star-primary:after {
   }
 }
 
+.jcboom-card-modal-ribbon-ux {
+  background-color: rgba(255,255,255,1); /*background:#5A0AA1;  need to fix to be dynamic */
+  color: #5A0AA1;
+  line-height: -100px;
+}
 #modal-hero .jcboom-card-modal-corner {
   height:40px;
   width:45px;
@@ -188,11 +192,15 @@ hr.star-primary:after {
   margin-top:-50;
   margin-left:-50;
   transform: translate(-50%, -50%); /*If you don't know, or are thinking it might change and want to be future proof, try this.*/
+  color: red;
   padding: 0px 0px 0px 0px;
 }
 #modal-hero .jcboom-card-modal-corner .jcboom-card-modal-corner-text::first-letter {
   font-size:16px;
   line-height: 40px;
+}
+#modal-hero .jcboom-card-modal-corner-text.type-ux {
+  color: #5A0AA1;
 }
 #modal-hero .jcboom-card-modal-ribbon .jcboom-card-modal-ribbon-text {
   font-family: "Lato", "Roboto", Arial, sans-serif;
@@ -311,6 +319,7 @@ hr.star-primary:after {
 }
 #modal-body .project-body-title {
   text-transform: uppercase;
+  color: #7427B1;
   font-weight: bold;
   font-size: 42px;
   line-height: 55px;
@@ -365,7 +374,6 @@ hr.star-primary:after {
 .subsection-text-container {
   vertical-align:middle;
   line-height: 20px;
-  width:50%;
 }
 .subsection-text-container h4 {
   font-weight: bold;
@@ -400,34 +408,9 @@ hr.star-primary:after {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
-.bgcolor-white {
-  background-color: rgba(255,255,255,1);
-}
-.bgcolor-an {
-  background-color: #8B7C6D;
-}
 .bgcolor-ux {
   background-color: #5A0AA1;
 }
-.bgcolor-ph {
-  background-color: #0197B2;
-}
-.bgcolor-hx {
-  background-color: #272727;
-}
-.color-an {
-  color: #8B7C6D;
-}
-.color-ux {
-  color: #5A0AA1;
-}
-.color-ph {
-  color: #0197B2;
-}
-.color-hx {
-  color: #272727;
-}
-
 .subsection-text {
   display: table-cell;
   line-height: 15px;
@@ -464,6 +447,13 @@ hr.star-primary:after {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.color-ux {
+  color: #5A0AA1;
+}
+
+
+
 .portfolio-modal .close-modal .lr .rl {
   height: 40px;
   width: 6px;
@@ -519,47 +509,3 @@ hr.star-primary:after {
 	100%{opacity: 1;}
 }
 /* END typewriter effect */
-
-#footer button {
-    margin: 0 auto;
-    font-family: "Maven", "Roboto", Arial, sans-serif;
-    position: relative;
-    display:table;
-    background-color: #fff;
-    margin-bottom: 50px;
-}
-#footer .button-ux:hover {
-
-}
-#footer .button-an {
-  border-color: #8B7C6D;
-  color: #8B7C6D;
-}
-#footer .button-an:hover {
-  background-color: #8B7C6D;
-  color:#fff;
-}
-#footer .button-ux {
-  border-color: #5A0AA1;
-  color: #5A0AA1;
-}
-#footer .button-ux:hover {
-  background-color: #5A0AA1;
-  color:#fff;
-}
-#footer .button-ph {
-  border-color: #0197B2;
-  color: #0197B2;
-}
-#footer .button-ph:hover {
-  background-color: #0197B2;
-  color:#fff;
-}
-#footer .button-hx {
-  border-color: #272727;
-  color: #272727;
-}
-#footer .button-hx:hover {
-  background-color: #272727;
-  color:#fff;
-}

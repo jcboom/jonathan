@@ -3,7 +3,7 @@
 
 <!-- Header -->
 <section id="modal-hero" style="background-image: url(cards/ux_yinzcam/hero.jpg);">
-  <div class="jcboom-card-modal-corner"><p class="jcboom-card-modal-corner-text color-ux">Ux</p></div>
+  <div class="jcboom-card-modal-corner"><p class="jcboom-card-modal-corner-text type-ux">Ux</p></div>
   <div class="close-modal" data-dismiss="modal">
       <div class="lr">
           <div class="rl">
@@ -17,7 +17,7 @@
     <span class="string-highlight">As role of anthropology in the 21st century expands, product design companies are increasingly employing anthropological methods in an atempt to innovate new products and improve their consumers' experiences. As an anthropologist I study these methods in corporate environments because they prove to reveal deeper and more meaninful human insights.</span>
   </div>
 -->
-  <div class="jcboom-card-modal-ribbon bgcolor-white color-ux"><span class="jcboom-card-modal-ribbon-text">UX Design @ YinzCam</span></div>
+  <div class="jcboom-card-modal-ribbon jcboom-card-modal-ribbon-ux"><span class="jcboom-card-modal-ribbon-text">UX Design @ YinzCam</span></div>
 
   <div class="project-meta-data-li">
     <a href="http://www.yinzcam.com" target="_blank"><i class="fa fa-building-o fa-lg" fa-fw aria-hidden="true" title="YinzCam"></i>&nbsp;&nbsp;&nbsp;YinzCam</a> </br>
@@ -30,7 +30,7 @@
 
 <!-- Body -->
 <section id="modal-body">
-  <div class="project-body-title color-ux">overview &amp; impact</div>
+  <div class="project-body-title">overview &amp; impact</div>
   <div class="project-body-description">As a User Experience Designer, I Initiated and led the re-design of the YinzCam Content Management System (CMS).  Conducted contextual inquiries, user interviews and expert reviews of current system in order to inform the design of a new navigation paradigm, information architecture, interactions model, and design language.  This holistic approach resulted in concrete benefits including a potentially measurable increase in the usability and ‘learnability’ of YinzCam enterprise software.</div>
 
 <div style="width:100%;">
@@ -70,8 +70,4 @@
 <br>
 <br>
 <br>
-</section>
-
-<section id="footer">
-  <div style="width:100%;"><button type="button" class="btn btn-default button-ux" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
 </section>
