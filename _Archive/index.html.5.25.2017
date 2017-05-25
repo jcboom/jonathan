@@ -640,6 +640,25 @@
 		}
 	}
 })
+
+
+/* from: https://stackoverflow.com/questions/27741640/show-remote-content-in-modal-bootstrap
+success: function (data) {
+               var result=data; //response content html
+                $('#myModal').find('.modal-content').html(result);
+                $('#myModal').modal('show');
+            });
+
+*/
+/* from: https://stackoverflow.com/questions/35024689/how-do-i-link-to-a-modal-dialog-from-an-external-link
+
+						$(document).ready(function() {
+						  var modals = ['#payment', '#anotherModal'];
+						  if (window.location.hash && ~modals.indexOf(window.location.hash)) {
+						     $(window.location.hash).modal();
+						  }
+						})
+*/
 /* END FUCNTION */
 
 	$(document).ready(function() {

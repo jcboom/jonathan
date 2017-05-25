@@ -43,7 +43,6 @@
       </div>
   </div>
 </div>
-
 <br>
 <div style="width:100%;">
   <div style="display:table; margin: 0 auto;" class="subsection">
@@ -61,7 +60,7 @@
   <div style="display:table; margin: 0 auto;" class="subsection">
       <div style="display:table-cell;vertical-align:middle; width:430px;"><img width="400px" src="cards/ux_yinzcam/images/ux_mapping.png" /></div>
       <div style="display:table-cell;vertical-align:middle; height:100%;"><div class="divider bgcolor-ux">&nbsp;</div></div>
-      <div style="display:table-cell;vertical-align:middle;padding-top:20px; padding-bottom:20px;">
+      <div style="display:table-cell;vertical-align:middle;">
         <h4><i class="fa fa-map fa-lg color-ux" fa-fw aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;UX Mapping</h4>
         <p>Conducted an exploratory interviedw with stakeholders and other designers to find out what the current state of the content management system was.</p>
       </div>

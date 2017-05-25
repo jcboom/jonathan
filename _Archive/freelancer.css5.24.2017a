@@ -362,7 +362,7 @@ z-index: 0;
   font-family: "Maven", "Roboto", Arial, sans-serif;
   position: relative;
   /*padding-left:10px;*/
-  background-color: #fff;
+  background-color: #fff; /*#cdcdcd;*/
   width: 90%;
   text-align: left;
 
