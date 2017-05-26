@@ -232,7 +232,7 @@ hr.star-primary:after {
 #modal-hero .modal-title {
   position: absolute;
   top: 70px;
-  left: 30px; /* Resize for mobile (orig 30px) Jonathan Calzada */
+  left: 20px; /* Resize for mobile (orig 30px) Jonathan Calzada */
   text-align: right;
   color: #fff;
   font-family: "Lato", "Roboto", Arial, sans-serif;
@@ -243,7 +243,7 @@ hr.star-primary:after {
   */
   font-weight: regular;
   text-transform: uppercase;
-  width:356px;
+  width:345px;
 
 }
 @media screen and (max-width: 480px) {
