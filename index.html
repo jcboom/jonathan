@@ -221,8 +221,8 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph" data-toggle="modal" data-target="#portfolioModal3" class="jcboom-project-item">
-						<a href="cards/ph_ph_series1/content.html" class="jcboom-project-item">
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
+						<a href="cards/ph_series1/content.html" class="jcboom-project-item" data-toggle="modal" data-target="#portfolioModal3" class="jcboom-project-item">
 							<img src="images/sunset-eyes.jpg" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
 							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Series 1 - Photography</span></div>
@@ -634,7 +634,7 @@
 	*******************************************************************************/
 	/* BEGIN: FUNCTION */
 	$(document).ready(function() {
-  var modals = ['#portfolioModal1', '#portfolioModal2']; //need to be dynamic Jonathan Calzada
+  var modals = ['#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4']; //need to be dynamic Jonathan Calzada
 
   if (window.location.hash && ~modals.indexOf(window.location.hash)) {
 		var htmlContent = $('*[data-target="'+window.location.hash+'"]').attr("href");
