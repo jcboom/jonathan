@@ -968,7 +968,7 @@ body {
 
 /* START PROJECTS SECTION */
 #fh5co-projects {
-  background: #f9f9f9;
+  background: black; /*#f9f9f9;*/
 }
 #jcboom-projects {
   background: #f9f9f9;
