@@ -236,7 +236,7 @@
 							<div id="jcboom-card-ribbon-hx" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">HAXORING CIRCLE INNOVATIONS</span></div>
 						</a>
 					</div>
-<!--
+
 					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
 						<a href="images/lavender_forest.jpg" class="jcboom-project-item">
 							<img src="images/lavender_forest.jpg" alt="Image" class="img-card-responsive" />
@@ -350,7 +350,7 @@
 							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
 						</a>
 					</div>
--->
+
 				</div>
 
 				</div>
@@ -851,90 +851,44 @@
 
  <!-- Filter Functionality -->
  <script>
- /*  if all the filters are activated, then clicking on one of them activates just that filter.
- 			if that filter is clicked again ( and no filters are active), then  it activates all filters again
- 		if another filter is clicked it simply adds it (it activates that plus the previous filter)
- 			if any of the two active filters are clicked, it deactivates that filter which was clicked
- 		if addional filsters are clicked, it keeps adding
- */
  /*******************************************************************************
  * Author: Jonathan Calzada
  * Purpose: This handles the filter and switch functionality
  * Date:
  *******************************************************************************/
  function toggleFilter(filter, color) {
-	 var strCard=".card-"+filter.substring(filter.lastIndexOf("-")+1,filter.lastIndexOf(""));
-	 var btnState= $("#"+filter).prop('className').indexOf(filter+"-deco");
-	 var paramFilterType = filter.substring(filter.lastIndexOf("filter-")+7,filter.lastIndexOf("filter-")+9);
-	 var cardsTotal = $("#cards").children().length;
+	 var strCards=".card-"+filter.substring(filter.lastIndexOf("-")+1,filter.lastIndexOf(""));
+		if( $("#"+filter).prop('className').indexOf(filter+"-deco") != -1) {
+ 			$("."+filter+"-button").html("&plus;");
+ 			$("."+filter+"-button").css("color", "#AAAAAA");
+			$(strCards).hide();
+		} else {
+ 			$("."+filter+"-button").html("&times;");
+ 			$("."+filter+"-button").css("color", color);
+			$("#cards").show(); //Displays cards section
+			$(strCards).show(); //Displays card types
+ 		}
+ 	  $("#"+filter).toggleClass(filter+'-deco');
+ 		$("#"+filter).toggleClass('cards-filter-item-disabled');
 
-
-	 /* SWITCH MECHANISM OFF/ON POSITION */
-	 var enableSwitch = true;
-	 var countFiltersEnabled = null;
-	 var countAllFilters = $('div','#main').length;
-
-	 $('div','#main').each(function(){ /// Check if all filters are enabled
-		 if( $(this).prop('className').indexOf("disabled") != -1) {
-			 enableSwitch = false;
-		 } else {
-			 countFiltersEnabled += 1;
-		 }
-	 });
-
-	 if ( countAllFilters == countFiltersEnabled) { /// All filters are enabled before click ///
-
-		 // Checks card container for cards and disables want is found
-		 $('#cards').children('div').each(function () {
-			 var strCardClass = $(this).prop("className")
-			 var strCardType=strCardClass.substring(strCardClass.lastIndexOf("card-")+5,strCardClass.lastIndexOf("card-")+7);
-			 var strCard=strCardClass.substring(strCardClass.lastIndexOf("card-"),strCardClass.lastIndexOf("card-")+7);
-			 if (paramFilterType != strCardType) {
-				 $("."+strCard).hide(); // if all the filters are activated, then clicking on one of them activates just that filter.
-			   $("#filter-"+strCardType).removeClass("filter-"+strCardType+"-deco" );
-				 $("#filter-"+strCardType).addClass('cards-filter-item-disabled');
-				 $(".filter-"+strCardType+"button").css("color", "#AAAAAA"); //Makes all close buttons gray
-				 $(".filter-"+strCardType+"button").css("display", "block")
-				 $(".filter-"+strCardType+"button").html("&times;"); //Changes all buttons to Plus signs
-			 }
-
-		 });
-		 /* alert($("#cards").children().length); //Total Number of cards */
-
-
-
-
-
-
-
-	 } else {
-
-		 if( btnState != -1) {
-				 $("."+filter+"-button").html("&plus;");
-				 $("."+filter+"-button").css("color", "#AAAAAA");
-			 $(strCard).hide();
-		 } else {
-			 $("."+filter+"-button").html("&times;");
-			 $("."+filter+"-button").css("color", color);
-			 $("#cards").show(); //Displays cards section
-			 $(strCard).show(); //Displays card types
-		 }
-		 $("#"+filter).toggleClass(filter+'-deco');
-		 $("#"+filter).toggleClass('cards-filter-item-disabled');
-
-	 }
-
-	 if (enableSwitch == false) { /// At last one filter is disabled so turn or keep swtich off ///
-		 $('#slider-mech').prop('checked', false);
-	 } else { /// All filters are enabled so turn swtich on ///
-		 enableSwitch = true;
-		 $('#slider-mech').prop('checked', true);
-	 }
-
+		/* SWITCH MECHANISM OFF/ON POSITION */
+		var enableSwitch = true;
+		$('div','#main').each(function(){
+			if( $(this).prop('className').indexOf("disabled") != -1) {
+				enableSwitch = false;
+			}
+    });
+		if (enableSwitch == false) {
+			$('#slider-mech').prop('checked', false);
+		} else {
+			enableSwitch = true;
+			$('#slider-mech').prop('checked', true);
+		}
  }
 
 $(document).ready(function() {
-			/* Need to simplify the function below and create veriables so its not DRY (Don't Repeat Yourself) */
+
+	/* Need to simplify the function below and create veriables so its not DRY (Don't Repeat Yourself) */
 	$("#slider-mech").click(function() {
 		$('#cards').children('div').each(function () {
 			var strClass = $(this).prop("className")
@@ -975,7 +929,6 @@ $(document).ready(function() {
 				//toggleFilter("filter-"+strCard,"red");
 				$("."+strCard).hide();
 			});
-
 			/* alert($("#cards").children().length); //Total Number of cards */
 			$(".closebtn").css("color", "#AAAAAA"); //Makes all close buttons gray
 			$(".closebtn").html("&plus;"); //Changes all buttons to Plus signs

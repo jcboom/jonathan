@@ -185,9 +185,11 @@ h1, h2, h3, h4, h5, h6 {
     float: right;
     font-size: 30px;
     cursor: pointer;
+    display:none;
 }
 .closebtn.filter-an {
   color: #8B7C6D;
+  display: none;
 }
 .closebtn.filter-ux {
   color: #5A0AA1;
