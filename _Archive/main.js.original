@@ -2,8 +2,7 @@
 
 	'use strict';
 
-	var scrollDownButton = ".jcboom-learn-more";
-	var loaderPageDivClass = ".jcboom-loader"
+
 
 	// iPad and iPod detection
 	var isiPad = function(){
@@ -19,7 +18,7 @@
 
 	// Go to next section
 	var gotToNextSection = function(){
-		var el = $(scrollDownButton),
+		var el = $('.fh5co-learn-more'),
 			w = el.width(),
 			divide = -w/2;
 		el.css('margin-left', divide);
@@ -27,7 +26,7 @@
 
 	// Loading page
 	var loaderPage = function() {
-		$(loaderPageDivClass).fadeOut("slow");
+		$(".fh5co-loader").fadeOut("slow");
 	};
 
 	// FullHeight
@@ -50,14 +49,14 @@
 	var toggleBtnColor = function() {
 
 
-		if ( $('#jcboom-hero').length > 0 ) {
-			$('#jcboom-hero').waypoint( function( direction ) {
+		if ( $('#fh5co-hero').length > 0 ) {
+			$('#fh5co-hero').waypoint( function( direction ) {
 				if( direction === 'down' ) {
 					$('.fh5co-nav-toggle').addClass('dark');
 				}
-			} , { offset: - $('#jcboom-hero').height() } );
+			} , { offset: - $('#fh5co-hero').height() } );
 
-			$('#jcboom-hero').waypoint( function( direction ) {
+			$('#fh5co-hero').waypoint( function( direction ) {
 				if( direction === 'up' ) {
 					$('.fh5co-nav-toggle').removeClass('dark');
 				}
