@@ -657,13 +657,7 @@
 					// $(this).toggleClass('fh5co-project-item img');
 			});
 */
-			$("#filter-all").click(function() {
-				//alert('me');
-					var checkBoxes = $("input[name=chk\\[\\]]");
-					checkBoxes.prop("checked", !checkBoxes.prop("checked"));
 
-						//alert(checkBoxes.prop("checked"));
-			});
 	});
 	</script>
 <!-- END of script -->
@@ -860,144 +854,136 @@
  /*******************************************************************************
  * Author: Jonathan Calzada
  * Purpose: This handles the filter and switch functionality
- * Date:
+ * Date: 5/28/2017
  *******************************************************************************/
  function toggleFilter(filter, color) {
-	 var strCard=".card-"+filter.substring(filter.lastIndexOf("-")+1,filter.lastIndexOf(""));
+	 var paramCardType=".card-"+filter.substring(filter.lastIndexOf("-")+1,filter.lastIndexOf(""));
 	 var btnState= $("#"+filter).prop('className').indexOf(filter+"-deco");
 	 var paramFilterType = filter.substring(filter.lastIndexOf("filter-")+7,filter.lastIndexOf("filter-")+9);
 	 var cardsTotal = $("#cards").children().length;
-
-
-	 /* SWITCH MECHANISM OFF/ON POSITION */
-	 var enableSwitch = true;
 	 var countFiltersEnabled = null;
-	 var countAllFilters = $('div','#main').length;
+	 var countAllFilters = $('div','#main').length - 1; //substracts 1 to omit slider
+	 var clickedActivatedFilter = null;
 
 	 $('div','#main').each(function(){ /// Check if all filters are enabled
-		 if( $(this).prop('className').indexOf("disabled") != -1) {
+		 if( $(this).prop('className').indexOf("disabled") != -1 ) {
 			 enableSwitch = false;
-		 } else {
-			 countFiltersEnabled += 1;
+		 } else if( $(this).prop('className').indexOf("slider") == -1 ) { /// Do not count slider ///
+			  countFiltersEnabled += 1;
+				if( $(this).prop('id') == filter) clickedActivatedFilter = true; /// Clicked on an activated filter
 		 }
 	 });
 
-	 if ( countAllFilters == countFiltersEnabled) { /// All filters are enabled before click ///
-
-		 // Checks card container for cards and disables want is found
-		 $('#cards').children('div').each(function () {
-			 var strCardClass = $(this).prop("className")
+	 if ( countAllFilters == countFiltersEnabled) { /// if all the filters are activated before click then clicking on one of them activates just that filter. ///
+		 $('#cards').children('div').each(function () { /// Checks card container for cards ///
+			 var strCardClass = $(this).prop("className");
 			 var strCardType=strCardClass.substring(strCardClass.lastIndexOf("card-")+5,strCardClass.lastIndexOf("card-")+7);
-			 var strCard=strCardClass.substring(strCardClass.lastIndexOf("card-"),strCardClass.lastIndexOf("card-")+7);
-			 if (paramFilterType != strCardType) {
-				 $("."+strCard).hide(); // if all the filters are activated, then clicking on one of them activates just that filter.
+			 var strCards=strCardClass.substring(strCardClass.lastIndexOf("card-"),strCardClass.lastIndexOf("card-")+7);
+
+			 if (paramFilterType != strCardType) { /// Deactivate all filters except the one that is clicked.  ///
+				 $("."+strCards).hide();
 			   $("#filter-"+strCardType).removeClass("filter-"+strCardType+"-deco" );
 				 $("#filter-"+strCardType).addClass('cards-filter-item-disabled');
-				 $(".filter-"+strCardType+"button").css("color", "#AAAAAA"); //Makes all close buttons gray
-				 $(".filter-"+strCardType+"button").css("display", "block")
-				 $(".filter-"+strCardType+"button").html("&times;"); //Changes all buttons to Plus signs
+				 $("."+filter+"-button").css("display", "block");
+				 $('#slider-mech').prop('checked', false);
 			 }
-
 		 });
-		 /* alert($("#cards").children().length); //Total Number of cards */
+	 } else if (countFiltersEnabled == 1 && clickedActivatedFilter ) {
+		 $('#cards').children('div').each(function () { /// Checks card container for cards ///
+			 var strCardClass = $(this).prop("className");
+			 var strCardType=strCardClass.substring(strCardClass.lastIndexOf("card-")+5,strCardClass.lastIndexOf("card-")+7);
+			 var strCards=strCardClass.substring(strCardClass.lastIndexOf("card-"),strCardClass.lastIndexOf("card-")+7);
 
-
-
-
-
-
-
+				 $("."+strCards).show();
+				 $('#slider-mech').prop('checked', true);
+				 $("#filter-"+strCardType).removeClass('cards-filter-item-disabled');
+				 $("#filter-"+strCardType).addClass("filter-"+strCardType+"-deco" );
+				 $("."+filter+"-button").css("display", "none");
+		 });
 	 } else {
-
 		 if( btnState != -1) {
-				 $("."+filter+"-button").html("&plus;");
-				 $("."+filter+"-button").css("color", "#AAAAAA");
-			 $(strCard).hide();
+			 $("."+filter+"-button").css("display", "none");
+			 $("#"+filter).addClass('cards-filter-item-disabled');
+			 $("#"+filter).removeClass(filter+"-deco" );
+		 	 $(paramCardType).hide();
 		 } else {
-			 $("."+filter+"-button").html("&times;");
 			 $("."+filter+"-button").css("color", color);
-			 $("#cards").show(); //Displays cards section
-			 $(strCard).show(); //Displays card types
+			 $("#"+filter).removeClass('cards-filter-item-disabled');
+			 $("#"+filter).addClass(filter+"-deco" );
+			 $("."+filter+"-button").css("display", "block");
+			 $(paramCardType).show(); //Displays card types
 		 }
-		 $("#"+filter).toggleClass(filter+'-deco');
-		 $("#"+filter).toggleClass('cards-filter-item-disabled');
-
+		 if ( countFiltersEnabled == 3 && !clickedActivatedFilter ) {
+			 $(".closebtn").css("display", "none");
+			 $('#slider-mech').prop('checked', true);
+		 }
 	 }
-
-	 if (enableSwitch == false) { /// At last one filter is disabled so turn or keep swtich off ///
-		 $('#slider-mech').prop('checked', false);
-	 } else { /// All filters are enabled so turn swtich on ///
-		 enableSwitch = true;
-		 $('#slider-mech').prop('checked', true);
-	 }
-
  }
 
-$(document).ready(function() {
-			/* Need to simplify the function below and create veriables so its not DRY (Don't Repeat Yourself) */
-	$("#slider-mech").click(function() {
-		$('#cards').children('div').each(function () {
-			var strClass = $(this).prop("className")
-			var strCardType=strClass.substring(strClass.lastIndexOf("card-")+5,strClass.lastIndexOf("card-")+7);
-			var strCard=strClass.substring(strClass.lastIndexOf("card-"),strClass.lastIndexOf("card-")+7);
-			//toggleFilter("filter-"+strCard,"red");
-			$("."+strCard).show();
-		});
+ $(document).ready(function() {
 
-		if( $("#slider-mech").prop("checked") ) { //When swtich is turned on
-			//$("#cards").show();
+ 	/* Need to simplify the function below and create veriables so its not DRY (Don't Repeat Yourself) */
+ 	$("#slider-mech").click(function() {
+ 		$('#cards').children('div').each(function () {
+ 			var strClass = $(this).prop("className")
+ 			var strCardType=strClass.substring(strClass.lastIndexOf("card-")+5,strClass.lastIndexOf("card-")+7);
+ 			var strCard=strClass.substring(strClass.lastIndexOf("card-"),strClass.lastIndexOf("card-")+7);
+ 			//toggleFilter("filter-"+strCard,"red");
+ 			$("."+strCard).show();
+ 		});
 
-			$(".closebtn").html("&times;"); //Changes + to x sign on buttons
+ 		if( $("#slider-mech").prop("checked") ) { //When swtich is turned on
+ 			//$("#cards").show();
+			$(".closebtn").css("display","none"); //Changes + to x sign on buttons
 
-			$("#filter-an").removeClass('cards-filter-item-disabled');
-			$("#filter-an").addClass('filter-an-deco');
-			$(".filter-an-button").css("color", "#8B7C6D");
+ 			$("#filter-an").removeClass('cards-filter-item-disabled');
+ 			$("#filter-an").addClass('filter-an-deco');
+ 			$(".filter-an-button").css("color", "#8B7C6D");
 
-			$("#filter-ux").removeClass('cards-filter-item-disabled');
-			$("#filter-ux").addClass('filter-ux-deco');
-			$(".filter-ux-button").css("color", "#5A0AA1");
+ 			$("#filter-ux").removeClass('cards-filter-item-disabled');
+ 			$("#filter-ux").addClass('filter-ux-deco');
+ 			$(".filter-ux-button").css("color", "#5A0AA1");
 
-			$("#filter-ph").removeClass('cards-filter-item-disabled');
-			$("#filter-ph").addClass('filter-ph-deco');
-			$(".filter-ph-button").css("color", "#0197B2");
+ 			$("#filter-ph").removeClass('cards-filter-item-disabled');
+ 			$("#filter-ph").addClass('filter-ph-deco');
+ 			$(".filter-ph-button").css("color", "#0197B2");
 
-			$("#filter-hx").removeClass('cards-filter-item-disabled');
-			$("#filter-hx").addClass('filter-hx-deco');
-			$(".filter-hx-button").css("color", "#272727");
-		} else { //When swtich is turned off
-			//$("#cards").hide();
+ 			$("#filter-hx").removeClass('cards-filter-item-disabled');
+ 			$("#filter-hx").addClass('filter-hx-deco');
+ 			$(".filter-hx-button").css("color", "#272727");
+ 		} else { //When swtich is turned off
+ 			//$("#cards").hide();
 
-			// Checks card container for cards and disables want is found
-			$('#cards').children('div').each(function () {
-				var strClass = $(this).prop("className")
-				var strCardType=strClass.substring(strClass.lastIndexOf("card-")+5,strClass.lastIndexOf("card-")+7);
-				var strCard=strClass.substring(strClass.lastIndexOf("card-"),strClass.lastIndexOf("card-")+7);
-				//toggleFilter("filter-"+strCard,"red");
-				$("."+strCard).hide();
-			});
-
-			/* alert($("#cards").children().length); //Total Number of cards */
-			$(".closebtn").css("color", "#AAAAAA"); //Makes all close buttons gray
-			$(".closebtn").html("&plus;"); //Changes all buttons to Plus signs
+ 			// Checks card container for cards and disables want is found
+ 			$('#cards').children('div').each(function () {
+ 				var strClass = $(this).prop("className")
+ 				var strCardType=strClass.substring(strClass.lastIndexOf("card-")+5,strClass.lastIndexOf("card-")+7);
+ 				var strCard=strClass.substring(strClass.lastIndexOf("card-"),strClass.lastIndexOf("card-")+7);
+ 				//toggleFilter("filter-"+strCard,"red");
+ 				$("."+strCard).hide();
+ 			});
+ 			/* alert($("#cards").children().length); //Total Number of cards */
+ 			$(".closebtn").css("color", "#AAAAAA"); //Makes all close buttons gray
 
 
 
-			$("#filter-an").removeClass('filter-an-deco');
-			$("#filter-an").addClass('cards-filter-item-disabled');
+ 			$("#filter-an").removeClass('filter-an-deco');
+ 			$("#filter-an").addClass('cards-filter-item-disabled');
+			$(".closebtn").css("display","none");
 
-			$("#filter-ux").removeClass('filter-ux-deco');
-			$("#filter-ux").addClass('cards-filter-item-disabled');
 
-			$("#filter-ph").removeClass('filter-ph-deco');
-			$("#filter-ph").addClass('cards-filter-item-disabled');
+ 			$("#filter-ux").removeClass('filter-ux-deco');
+ 			$("#filter-ux").addClass('cards-filter-item-disabled');
 
-			$("#filter-hx").removeClass('filter-hx-deco');
-			$("#filter-hx").addClass('cards-filter-item-disabled');
+ 			$("#filter-ph").removeClass('filter-ph-deco');
+ 			$("#filter-ph").addClass('cards-filter-item-disabled');
 
-		}
-	});
-});
+ 			$("#filter-hx").removeClass('filter-hx-deco');
+ 			$("#filter-hx").addClass('cards-filter-item-disabled');
 
+ 		}
+ 	});
+ });
  </script>
 <!-- END of script -->
 
