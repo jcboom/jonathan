@@ -895,6 +895,8 @@
 			 $("#"+filter).addClass(filter+"-deco" );
 			 $("."+filter+"-button").css("display", "block");
 			 $(paramCardType).show(); //Displays card types
+			 $('#slider-mech').prop('checked', false);
+			 $(".slider").addClass('sliderlight'); //this actually turns the light off by adding the original class
 		 }
 		 if ( countFiltersEnabled == 3 && !clickedActivatedFilter ) {
 			 $(".closebtn").css("display", "none");
