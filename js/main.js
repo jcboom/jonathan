@@ -186,6 +186,7 @@
 			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 				i++;
+				//$.notify(i)
 
 				$(this.element).addClass('item-animate');
 				setTimeout(function(){

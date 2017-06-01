@@ -249,40 +249,15 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 15px;
   line-height: 37px;
 }
-.slider-text {
-  font-style: italic;
-}
+
 .slider::before {
   position: absolute;
-  font-family: "FontAwesome";
-  content: "\f011";
-  color: #8AC732;
-  text-align: center;
+  content: "";
   height: 35px;
   width: 35px;
   left: 3px;
   bottom: 3px;
-  background-color: #fff;
-  -webkit-transition: .4s;
-  transition: .4s;
-
-  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
-  -ms-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
-  -o-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
-}
-.sliderlight::before {
-  position: absolute;
-  font-family: "FontAwesome";
-  content: "\f011";
-  color: #AAAAAA;
-  text-align: center;
-  height: 35px;
-  width: 35px;
-  left: 3px;
-  bottom: 3px;
-  background-color: #fff;
+  background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
 
@@ -310,9 +285,10 @@ input:checked + .slider::before {
   transform: translateX(129px);
 }
 
-/* Rounded slider */
+/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
+
 }
 
 .slider.round::before {

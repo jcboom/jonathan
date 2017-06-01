@@ -402,33 +402,6 @@ hr.star-primary:after {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
-.bgcolor-white {
-  background-color: rgba(255,255,255,1);
-}
-.bgcolor-an {
-  background-color: #8B7C6D;
-}
-.bgcolor-ux {
-  background-color: #5A0AA1;
-}
-.bgcolor-ph {
-  background-color: #0197B2;
-}
-.bgcolor-hx {
-  background-color: #525252; /*225862*/ Jonathan Calzada (maybe)
-}
-.color-an {
-  color: #8B7C6D;
-}
-.color-ux {
-  color: #5A0AA1;
-}
-.color-ph {
-  color: #0197B2;
-}
-.color-hx {
-  color: #525252;
-}
 
 .subsection-text {
   display: table-cell;

@@ -297,7 +297,7 @@
 							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">DESIGN Anthro</span></div>
 						</a>
 					</div>
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box  card-ph">
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
 						<a href="https://source.unsplash.com/random?landscape" class="jcboom-project-item">
 							<img src="https://source.unsplash.com/random?landscape" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
@@ -608,11 +608,6 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
 
-	<!-- Notifyjs.com -->
-	<script src="js/notify.js"></script>
-	<script> $.notify.defaults({ className: "success" });</script>
-
-
 	<!-- when you start or end a touch, turn the class hover_effect on or off.-->
 	<script>
 
@@ -793,20 +788,30 @@
 
 	/* Nav Button Locations (http://easings.net/) */
 	$("#navbutton-an").click(function(){
-		toggleAll("off");
 		toggleFilter('filter-an','#8B7C6D');
+		// $('html, body').animate({
+		// 	scrollTop: $('#jcboom-projects').offset().top
+		// }, 500, 'easeInOutExpo'); //http://easings.net/
+		// return false;
 	});
 	$("#navbutton-ux").click(function(){
-		toggleAll("off");
 		toggleFilter('filter-ux','#5A0AA1');
+		// $('html, body').animate({
+		// 	scrollTop: $("#jcboom-projects").offset().top
+		// }, 500, 'easeInOutExpo');
 	});
 	$("#navbutton-ph").click(function(){
-		toggleAll("off");
 		toggleFilter('filter-ph','#0197B2');
+		// $('html, body').animate({
+		// 	scrollTop: $("#jcboom-projects").offset().top
+		// }, 500, 'easeInOutExpo');
+
 	});
 	$("#navbutton-hx").click(function(){
-		toggleAll("off");
 		toggleFilter('filter-hx','#272727');
+		// $('html, body').animate({
+		// 	scrollTop: $("#jcboom-projects").offset().top
+		// }, 500, 'easeInOutExpo');
 	});
 });
 /* End Nav Button Locations */
@@ -814,13 +819,11 @@
 
  <!-- Filter Functionality -->
  <script>
- var DEBUG = true;
-
  /*** Temporary solution to load the rest of the page if slider is activated ***/
  function loadEntirePage() {
-	 $(".animate-box").addClass('item-animate');
-	 $(".animate-box").addClass('fadeInUp animated');
-	 $(".animate-box").removeClass('item-animate');
+	// $(".animate-box").addClass('item-animate');
+	// $(".animate-box").addClass('fadeInUp animated');
+	// $(".animate-box").removeClass('item-animate');
  }
 
  /*  if all the filters are activated, then clicking on one of them activates just that filter.
@@ -835,6 +838,8 @@
  * Date: 5/28/2017
  *******************************************************************************/
  function toggleFilter(filter, color) {
+	 loadEntirePage();
+
 	 var paramCardType=".card-"+filter.substring(filter.lastIndexOf("-")+1,filter.lastIndexOf(""));
 	 var btnState= $("#"+filter).prop('className').indexOf(filter+"-deco");
 	 var paramFilterType = filter.substring(filter.lastIndexOf("filter-")+7,filter.lastIndexOf("filter-")+9);
@@ -903,49 +908,92 @@
 			 $(".slider").toggleClass('sliderlight');
 		 }
 	 }
-	 Waypoint.refreshAll();
- }
-
- function toggleAll(showAction) {
-	 // Checks card container for cards and toggles what is found
-	 $('#cards').children('div').each(function () {
-		 if(showAction == "true" || showAction == "on") {
-			 $(this).show();
-		 } else if(showAction == "false" || showAction == "off") {
-			 $(this).hide();
-		 }
-	 });
-	 // Checks filter container for filters and toggles what is found
-	 $('#main').children('div').each(function () {
-		 if(showAction == "true" || showAction == "on") {
-			 var toggleFilterColor = $(this).attr("onclick").substring($(this).attr("onclick").lastIndexOf(",\'")+2,$(this).attr("onclick").lastIndexOf("\'"));
-			 $(".closebtn").css("display","none"); //Changes + to x sign on buttons
-			 $(this).removeClass('cards-filter-item-disabled');
-			 $(this).addClass($(this).prop("id")+"-deco");
-			 $("."+$(this).prop("id")+"-button").css("color", toggleFilterColor);
-		 } else if(showAction == "false" || showAction == "off") {
-			 $(this).removeClass($(this).prop("id")+"-deco");
-			 $(this).addClass('cards-filter-item-disabled');
-		 } else {
-			 if(DEBUG) $.notify("Error: toggleAll() has incorrect parameters","error");
-		 }
-	 });
-	 $(".closebtn").css("color", "#AAAAAA"); /// Makes all close buttons gray
-	 $(".closebtn").css("display","none");
-	 $(".slider").toggleClass('sliderlight'); /// Turn slider power-button light off
-	 Waypoint.refreshAll();
  }
 
  $(document).ready(function() {
  	/* Need to simplify the function below and create veriables so its not DRY (Don't Repeat Yourself) */
  	$("#slider-mech").click(function() {
+		loadEntirePage();
 
- 		if( $("#slider-mech").prop("checked") ) { //If swtich is toggled ON
-			toggleAll("on");
- 		} else { //If switch is toggled off
-			toggleAll("off");
+ 		$('#cards').children('div').each(function () {
+ 			var strClass = $(this).prop("className")
+ 			var strCardType=strClass.substring(strClass.lastIndexOf("card-")+5,strClass.lastIndexOf("card-")+7);
+ 			var strCard=strClass.substring(strClass.lastIndexOf("card-"),strClass.lastIndexOf("card-")+7);
+ 			//toggleFilter("filter-"+strCard,"red");
+ 			$("."+strCard).show();
+ 		});
+
+ 		if( $("#slider-mech").prop("checked") ) { //When swtich is turned on
+			// Turn slider power-button light off
+			$(".slider").toggleClass('sliderlight');
+
+			$(".closebtn").css("display","none"); //Changes + to x sign on buttons
+
+ 			$("#filter-an").removeClass('cards-filter-item-disabled');
+ 			$("#filter-an").addClass('filter-an-deco');
+ 			$(".filter-an-button").css("color", "#8B7C6D");
+
+ 			$("#filter-ux").removeClass('cards-filter-item-disabled');
+ 			$("#filter-ux").addClass('filter-ux-deco');
+ 			$(".filter-ux-button").css("color", "#5A0AA1");
+
+ 			$("#filter-ph").removeClass('cards-filter-item-disabled');
+ 			$("#filter-ph").addClass('filter-ph-deco');
+ 			$(".filter-ph-button").css("color", "#0197B2");
+
+ 			$("#filter-hx").removeClass('cards-filter-item-disabled');
+ 			$("#filter-hx").addClass('filter-hx-deco');
+ 			$(".filter-hx-button").css("color", "#272727");
+ 		} else { //When swtich is turned off
+			// Turn slider power-button light off
+			$(".slider").toggleClass('sliderlight');
+
+ 			// Checks card container for cards and disables want is found
+ 			$('#cards').children('div').each(function () {
+ 				var strClass = $(this).prop("className")
+ 				var strCardType=strClass.substring(strClass.lastIndexOf("card-")+5,strClass.lastIndexOf("card-")+7);
+ 				var strCard=strClass.substring(strClass.lastIndexOf("card-"),strClass.lastIndexOf("card-")+7);
+ 				//toggleFilter("filter-"+strCard,"red");
+ 				$("."+strCard).hide();
+ 			});
+ 			/* alert($("#cards").children().length); //Total Number of cards */
+ 			$(".closebtn").css("color", "#AAAAAA"); //Makes all close buttons gray
+
+ 			$("#filter-an").removeClass('filter-an-deco');
+ 			$("#filter-an").addClass('cards-filter-item-disabled');
+			$(".closebtn").css("display","none");
+
+
+ 			$("#filter-ux").removeClass('filter-ux-deco');
+ 			$("#filter-ux").addClass('cards-filter-item-disabled');
+
+ 			$("#filter-ph").removeClass('filter-ph-deco');
+ 			$("#filter-ph").addClass('cards-filter-item-disabled');
+
+ 			$("#filter-hx").removeClass('filter-hx-deco');
+ 			$("#filter-hx").addClass('cards-filter-item-disabled');
+
  		}
  	});
+
+
+	// $( "#jcboom-features" ).load(function() {
+  // // Handler for .load() called.
+	// });
+	// var target = $("#jcboom-features").offset().top;
+	//
+	//
+	// var interval = setInterval(function() {
+	//     if ($(window).scrollTop() >= target) {
+	//
+	// 				//alert("made it!");
+	//         clearInterval(interval);
+	//     }
+	// }, 50);
+
+
+
+
  });
  </script>
 <!-- END of script -->
