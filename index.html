@@ -27,6 +27,10 @@
 <!-- Theme CSS -->
 <link href="css/freelancer.css" rel="stylesheet">
 
+<!-- Button Pop Up Menu -->
+<link href="css/button-popup-menu.css" rel="stylesheet" />
+
+
 <!-- Bootstrap - Add the line below if not present elsewhere in this file
 <link rel="stylesheet" href="css/bootstrap.css" />
 -->
@@ -132,17 +136,84 @@
 							<div class="jcboom-right-position">
 						-->
 
-
 						<div class="jcboom-right-position">
               <h2 class="animate-box"><span id="first-name"><!--Content being added in style.css --></span> <span id="last-name"><!--Content being added in style.css --></span></h2>
-							<h2>
-							<div id="navbuttons">
+							<h2><!-- <h2> makes the #Anthropologist text and others more visible --->
+
+							<!-- <div id="navbuttons">
 								<button id="navbutton-an" type="button" class="btn bgcolor-an btn-circle btn-xl animate-box scroll-btn">An</button>
 							  <button id="navbutton-ux" type="button" class="btn bgcolor-ux btn-circle btn-xl animate-box scroll-btn">Ux</button>
 							  <button id="navbutton-ph" type="button" class="btn bgcolor-ph btn-circle btn-xl animate-box scroll-btn">Ph</button>
 							  <button id="navbutton-hx" type="button" class="btn bgcolor-hx btn-circle btn-xl animate-box scroll-btn">Hx</button>
-							</div>
-							<div class="hero_quote"><q>The future needs the whole [wo]man. </q><br />--László Moholy-Nagy</div>
+							</div> -->
+							 <nav id="menu-an" class="menu-an animate-box">
+							   <input id="menu-open" type="checkbox" href="#" class="menu-open" name="menu-open" />
+							   <label id="navbutton-an" class="menu-open-button" for="menu-open">
+							    <p class="btn-text">an</p>
+									<p class="btn-pressed-text"></p>
+							   </label>
+							   <a href="#" class="menu-item blue scroll-btn"> <i class="fa fa-anchor fa-lg"></i> </a>
+							   <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+							   <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+							   <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
+							   <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+							   <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
+							</nav>
+							<nav id="menu-ux" class="menu-ux animate-box">
+							   <input id="menu-open-ux" type="checkbox" href="#" class="menu-open" name="menu-open" />
+							   <label id="navbutton-ux" class="menu-open-button" for="menu-open-ux">
+							    <p class="btn-text">ux</p>
+									<p class="btn-pressed-text"></p>
+							   </label>
+							   <a href="#" class="menu-item blue scroll-btn"> <i class="fa fa-anchor fa-lg"></i> </a>
+							   <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+							   <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+							   <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
+							   <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+							   <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
+							</nav>
+							<nav id="menu-ph" class="menu-ph animate-box">
+							   <input id="menu-open-ph" type="checkbox" href="#" class="menu-open" name="menu-open"  />
+							   <label id="navbutton-ph" class="menu-open-button" for="menu-open-ph">
+							    <p class="btn-text">ph</p>
+									<p class="btn-pressed-text"></p>
+							   </label>
+							   <a href="#" class="menu-item blue scroll-btn"> <i class="fa fa-anchor fa-lg"></i> </a>
+							   <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+							   <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+							   <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
+							   <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+							   <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
+							</nav>
+							<nav id="menu-hx" class="menu-hx animate-box">
+							   <input id="menu-open-hx" type="checkbox" href="#" class="menu-open" name="menu-open" />
+							   <label id="navbutton-hx" class="menu-open-button" for="menu-open-hx">
+							    <p class="btn-text">hx</p>
+									<p class="btn-pressed-text"></p>
+							   </label>
+							   <a href="#" class="menu-item blue scroll-btn"> <i class="fa fa-anchor fa-lg"></i> </a>
+							   <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+							   <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+							   <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
+							   <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+							   <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
+							</nav>
+
+							<!-- <nav class="menu-an animate-box">
+							   <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+							   <label class="menu-open-button" for="menu-open">
+							    <p class="btn-text">an</p>
+									<p class="btn-pressed-text"></p>
+							   </label>
+							   <a href="#" class="menu-item blue scroll-btn"> <i class="fa fa-anchor fa-lg"></i> </a>
+							   <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+							   <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+							   <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
+							   <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+							   <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
+							</nav> -->
+
+							<div class="hero_quote"><q>The future needs the whole *man. </q><br />--László Moholy-Nagy</div>
 							<div id="navbutton-an-text" class="button_text"> #Anthropologist</div>
 							<div id="navbutton-ux-text" class="button_text"> #UX Designer</div>
 							<div id="navbutton-ph-text" class="button_text"> #Photographer</div>
@@ -170,7 +241,7 @@
 				<div class="row row-bottom-padded-sm">
 					<div class="col-md-6 col-md-offset-3 text-center">
 						<h2 class="jcboom-lead animate-box">Portfolio of an </h2>
-							<div class="jcboom-sub-lead animate-box">&ldquo;"The future needs the whole [wo]man.&rdquo;
+							<div class="jcboom-sub-lead animate-box">&ldquo;The future needs the whole man<sup>*</sup>.&rdquo;
 							<cite><small>&mdash; László Moholy-Nagy</small></cite>
 						</div>
 					</div>
