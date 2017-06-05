@@ -291,13 +291,13 @@ a {
 }
 
 .green {
-   background-color: #70CC72;
+   background-color: #8CC53E;
    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .green:hover {
-   color: #70CC72;
+   color: #8CC53E;
    text-shadow: none;
 }
 
