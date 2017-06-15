@@ -124,10 +124,12 @@
 		<section id="jcboom-hero" class="js-fullheight" style="background-image: url(images/hero_bg.jpg);" data-next="yes">
 			<div class="jcboom-overlay"></div>
 
+
 			<!--Added the following layer to hide right-menu when hero image doesn't take up the whole screen. Uncomment this line to see problem on mobile. -Jonathan Calzada -->
 			<div style="background-color:#f9f9f9; width:100%; height:100%; position:absolute; top:-100px; left:0px; z-index:-1;"></div>
 			<div class="container">
 				<div class="jcboom-intro js-fullheight">
+
 					<div class=""><!--I'm not sure why this needs to be here, but it places the nav menu to the right.  NEED TO CLEAN UP: Jonathan Calzada-->
 						<!--
 							INFO:
@@ -156,7 +158,7 @@
 							   <a href="#" style="display:none;"class="menu-item green"> <i class="fa fa-coffee"></i> </a>
 							   <a href="#" class="menu-item blue"> <i class="fa fa-info"></i> </a>
 							   <a href="#" class="menu-item green scroll-btn" onClick="$(this).siblings('input').click();"><i class="fa fa-eye"></i></a>
-							   <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+							   <a href="#" class="menu-item orange" onClick="$(this).siblings('input').click();"> <i class="fa fa-graduation-cap"></i> </a>
 							   <a href="#" style="display:none;" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
 							</nav>
 							<nav id="menu-ux" class="menu-ux animate-box">
@@ -167,9 +169,11 @@
 							   </label>
 								 <a href="#" style="display:none;" class="menu-item blue">  <i class="fa fa-microphone"></i> </a>
 							   <a href="#" style="display:none;"class="menu-item green"> <i class="fa fa-coffee"></i> </a>
-							   <a href="#" class="menu-item blue"> <i class="fa fa-info"></i> </a>
+
+
+							   <a href="ux_info.html" class="menu-item blue" data-toggle="modal" data-target="#ux-info" onClick="$(this).siblings('input').click();"> <i class="fa fa-info"></i> </a>
 							   <a href="#" class="menu-item green scroll-btn" onClick="$(this).siblings('input').click();"><i class="fa fa-eye"></i></a>
-							   <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+							   <a href="http://jonathancalzada.com/Resume.pdf" onClick="$(this).siblings('input').click();" class="menu-item resume"> <i class="fa fa-file-pdf-o"></i> </a>
 							   <a href="#" style="display:none;" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
 							</nav>
 							<nav id="menu-ph" class="menu-ph animate-box">
@@ -536,7 +540,7 @@
 				<div class="row row-bottom-padded-sm">
 					<div class="col-md-6 col-md-offset-3 text-center">
 						<div class="jcboom-label animate-box">Recommendations</div>
-						<h2 class="jcboom-lead animate-box">What peeps say 'bout me </h2>
+						<h2 class="jcboom-lead animate-box">What employers say 'bout me </h2>
 					</div>
 				</div>
 				<div class="row">
@@ -867,7 +871,7 @@
 		$("#menu-ux").toggle();
 		$("#menu-ph").toggle();
 		$("#menu-hx").toggle();
-		toggleAll("off");
+	  toggleAll("off");
 		toggleFilter('filter-an','#8B7C6D');
 	});
 	$("#menu-open-ux").click(function(){
@@ -1047,6 +1051,8 @@
 <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
+
+<div class="hero-modal modal fade" id="ux-info" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 
 <!-- End Modals -->
 	</body>
