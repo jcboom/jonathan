@@ -123,6 +123,10 @@
 
 		<section id="jcboom-hero" class="js-fullheight" style="background-image: url(images/hero_bg.jpg);" data-next="yes">
 			<div class="jcboom-overlay"></div>
+
+
+			<!--Added the following layer to hide right-menu when hero image doesn't take up the whole screen. Uncomment this line to see problem on mobile. -Jonathan Calzada -->
+			<div style="background-color:#f9f9f9; width:100%; height:100%; position:absolute; top:-100px; left:0px; z-index:-1;"></div>
 			<div id="hero-container" class="container">
 				<div class="jcboom-intro js-fullheight">
 
@@ -169,7 +173,7 @@
 
 							   <a href="info-ux.html" class="menu-item blue" data-toggle="modal" data-target="#info-ux"> <i class="fa fa-info"></i> </a>
 							   <a href="#" class="menu-item green scroll-btn" onClick="$(this).siblings('input').click();"><i class="fa fa-eye"></i></a>
-							   <a href="http://jonathancalzada.com/Resume.pdf" target="_blank" onClick="$(this).siblings('input').click();" class="menu-item resume"> <i class="fa fa-file-pdf-o"></i> </a>
+							   <a href="http://jonathancalzada.com/Resume.pdf" onClick="$(this).siblings('input').click();" class="menu-item resume"> <i class="fa fa-file-pdf-o"></i> </a>
 							   <a href="#" style="display:none;" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
 							</nav>
 							<nav id="menu-ph" class="menu-ph animate-box">
@@ -863,14 +867,14 @@
 	};
 
 	/* Hero Area: Hide all contents when modal open */
-	$('#info-an').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true); $("#jcboom-hero").removeClass("jcboom-page-blur");	})
-	$('#info-an').on('show.bs.modal', function () {		$("#hero-container").toggle(false); $("#jcboom-hero").addClass("jcboom-page-blur");	})
-	$('#info-ux').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true); $("#jcboom-hero").removeClass("jcboom-page-blur");	})
-	$('#info-ux').on('show.bs.modal', function () {		$("#hero-container").toggle(false);	$("#jcboom-hero").addClass("jcboom-page-blur") ;})
-	$('#info-ph').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true); $("#jcboom-hero").removeClass("jcboom-page-blur");	})
-	$('#info-ph').on('show.bs.modal', function () {		$("#hero-container").toggle(false);	$("#jcboom-hero").addClass("jcboom-page-blur"); })
-	$('#info-hx').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true); $("#jcboom-hero").removeClass("jcboom-page-blur");	})
-	$('#info-hx').on('show.bs.modal', function () {		$("#hero-container").toggle(false); $("#jcboom-hero").addClass("jcboom-page-blur");	})
+	$('#info-an').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true);	})
+	$('#info-an').on('show.bs.modal', function () {		$("#hero-container").toggle(false);	})
+	$('#info-ux').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true);	})
+	$('#info-ux').on('show.bs.modal', function () {		$("#hero-container").toggle(false);	})
+	$('#info-ph').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true);	})
+	$('#info-ph').on('show.bs.modal', function () {		$("#hero-container").toggle(false);	})
+	$('#info-hx').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true);	})
+	$('#info-hx').on('show.bs.modal', function () {		$("#hero-container").toggle(false);	})
 	$('#info-an').on('click', function() {	$('#info-an').modal('toggle'); }); /// Closes modal when clicking anywhere in it.
 	$('#info-ux').on('click', function() {	$('#info-ux').modal('toggle'); }); /// Closes modal when clicking anywhere in it.
 	$('#info-ph').on('click', function() {	$('#info-ph').modal('toggle'); }); /// Closes modal when clicking anywhere in it.
@@ -922,17 +926,17 @@
 	 $(".animate-box").removeClass('item-animate');
  }
 
- /***************************************************************************************************************
+ /*  if all the filters are activated, then clicking on one of them activates just that filter.
+ 			if that filter is clicked again ( and no filters are active), then  it activates all filters again
+ 		if another filter is clicked it simply adds it (it activates that plus the previous filter)
+ 			if any of the two active filters are clicked, it deactivates that filter which was clicked
+ 		if addional filsters are clicked, it keeps adding
+ */
+ /*******************************************************************************
  * Author: Jonathan Calzada
  * Purpose: This handles the filter and switch functionality. Google images like.
  * Date: 5/28/2017
- * Logic:
- *   if all the filters are activated, then clicking on one of them activates just that filter.
- *  			if that filter is clicked again ( and no filters are active), then  it activates all filters again
- *  		if another filter is clicked it simply adds it (it activates that plus the previous filter)
- *  			if any of the two active filters are clicked, it deactivates that filter which was clicked
- *  		if addional filsters are clicked, it keeps adding
- ****************************************************************************************************************/
+ *******************************************************************************/
  function toggleFilter(filter, color) {
 	 var paramCardType=".card-"+filter.substring(filter.lastIndexOf("-")+1,filter.lastIndexOf(""));
 	 var btnState= $("#"+filter).prop('className').indexOf(filter+"-deco");

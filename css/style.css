@@ -103,13 +103,13 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 /* BEGIN Filter Functionality Section - Added by Jonathan Calzada */
-#jcboom-page-blur {
+.jcboom-page-blur {
+  /*background-image: url(images/hero_bg.jpg);*/
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
-  background-color: #ccc;
 }
 .cards-filter {
   width: 100%;

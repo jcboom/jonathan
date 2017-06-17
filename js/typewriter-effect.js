@@ -2,13 +2,13 @@
 function setupTypewriter(t) {
     var HTML = t.innerHTML;
 
-    t.innerHTML = ""; /* Jonny$ █ */
+    t.innerHTML = "Jonny$ "; /* Jonny$ █ */
 
     var cursorPosition = 0,
         tag = "",
         writingTag = false,
         tagOpen = false,
-        typeSpeed = 100, /* 100 */
+        typeSpeed = 0, /* 100 */
       tempTypeSpeed = 0;
 
     var type = function() {
