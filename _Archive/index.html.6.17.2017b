@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -11,6 +12,8 @@
 	<meta name="description" content="Jonathan Calzada's Portfolio" />
 	<meta name="keywords" content="user experience research, user experience designer, anthropologist, academic" />
 	<meta name="author" content="FREEHTML5.CO modified by Jonathan Calzada" />
+
+	<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />-->
 
 
 <!-- From Bootsnip (Rotating Card) -->
@@ -27,7 +30,32 @@
 <!-- Button Pop Up Menu -->
 <link href="css/button-popup-menu.css" rel="stylesheet" />
 
-<!-- Facebook and Twitter integration -->
+
+<!-- Bootstrap - Add the line below if not present elsewhere in this file
+<link rel="stylesheet" href="css/bootstrap.css" />
+-->
+
+
+<!-- Header End -->
+
+
+  <!--
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	THIS TEMPLATE HAS BEEN SIGNIFICANTLY MODIFIED BY JONATHAN CALZADA.
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
@@ -62,8 +90,14 @@
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 
-	<!-- Stylesheet for main page -->
+	<!--
+	Default Theme Style
+	You can change the style.css (default color purple) to one of these styles
+	-->
 	<link rel="stylesheet" href="css/style.css">
+
+<!--INSERT STYLE SWITCHER HERE JONATHAN CALZADA -->
+
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -82,6 +116,8 @@
 		<body class="boxed">
 	-->
 	<body>
+	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
 	<!-- Loader -->
 	<div class="jcboom-loader"></div>
 
@@ -91,6 +127,13 @@
 				<div class="jcboom-intro js-fullheight">
 
 					<div class=""><!--I'm not sure why this needs to be here, but it places the nav menu to the right.  NEED TO CLEAN UP: Jonathan Calzada-->
+						<!--
+							INFO:
+							Change the class to 'jcboom-right-position' or 'jcboom-center-position' to change the layout position
+							Example:
+							<div class="jcboom-right-position">
+						-->
+
 						<div class="jcboom-right-position">
               <h2 class="animate-box"><span id="first-name"><!--Content being added in style.css --></span> <span id="last-name"><!--Content being added in style.css --></span></h2>
 							<h2><!-- <h2> makes the #Anthropologist text and others more visible --->
@@ -154,6 +197,20 @@
 							   <a href="#" style="display:none;" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
 							</nav>
 
+							<!-- <nav class="menu-an animate-box">
+							   <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+							   <label class="menu-open-button" for="menu-open">
+							    <p class="btn-text">an</p>
+									<p class="btn-pressed-text"></p>
+							   </label>
+							   <a href="#" class="menu-item blue scroll-btn"> <i class="fa fa-anchor fa-lg"></i> </a>
+							   <a href="#" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+							   <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+							   <a href="#" class="menu-item purple"> <i class="fa fa-microphone"></i> </a>
+							   <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+							   <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
+							</nav> -->
+
 							<div class="hero_quote"><q>The future needs the whole *man. </q><br />--László Moholy-Nagy</div>
 							<div id="navbutton-an-text" class="button_text"> #Anthropologist</div>
 							<div id="navbutton-ux-text" class="button_text"> #UX Designer</div>
@@ -172,6 +229,9 @@
 			</div>
 		</section>
 		<!-- END #jcboom-hero -->
+
+
+
 
 		<!--BEGIN JCBOOM CARDS -->
 		<section id="jcboom-projects">
@@ -358,7 +418,7 @@
 				<div class="row text-center row-bottom-padded-md">
 					<div class="col-md-8 col-md-offset-2">
 						<figure class="jcboom-devices animate-box"><img src="images/img_devices.png" alt="" class="img-responsive"></figure>
-						<h2 class="jcboom-lead animate-box">My Quantified Self</h2>
+						<h2 class="jcboom-lead animate-box">View Portfolio by Profession</h2>
 						<p class="jcboom-sub-lead animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows.</p>
 					</div>
 				</div>
@@ -495,7 +555,7 @@
 							   </li>
 							   <li>
 							    	<blockquote>
-							      	<p>&ldquo;Never heard of him.&rdquo;</p>
+							      	<p>&ldquo;I never heard of him.&rdquo;</p>
 							      	<p><cite>&mdash; Steve Jobs</cite></p>
 							      </blockquote>
 							   </li>
@@ -535,10 +595,11 @@
 						<div class="jcboom-footer-widget">
 							<h3>About Me</h3>
 							<ul class="fh5co-links">
-								<li><a href="#">My Story</a></li>
-								<li><a href="#">Resume</a></li>
-								<li><a href="#">Curriculum Vitae</a></li>
-								<li><a href="#">PDF Portfolio</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Feature Tour</a></li>
+								<li><a href="#">Pricing</a></li>
+								<li><a href="#">Team</a></li>
 							</ul>
 						</div>
 					</div>
@@ -547,11 +608,11 @@
 						<div class="jcboom-footer-widget">
 							<h3>Support My Causes</h3>
 							<ul class="fh5co-links">
-								<li><a href="http://www.navigoamnis.org" target="_blank">Navigo Amnis</a></li>
-								<li><a href="#">Navego</a></li>
-								<li><a href="#">University Lutheran Chapel</a></li>
-								<li><a href="#">My Bootstraps</a></li>
-								<!-- <li><a href="#">Silos of Knowledge</a></li> -->
+								<li><a href="#">Knowledge Base</a></li>
+								<li><a href="#">24/7 Call Support</a></li>
+								<li><a href="#">Video Demos</a></li>
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">Privacy Policy</a></li>
 							</ul>
 						</div>
 					</div>
@@ -563,7 +624,7 @@
 								<a href="mailto:jonathan@jcboom.com">jonathan@jcboom.com</a> <br>
 								Los Angeles, CA <br>
 								San Francisco Bay Area <br>
-								<a href="tel:+123456789">+1 (650) 395 UCLA</a>
+								<a href="tel:+123456789">+12 34  5677 89</a>
 							</p>
 						</div>
 					</div>
@@ -584,6 +645,16 @@
 				</div>
 
 			</div>
+			<!-- <div class="fh5co-copyright animate-box">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="fh5co-left"><small>&copy; 2016 <a href="index.html">Guide</a> free html5. All Rights Reserved.</small></p>
+							<p class="fh5co-right"><small class="fh5co-right">Designed by <a href="http://freehtml5.co" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://unsplash.com" target="_blank">Unsplash</a></small></p>
+						</div>
+					</div>
+				</div>
+			</div> -->
 		</footer>
 		<!-- END #jcboom-footer -->
 	</div>
@@ -649,6 +720,28 @@
 	});
 	</script>
 <!-- END of script -->
+
+	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+	<script src="js/jquery.style.switcher.js"></script>
+	<script>
+		/* Close Cheat Sheet when loading page */
+		$(function(){
+			$('#colour-variations').toggleClass('sleep');
+			$('#colour-variations ul').styleSwitcher({
+				defaultThemeId: 'theme-switch',
+				hasPreview: false,
+				cookie: {
+		          	expires: 30,
+		          	isManagingLoad: true
+		      	}
+			});
+
+			$('.option-toggle').click(function() {
+				$('#colour-variations').toggleClass('sleep');
+			});
+		});
+	</script>
+	<!-- End demo purposes only -->
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
@@ -776,10 +869,11 @@
 	$('#info-ph').on('show.bs.modal', function () {		$("#hero-container").toggle(false);	$("#jcboom-hero").addClass("jcboom-page-blur"); })
 	$('#info-hx').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true); $("#jcboom-hero").removeClass("jcboom-page-blur");	})
 	$('#info-hx').on('show.bs.modal', function () {		$("#hero-container").toggle(false); $("#jcboom-hero").addClass("jcboom-page-blur");	})
-	$('#info-an').on('click', function() {	$('#info-an').modal('hide'); }); /// Closes modal when clicking anywhere in it.
-	$('#info-ux').on('click', function() {	$('#info-ux').modal('hide'); }); /// Closes modal when clicking anywhere in it.
-	$('#info-ph').on('click', function() {	$('#info-ph').modal('hide'); }); /// Closes modal when clicking anywhere in it.
-	$('#info-hx').on('click', function() {	$('#info-hx').modal('hide'); }); /// Closes modal when clicking anywhere in it.
+	$('#info-an').on('click', function() {	$('#info-an').modal('toggle'); }); /// Closes modal when clicking anywhere in it.
+	$('#info-ux').on('click', function() {	$('#info-ux').modal('toggle'); }); /// Closes modal when clicking anywhere in it.
+	$('#info-ph').on('click', function() {	$('#info-ph').modal('toggle'); }); /// Closes modal when clicking anywhere in it.
+	$('#info-hx').on('click', function() {	$('#info-hx').modal('toggle'); }); /// Closes modal when clicking anywhere in it.
+
 
 	/* Nav Button Locations (http://easings.net/) */
 	$("#menu-open-an").click(function(){
