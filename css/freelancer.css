@@ -145,7 +145,7 @@ hr.star-primary:after {
   height:250px;
   z-index: 0;
   overflow: hidden;
-  opacity: .8;
+  opacity: 1;
 }
 
 #modal-hero .jcboom-card-modal-ribbon {
@@ -253,6 +253,7 @@ hr.star-primary:after {
   opacity: .80;
   background: #272727; /* Needs to be dynamic */
   z-index: -1;
+  opacity: .9;
 }
 #modal-hero .modal-overlay.type-an {
   background: #8B7C6D; /* Needs to be dynamic */
