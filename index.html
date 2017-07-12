@@ -110,8 +110,9 @@
 							   <a href="#" style="display:none;"class="menu-item green"> <i class="fa fa-coffee"></i> </a>
 							   <a href="info-an.html" class="menu-item blue" data-toggle="modal" data-target="#info-an"> <i class="fa fa-info"></i> </a>
 							   <a href="#" class="menu-item green scroll-btn" onClick="$(this).siblings('input').click();"><i class="fa fa-eye"></i></a>
-							   <a href="#" class="menu-item orange" onClick="$(this).siblings('input').click();"> <i class="fa fa-paperclip"></i> </a>
-							   <a href="#" style="display:none;" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
+							   <!-- <a href="resources-an.html" class="menu-item orange" data-toggle="modal" data-target="#resources-an"> <i class="fa fa-paperclip"></i> </a> -->
+								 <a href="http://jonathancalzada.com/CV.pdf" target="_blank" class="menu-item orange"> <i class="fa fa-file-pdf-o"></i> </a>
+								 <a href="#" style="display:none;" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
 							</nav>
 							<nav id="menu-ux" class="menu-ux animate-box">
 							   <input id="menu-open-ux" type="checkbox" href="#" class="menu-open" name="menu-open" />
@@ -136,7 +137,8 @@
 							   <a href="#" style="display:none;"class="menu-item green"> <i class="fa fa-coffee"></i> </a>
 							   <a href="info-ph.html" class="menu-item blue" data-toggle="modal" data-target="#info-ph"> <i class="fa fa-info"></i> </a>
 							   <a href="#" class="menu-item green scroll-btn" onClick="$(this).siblings('input').click();"><i class="fa fa-eye"></i></a>
-							   <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+							   <!-- <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a> -->
+								 <a href="http://jonathancalzada.com/Portfolio.pdf" target="_blank" class="menu-item orange"> <i class="fa fa-file-pdf-o"></i> </a>
 							   <a href="#" style="display:none;" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
 							</nav>
 							<nav id="menu-hx" class="menu-hx animate-box">
@@ -149,12 +151,18 @@
 							   <a href="#" style="display:none;"class="menu-item green"> <i class="fa fa-coffee"></i> </a>
 							   <a href="info-hx.html" class="menu-item blue" data-toggle="modal" data-target="#info-hx"> <i class="fa fa-info"></i> </a>
 							   <a href="#" class="menu-item green scroll-btn" onClick="$(this).siblings('input').click();"><i class="fa fa-eye"></i></a>
-							   <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+							   <!-- <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a> -->
+								 <a href="http://jonathancalzada.com/Resume.pdf" target="_blank" class="menu-item orange"> <i class="fa fa-file-pdf-o"></i> </a>
 							   <a href="#" style="display:none;" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
 							</nav>
 
 							<div class="hero_quote"><q>The future needs the whole *man. </q><br />--László Moholy-Nagy</div>
 							<div id="navbutton-an-text" class="button_text"> #Anthropologist</div>
+							<div id="navbutton-an-info-text" class="button_text"> •Information</div>
+							<div id="navbutton-an-resources-text" class="button_text"> •CV</div>
+							<div id="navbutton-an-view-text" class="button_text"> #Anthropologist Portfolio</div>
+
+
 							<div id="navbutton-ux-text" class="button_text"> #UX Designer</div>
 							<div id="navbutton-ph-text" class="button_text"> #Photographer</div>
 							<div id="navbutton-hx-text" class="button_text"> #Haxor</div>
@@ -357,7 +365,7 @@
 				<div class="row text-center row-bottom-padded-md">
 					<div class="col-md-8 col-md-offset-2">
 						<figure class="jcboom-devices animate-box"><img src="images/my-quantified-self-header.png" alt="" class="img-responsive"></figure>
-						<h2 class="jcboom-lead animate-box">My Quantified Self</h2>
+						<h2 class="jcboom-lead animate-box">My Quantified Self</h2> <!---CHANGE IMAGE TO SAY "WHAT GETS MEASURED GETS OWNED"--->
 						<p class="jcboom-sub-lead animate-box">We are constantly being measured and quantified not only by others but also more critically by ourselves. By quantifying humanity one is tempted to objectify it and in Western culture most likely to turn it into property. Soccer players in Europe, for example, are quantified so that they can be easily turned into commodities.  Player attributes are calculated, summed and inputted through an algorithm of which results presume to give them value.  We have observed this process extended to human labor in digitized form through HCM software. To follow suit, I provide a snapshot of my quantified-self in this context so that I may be valued in the workforce and society in which I live (Corporate America).</p><br><br><br>
 						<figure class="jcboom-devices animate-box"><img src="images/my-quantified-self.png" alt="" class="img-responsive"></figure>
 						<p class="animate-box">*Inspired by the <a href="http://www.ethanzuckerman.com/blog/2010/09/09/media-tracking-and-the-quantified-self/" target="_blank">quantified-self</a> movement and <a href="http://sofifa.com" target="_blank">sofifa.com.</a></p>
@@ -696,6 +704,13 @@
 		}).mouseleave(function(){
 			$("#navbutton-an-text").hide();
 		})
+
+		$(".blue").mouseenter(function(){
+			$("#navbutton-an-info-text").show();
+		}).mouseleave(function(){
+			$("#navbutton-an-info-text").hide();
+		})
+
 		$("#navbutton-ux").mouseenter(function(){
 			$("#navbutton-ux-text").show();
 		}).mouseleave(function(){
@@ -771,6 +786,19 @@
 	$('#info-ux').on('click', function() {	$('#info-ux').modal('hide'); }); /// Closes modal when clicking anywhere in it.
 	$('#info-ph').on('click', function() {	$('#info-ph').modal('hide'); }); /// Closes modal when clicking anywhere in it.
 	$('#info-hx').on('click', function() {	$('#info-hx').modal('hide'); }); /// Closes modal when clicking anywhere in it.
+
+	$('#resources-an').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true); $("#jcboom-hero").removeClass("jcboom-page-blur");	})
+	$('#resources-an').on('show.bs.modal', function () {		$("#hero-container").toggle(false); $("#jcboom-hero").addClass("jcboom-page-blur");	})
+	$('#resources-ux').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true); $("#jcboom-hero").removeClass("jcboom-page-blur");	})
+	$('#resources-ux').on('show.bs.modal', function () {		$("#hero-container").toggle(false);	$("#jcboom-hero").addClass("jcboom-page-blur") ;})
+	$('#resources-ph').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true); $("#jcboom-hero").removeClass("jcboom-page-blur");	})
+	$('#resources-ph').on('show.bs.modal', function () {		$("#hero-container").toggle(false);	$("#jcboom-hero").addClass("jcboom-page-blur"); })
+	$('#resources-hx').on('hidden.bs.modal', function () {	  $("#hero-container").toggle(true); $("#jcboom-hero").removeClass("jcboom-page-blur");	})
+	$('#resources-hx').on('show.bs.modal', function () {		$("#hero-container").toggle(false); $("#jcboom-hero").addClass("jcboom-page-blur");	})
+	$('#resources-an').on('click', function() {	$('#resources-an').modal('hide'); }); /// Closes modal when clicking anywhere in it.
+	$('#resources-ux').on('click', function() {	$('#resources-ux').modal('hide'); }); /// Closes modal when clicking anywhere in it.
+	$('#resources-ph').on('click', function() {	$('#resources-ph').modal('hide'); }); /// Closes modal when clicking anywhere in it.
+	$('#resources-hx').on('click', function() {	$('#resources-hx').modal('hide'); }); /// Closes modal when clicking anywhere in it.
 
 	/* Nav Button Locations (http://easings.net/) */
 	$("#menu-open-an").click(function(){
@@ -962,6 +990,12 @@
 <div class="hero-modal modal fade" id="info-ux" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 <div class="hero-modal modal fade" id="info-ph" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 <div class="hero-modal modal fade" id="info-hx" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
+
+<div class="hero-modal modal fade" id="resources-an" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
+<div class="hero-modal modal fade" id="resources-ux" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
+<div class="hero-modal modal fade" id="resources-ph" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
+<div class="hero-modal modal fade" id="resources-hx" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
+
 
 <!-- End Modals -->
 	</body>

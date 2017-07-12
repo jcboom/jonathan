@@ -77,6 +77,10 @@ hr.star-primary:after {
   /*border: 0px solid rgba(90, 10, 161, 0);*/
   /*border: 0px solid rgba(0, 255, 0, 0.1);*/
 }
+#resources-an .modal-content {
+  background-color: rgba(252, 145, 58, .7);
+  color: #FFDFBE;
+}
 #info-an .modal-content {
   background-color: rgba(139, 124, 109, 0.2);
   color: #FFDFBE;

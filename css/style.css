@@ -413,7 +413,10 @@ input:checked + .slider::before {
 #navbutton-an-text,
 #navbutton-ux-text,
 #navbutton-ph-text,
-#navbutton-hx-text {
+#navbutton-hx-text,
+#navbutton-an-info-text,
+#navbutton-an-resources-text,
+#navbutton-an-view-text {
   display: none;
   position:absolute;
   text-align:left;
