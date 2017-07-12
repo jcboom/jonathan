@@ -94,7 +94,6 @@
 						<div class="jcboom-right-position">
               <h2 class="animate-box"><span id="first-name"><!--Content being added in style.css --></span> <span id="last-name"><!--Content being added in style.css --></span></h2>
 							<h2><!-- <h2> makes the #Anthropologist text and others more visible --->
-
 							<!-- <div id="navbuttons">
 								<button id="navbutton-an" type="button" class="btn bgcolor-an btn-circle btn-xl animate-box scroll-btn">An</button>
 							  <button id="navbutton-ux" type="button" class="btn bgcolor-ux btn-circle btn-xl animate-box scroll-btn">Ux</button>
@@ -178,7 +177,7 @@
 			<div class="container">
 				<div class="row row-bottom-padded-sm">
 					<div class="col-md-6 col-md-offset-3 text-center">
-						<h2 class="jcboom-lead animate-box">Portfolio of an </h2>
+						<h2 class="jcboom-lead animate-box">Portfolio</h2>
 							<div class="jcboom-sub-lead animate-box">&ldquo;The future needs the whole man<sup>*</sup>.&rdquo;
 							<cite><small>&mdash; László Moholy-Nagy</small></cite>
 						</div>
@@ -615,8 +614,6 @@
 
 	<!-- when you start or end a touch, turn the class hover_effect on or off.-->
 	<script>
-
-
 	/*******************************************************************************
 	* Author: Jonathan Calzada
 	* Purpose: OPEN ANY MODAL VIA LINK w/ # e.g.  jonathan.jcboom.com#portfolioModal1
@@ -633,21 +630,13 @@
 		}
 	}
 })
-/* END FUCNTION */
+ /* END FUCNTION */
 
 	$(document).ready(function() {
 			$('.hover').bind('touchstart', function(e) { /* OLD: $('.hover').bind('touchstart touchend', function(e) { */
 					/* e.preventDefault(); Commented this out because it prevents user from scrolling. */
 					/* $(this).addClass('hover_effect');*/
 			});
-/*
-			$('.hovered').bind('touchend focusout', function(e) {
-				$(this).toggleClass('fh5co-project-item');
-
-					// $(this).toggleClass('fh5co-project-item img');
-			});
-*/
-
 	});
 	</script>
 <!-- END of script -->
@@ -662,24 +651,24 @@
 	-->
 	<script src="js/jquery.cookie.js"></script>
 	<script>
-		$(function(){
-
-			if ( $.cookie('layoutCookie') != '' ) {
-				$('body').addClass($.cookie('layoutCookie'));
-			}
-
-			$('a[data-layout="boxed"]').click(function(event){
-				event.preventDefault();
-				$.cookie('layoutCookie', 'boxed', { expires: 7, path: '/'});
-				$('body').addClass($.cookie('layoutCookie')); // the value is boxed.
-			});
-
-			$('a[data-layout="wide"]').click(function(event){
-				event.preventDefault();
-				$('body').removeClass($.cookie('layoutCookie')); // the value is boxed.
-				$.removeCookie('layoutCookie', { path: '/' }); // remove the value of our cookie 'layoutCookie'
-			});
-		});
+		// $(function(){
+		//
+		// 	if ( $.cookie('layoutCookie') != '' ) {
+		// 		$('body').addClass($.cookie('layoutCookie'));
+		// 	}
+		//
+		// 	$('a[data-layout="boxed"]').click(function(event){
+		// 		event.preventDefault();
+		// 		$.cookie('layoutCookie', 'boxed', { expires: 7, path: '/'});
+		// 		$('body').addClass($.cookie('layoutCookie')); // the value is boxed.
+		// 	});
+		//
+		// 	$('a[data-layout="wide"]').click(function(event){
+		// 		event.preventDefault();
+		// 		$('body').removeClass($.cookie('layoutCookie')); // the value is boxed.
+		// 		$.removeCookie('layoutCookie', { path: '/' }); // remove the value of our cookie 'layoutCookie'
+		// 	});
+		// });
 	</script>
 
 	<!-- Button Navigation Behavior by Jonathan Calzada.  Using main.js.-->
@@ -822,11 +811,11 @@
  var DEBUG = true;
 
  /*** Temporary solution to load the rest of the page if slider is activated ***/
- function loadEntirePage() {
-	 $(".animate-box").addClass('item-animate');
-	 $(".animate-box").addClass('fadeInUp animated');
-	 $(".animate-box").removeClass('item-animate');
- }
+ // function loadEntirePage() {
+ //  $(".animate-box").addClass('item-animate');
+ //  $(".animate-box").addClass('fadeInUp animated');
+ //  $(".animate-box").removeClass('item-animate');
+ // }
 
  /***************************************************************************************************************
  * Author: Jonathan Calzada

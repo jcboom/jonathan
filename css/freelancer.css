@@ -355,6 +355,16 @@ hr.star-primary:after {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+#info-body .info-menu {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top:10px;
+  max-width: 1200px;
+  text-align: center;
+}
 
 #info-body .info-text {
   /*font-family: "Courier New", "Andale Mono", "Roboto", Arial, sans-serif;*/
