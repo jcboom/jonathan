@@ -158,14 +158,14 @@
 
 							<div class="hero_quote"><q>The future needs the whole *man. </q><br />--László Moholy-Nagy</div>
 							<div id="navbutton-an-text" class="button_text"> #Anthropologist</div>
-							<div id="navbutton-an-info-text" class="button_text"> •Information</div>
-							<div id="navbutton-an-resources-text" class="button_text"> •CV</div>
-							<div id="navbutton-an-view-text" class="button_text"> #Anthropologist Portfolio</div>
-
-
 							<div id="navbutton-ux-text" class="button_text"> #UX Designer</div>
 							<div id="navbutton-ph-text" class="button_text"> #Photographer</div>
 							<div id="navbutton-hx-text" class="button_text"> #Haxor</div>
+							<div id="navbutton-info-text" class="button_text"> &#x25cf;Information</div>
+							<div id="navbutton-cv-text" class="button_text"> &#x25cf;Curriculum Vitae</div>
+							<div id="navbutton-resume-text" class="button_text"> &#x25cf;Resum&eacute;</div>
+							<div id="navbutton-view-text" class="button_text"> &#x25cf;View Portfolio</div>
+							<div id="navbutton-portfoliopdf-text" class="button_text"> &#x25cf;Portfolio PDF</div>
 						 </h2>
 						</div>
 					</div>
@@ -705,17 +705,12 @@
 			$("#navbutton-an-text").hide();
 		})
 
-		$(".blue").mouseenter(function(){
-			$("#navbutton-an-info-text").show();
-		}).mouseleave(function(){
-			$("#navbutton-an-info-text").hide();
-		})
-
 		$("#navbutton-ux").mouseenter(function(){
 			$("#navbutton-ux-text").show();
 		}).mouseleave(function(){
 			$("#navbutton-ux-text").hide();
 		})
+
 		$("#navbutton-ph").mouseenter(function(){
 			$("#navbutton-ph-text").show();
 		}).mouseleave(function(){
@@ -725,6 +720,36 @@
 			$("#navbutton-hx-text").show();
 		}).mouseleave(function(){
 			$("#navbutton-hx-text").hide();
+		})
+		$(".blue").mouseenter(function(){
+			$("#navbutton-info-text").show();
+		}).mouseleave(function(){
+			$("#navbutton-info-text").hide();
+		})
+		$(".green").mouseenter(function(){
+			$("#navbutton-view-text").show();
+		}).mouseleave(function(){
+			$("#navbutton-view-text").hide();
+		})
+		$("#menu-an").children('.orange').mouseenter(function(){
+			$("#navbutton-cv-text").show();
+		}).mouseleave(function(){
+			$("#navbutton-cv-text").hide();
+		})
+		$("#menu-ux").children('.orange').mouseenter(function(){
+			$("#navbutton-resume-text").show();
+		}).mouseleave(function(){
+			$("#navbutton-resume-text").hide();
+		})
+		$("#menu-ph").children('.orange').mouseenter(function(){
+			$("#navbutton-portfoliopdf-text").show();
+		}).mouseleave(function(){
+			$("#navbutton-portfoliopdf-text").hide();
+		})
+		$("#menu-hx").children('.orange').mouseenter(function(){
+			$("#navbutton-resume-text").show();
+		}).mouseleave(function(){
+			$("#navbutton-resume-text").hide();
 		})
 	} else {
 		$('#navbutton-an').bind('touchstart', function() {
@@ -799,6 +824,7 @@
 	$('#resources-ux').on('click', function() {	$('#resources-ux').modal('hide'); }); /// Closes modal when clicking anywhere in it.
 	$('#resources-ph').on('click', function() {	$('#resources-ph').modal('hide'); }); /// Closes modal when clicking anywhere in it.
 	$('#resources-hx').on('click', function() {	$('#resources-hx').modal('hide'); }); /// Closes modal when clicking anywhere in it.
+
 
 	/* Nav Button Locations (http://easings.net/) */
 	$("#menu-open-an").click(function(){
