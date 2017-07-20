@@ -3,11 +3,9 @@ a {
 }
 
 @media screen and (max-width: 992px) {
-
   #main-menu {
     display:none;
   }
-
 }
 
 .menu-item,
