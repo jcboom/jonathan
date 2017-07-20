@@ -189,6 +189,25 @@ a {
 .menu-hx {
   padding-right:0px;
 }
+@media screen and (max-width: 480px) {
+  .menu-an {
+    padding-right:0px;
+  }
+  .menu-ux {
+    padding-right:0px;
+  }
+  .menu-ph {
+    padding-right:0px;
+  }
+  .menu-hx {
+    padding-right:0px;
+  }
+  .menu-an, .menu-ux, .menu-ph, .menu-hx {
+     margin: auto;
+     position: inherit;
+     font-size: 16px;
+  }
+}
 #menu-an .menu-open-button {
   background: #8B7C6D;
 }

@@ -417,6 +417,7 @@ input:checked + .slider::before {
 #navbutton-info-text,
 #navbutton-cv-text,
 #navbutton-resume-text,
+#navbutton-resume-text,
 #navbutton-portfoliopdf-text,
 #navbutton-view-text {
   display: none;
