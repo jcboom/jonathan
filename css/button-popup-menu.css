@@ -2,6 +2,14 @@ a {
    color: inherit;
 }
 
+@media screen and (max-width: 992px) {
+
+  #main-menu {
+    display:none;
+  }
+
+}
+
 .menu-item,
 .menu-open-button {
    background: #8B7C6D;
@@ -50,9 +58,11 @@ a {
 }
 
 .info-menu-buttons {
-  /*background: #8B7C6D;*/
   position: relative;
   display: inline-block;
+}
+.info-menu div:nth-child(2) {
+    top:5px;
 }
 
 .menu-open {

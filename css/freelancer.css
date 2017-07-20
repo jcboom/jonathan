@@ -218,8 +218,14 @@ hr.star-primary:after {
 }
 
 #modal-hero .jcboom-card-modal-close:hover {
-  background-color: #8CC53E;
+  background-color: #C54F52;
+  color: #fff
 }
+
+#modal-hero .jcboom-card-modal-close:hover .jcboom-card-modal-close-text {
+ color:#fff;
+}
+
 #modal-hero .jcboom-card-modal-close {
   height:40px;
   width:45px;
@@ -287,6 +293,7 @@ hr.star-primary:after {
   transform: translate(-50%, -50%); /*If you don't know, or are thinking it might change and want to be future proof, try this.*/
   padding: 0px 0px 0px 0px;
 }
+
 #modal-hero .jcboom-card-modal-corner .jcboom-card-modal-corner-text::first-letter {
   font-size:16px;
   line-height: 40px;
@@ -387,6 +394,9 @@ hr.star-primary:after {
   font-family:  "Lato", "Cutive Mono", monospace, "Andale Mono", "Menlo Regular", "Courier New", "Lato", "Roboto", Arial, sans-serif;
   font-size: 14px;
   font-weight: 100;
+  display: block;
+  white-space: nowrap; 
+
 }
 @media screen and (max-width: 768px) {
   #modal-hero .project-meta-data-li {
