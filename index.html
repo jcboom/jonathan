@@ -100,6 +100,7 @@
 							  <button id="navbutton-ph" type="button" class="btn bgcolor-ph btn-circle btn-xl animate-box scroll-btn">Ph</button>
 							  <button id="navbutton-hx" type="button" class="btn bgcolor-hx btn-circle btn-xl animate-box scroll-btn">Hx</button>
 							</div> -->
+							<div id="main-menu">
 							 <nav id="menu-an" class="menu-an animate-box">
 							   <input id="menu-open-an" type="checkbox" href="#" class="menu-open" name="menu-open" />
 							   <label id="navbutton-an" class="menu-open-button" for="menu-open-an">
@@ -152,10 +153,10 @@
 								 <a href="http://jonathancalzada.com/Resume.pdf" style="display:none" target="_blank" class="menu-item orange"> <i class="fa fa-file-pdf-o"></i> </a>
 							   <a href="#" class="menu-item green scroll-btn" onClick="$(this).siblings('input').click();"><i class="fa fa-eye"></i></a>
 								 <a href="info-hx.html" class="menu-item blue" data-toggle="modal" data-target="#info-hx"> <i class="fa fa-info"></i> </a>
-
 							   <a href="#" style="display:none;" class="menu-item orange"> <i class="fa fa-star"></i> </a>
 								 <a href="#" style="display:none;" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a>
 							</nav>
+						</div>
 
 							<div class="hero_quote"><q>The future needs the whole *man. </q><br />--László Moholy-Nagy</div>
 							<div id="navbutton-an-text" class="button_text"> #Anthropologist</div>
@@ -827,7 +828,6 @@
 	$('#resources-ph').on('click', function() {	$('#resources-ph').modal('hide'); }); /// Closes modal when clicking anywhere in it.
 	$('#resources-hx').on('click', function() {	$('#resources-hx').modal('hide'); }); /// Closes modal when clicking anywhere in it.
 
-
 	/* Nav Button Locations (http://easings.net/) */
 	$("#menu-open-an").click(function(){
 		$("#menu-ux").toggle();
@@ -857,6 +857,29 @@
 		toggleAll("off");
 		toggleFilter('filter-hx','#272727');
 	});
+
+// Resets Main Menu nav when clicking off or outside the menu buttons
+$("#jcboom-hero").mouseup(function(e)
+{
+    var container = $("#main-menu");
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0)
+    {
+      //  container.hide();
+			resetMainMenu();
+    }
+});
+function resetMainMenu(){
+	$('#menu-open-an').prop('checked', false);
+	$('#menu-open-ux').prop('checked', false);
+	$('#menu-open-ph').prop('checked', false);
+	$('#menu-open-hx').prop('checked', false);
+	$("#menu-an").toggle(true);
+	$("#menu-ux").toggle(true);
+	$("#menu-ph").toggle(true);
+	$("#menu-hx").toggle(true);
+}
 
 });
 /* End Nav Button Locations */
