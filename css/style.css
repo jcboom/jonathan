@@ -775,12 +775,14 @@ body {
   width: 65%;
   float: right;
   text-align: right;
-  margin-top: -200px; /*added this for new nav menu */
+  margin-top: -150px; /*added this for new nav menu */
 }
 @media screen and (max-width: 992px) {
   #jcboom-hero .jcboom-intro > div .jcboom-right-position {
     width: 100%;
     text-align: left;
+    margin-top:85px;
+
   }
 }
 @media screen and (max-width: 480px) {
