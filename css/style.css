@@ -376,13 +376,26 @@ input:checked + .slider::before {
 }
 
 @media screen and (max-width: 1800px) {
-  .btn-circle {
+  .btn-circle.btn-xl {
+    width: 80px;
+    height: 80px;
+    padding: 10px 16px;
+    border-radius: 100px;
+
+
     margin: 0px 0px 0px 50px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .btn-circle {
+  .btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 25px;
+    line-height: 1.33;
+    border-radius: 35px;
+    font-weight:300;
     margin: 0px 0px 0px 0px;
   }
 }
