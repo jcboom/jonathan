@@ -44,7 +44,7 @@ a {
   background-color: #0197B2;
 }
 .bgcolor-hx {
-  background-color: #525252; /*225862*/ Jonathan Calzada (maybe)
+  background-color: #242424; /* old black:#525252; older: 225862*/ Jonathan Calzada (maybe)
 }
 .color-an {
   color: #8B7C6D;
@@ -56,7 +56,7 @@ a {
   color: #0197B2;
 }
 .color-hx {
-  color: #525252;
+  color: #242424;
 }
 
 /* Added to stop the browser asking you to copy/save/select the image or whatever. -Jonathan Calzada*/
