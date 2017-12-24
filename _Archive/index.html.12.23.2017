@@ -28,12 +28,12 @@
 <link href="css/button-popup-menu.css" rel="stylesheet" />
 
 <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="Jonathan Calzada's Portfolio"/>
+	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
 	<meta property="og:site_name" content=""/>
 	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="JonnyCalz Work" />
+	<meta name="twitter:title" content="" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
@@ -74,9 +74,14 @@
 
 	</head>
 
+
+	<!--
+		INFO:
+		Add 'boxed' class to body element to make the layout as boxed style.
+		Example:
+		<body class="boxed">
+	-->
 	<body>
-
-
 	<!-- Loader -->
 	<div class="jcboom-loader"></div>
 
@@ -452,7 +457,7 @@
 						</div>
 						<div class="flexslider-controls">
 						   <ol class="flex-control-nav">
-						      <li class="animate-box"><img src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_100_100/AAEAAQAAAAAAAAnxAAAAJGI3MWMxYjk0LTdhNmUtNDk2NS1hY2IyLTM1NThiNTUxZjAzZg.jpg" alt="Rachel Lynch"></li>
+						      <li class="animate-box"><img src="https://media.licdn.com/mpr/mpr/shrinknp_100_100/p/2/000/280/2bc/3b2e66b.jpg" alt="Rachel Lynch"></li>
 						      <li class="animate-box"><img src="https://media.licdn.com/mpr/mpr/shrinknp_100_100/AAEAAQAAAAAAAANGAAAAJGNhNjczYjA1LThjODQtNGJiOS1hZTQyLTI3Y2JiYWIxYzNjNA.jpg" alt="Kedar Shiroor"></li>
 						      <li class="animate-box"><img src="images/stevejobs.jpg" alt="Free HTML5 Bootstrap Template by FREEHTML5.co"></li>
 						   </ol>
