@@ -21,19 +21,19 @@
 <!-- Body -->
 <div id="social-buttons">
 <!-- Add font awesome icons -->
+
+<a href="#portfolioModal1" title="share on fb" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjonathan.jcboom.com%2F%23portfolioModal1&amp;src=sdkpreparse', '_blank', 'toolbar=no,scrollbars=yes,resizable=no,fullscreen=no,top=50,left=50,width=555,height=615')" class="fa fa-facebook"></a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" title="share on twitter" class="fa fa-twitter" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a href="#portfolioModal1" onclick='myFunction()' class="fa fa-link" aria-hidden="true" title="permalink"></a><input type="hidden" value="http://jonathan.jcboom.com/#portfolioModal1" id="myInput">
+<!--<a href="#portfolioModal1" onclick="prompt('Press Ctrl + C, then Enter to copy to clipboard','#portfolioModal1')" class="fa fa-link" aria-hidden="true" title="permalink"></a>-->
 <script>
 function myFunction() {
   var copyText = document.getElementById("myInput");
   copyText.select();
   document.execCommand("Copy");
-  alert("Set permalink to this page and copied to your clipboard: " + copyText.value);
+  alert("Created permalink for this page. Please copy the URL to share: \n" + copyText.value);
 }
 </script>
-<a href="#portfolioModal1" title="share on fb" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjonathan.jcboom.com%2F%23portfolioModal1&amp;src=sdkpreparse', '_blank', 'toolbar=no,scrollbars=yes,resizable=no,fullscreen=no,top=50,left=50,width=555,height=615')" class="fa fa-facebook"></a>
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" title="share on twitter" class="fa fa-twitter" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<a href="#portfolioModal1" onclick='myFunction()' class="fa fa-link" aria-hidden="true" title="permalink"></a><input type="hidden" value="http://jonathan.jcboom.com/#portfolioModal1" id="myInput">
-<!--<a href="#portfolioModal1" onclick="prompt('Press Ctrl + C, then Enter to copy to clipboard','#portfolioModal1')" class="fa fa-link" aria-hidden="true" title="permalink"></a>-->
-
 </div>
 
 <section id="modal-body">
