@@ -556,7 +556,41 @@
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Notifyjs.com -->
 	<script src="js/notify.js"></script>
-	<script> $.notify.defaults({ className: "success" });</script>
+	<script>
+	$.notify.defaults({ className: "success" });
+	$.notify.defaults(
+		{ className: "smButtonTooltip",
+		// whether to hide the notification on click
+	  clickToHide: true,
+	  // whether to auto-hide the notification
+	  autoHide: true,
+	  // if autoHide, hide after milliseconds
+	  autoHideDelay: 5000,
+	  // show the arrow pointing at the element
+	  arrowShow: true,
+	  // arrow size in pixels
+	  arrowSize: 12,
+	  // padding between element and notification
+	  gap: 5
+		}
+	);
+	$.notify.addStyle('smButtonTooltip', {
+		html: "<div>&nbsp;&nbsp;<span data-notify-text/>&nbsp;&nbsp;</div>",
+		classes: {
+			base: {
+				"white-space": "nowrap",
+				"color": "#F7D043",
+				"background-color": "black",
+				"padding": "5px",
+				"border-radius":"10px",
+				"font-size":"12px",
+				"font-weight":"400",
+				"opacity":".70"
+			}
+		}
+	});
+
+	</script>
 
 	<!-- when you start or end a touch, turn the class hover_effect on or off.-->
 	<script>
@@ -567,14 +601,14 @@
 	*******************************************************************************/
 	/* BEGIN: FUNCTION */
 	$(document).ready(function() {
-  var modals = ['#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4']; //need to be dynamic Jonathan Calzada
-  if (window.location.hash && ~modals.indexOf(window.location.hash)) {
-		var htmlContent = $('*[data-target="'+window.location.hash+'"]').attr("href");
-		if (htmlContent) {
-			$(window.location.hash).modal('show').find('.modal-content').load(htmlContent); ///Loads modal///
+	  var modals = ['#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4']; //need to be dynamic Jonathan Calzada
+	  if (window.location.hash && ~modals.indexOf(window.location.hash)) {
+			var htmlContent = $('*[data-target="'+window.location.hash+'"]').attr("href");
+			if (htmlContent) {
+				$(window.location.hash).modal('show').find('.modal-content').load(htmlContent); ///Loads modal///
+			}
 		}
-	}
-})
+	})
  /* END FUCNTION */
 
 	$(document).ready(function() {
@@ -966,7 +1000,6 @@ function resetMainMenu(){
 <div class="hero-modal modal fade" id="resources-ux" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 <div class="hero-modal modal fade" id="resources-ph" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
 <div class="hero-modal modal fade" id="resources-hx" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"></div></div>
-
 
 <!-- End Modals -->
 	</body>

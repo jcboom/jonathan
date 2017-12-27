@@ -40,7 +40,6 @@ var cornerText = "An"
   <script type="text/javascript">
     //Bootstrap's modal enforce focus for accessibility reasons but that causes problems with LOTS of third-party libraries, including clipboard.js, so turning off
     $.fn.modal.Constructor.prototype.enforceFocus = function() {};
-
     //copy data to clipboard: https://codemagik.wordpress.com/2015/10/09/copy-data-to-clipboard-using-javascript/#more-793
     function copyData(data){
       var textarea = document.createElement("textarea");
@@ -50,8 +49,8 @@ var cornerText = "An"
     	textarea.select();
     	try {
     		var isCopied = document.execCommand('copy');
-    		var msg = isCopied ? 'The link to this page was copied to the clipboard.':'Link could not be copied to the Clipboard.';
-       $.notify(msg, "info");
+    		var msg = isCopied ? 'Link copied to clipboard':'Link could not be copied to Clipboard.';
+        $(".fa-link").notify(msg, { position:"bottom right", style: 'smButtonTooltip'});
     		console.log(msg);
     	}
     	catch (err) {
