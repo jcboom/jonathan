@@ -784,6 +784,157 @@ hr.star-primary:after {
 }
 /* END social media button for content.html pages */
 
+
+
+
+/* START social media buttons for content.html pages */
+#social-buttons2 {
+  position: absolute;
+  margin-right: 0px;
+  right: 0px;
+  z-index: 1060;
+  //padding-top:300px;
+  top: 220px;
+}
+
+#social-buttons2 .fa {
+  padding: 14px;
+  font-size: 20px;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .2) ;
+  -moz-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .2) ;
+  -ms-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .2) ;
+  -o-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .2) ;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .2) ;
+  background:#FFF;
+  color:#000000;
+}
+
+#social-buttons2 .fa:hover {
+    //opacity: 0.7;
+    //background:#000000;
+    //color:#fff;
+}
+
+#social-buttons2 .fa-facebook:hover {
+  background: #3B5998;
+  color: white;
+}
+
+#social-buttons2 .fa-twitter:hover {
+  background: #55ACEE;
+  color: white;
+}
+
+#social-buttons2 .fa-link:hover {
+  background: #444344;
+  color: #F6CF44;
+}
+
+
+#social-buttons2 .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+#social-buttons2 .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+#social-buttons2 .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+#social-buttons2 .fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+#social-buttons2 .fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#social-buttons2 .fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+#social-buttons2 .fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+#social-buttons2 .fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+#social-buttons2 .fa-vimeo {
+  background: #45bbff;
+  color: white;
+  alt
+}
+
+#social-buttons2 .fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+#social-buttons2 .fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+#social-buttons2 .fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+#social-buttons2 .fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+#social-buttons2 .fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+#social-buttons2 .fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+#social-buttons2 .fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+#social-buttons2 .fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+#social-buttons2 .fa-rss {
+  background: #ff6600;
+  color: white;
+}
+/* END social media button for content.html pages */
+
 /* START typewriter effect */
 .var-highlight {
   color: #C0AD60;
