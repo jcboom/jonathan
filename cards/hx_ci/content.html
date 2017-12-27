@@ -1,3 +1,15 @@
+<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="Circle Innovations Startup"/>
+	<meta property="og:image" content="cards/hx_ci/images/ci-website.png"/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content="Jonathan Calzada's Portfolio"/>
+	<meta property="og:description" content="HAXORING CIRCLE INNOVATIONS"/>
+	<meta name="twitter:title" content="JonnyCalz Work" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+
 <script>
 /*** GLOBAL VARIABLES ***/
 var projectDirectory = "cards/hx_series1";
@@ -36,6 +48,41 @@ var cornerText = "hx"
 </section>
 
 <!-- Body -->
+
+
+<!-- START: Social Media Buttons -->
+<div id="social-buttons">
+  <a href="#portfolioModal4" title="share on fb" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjonathan.jcboom.com%2F%23portfolioModal4&amp;src=sdkpreparse', '_blank', 'toolbar=no,scrollbars=yes,resizable=no,fullscreen=no,top=50,left=50,width=555,height=615')" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" title="share on twitter" class="fa fa-twitter" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <a href="#portfolioModal4" onclick="copyData(window.location.href)" class="fa fa-link" aria-hidden="true" title="permalink"></a>
+
+  <script type="text/javascript">
+    //Bootstrap's modal enforce focus for accessibility reasons but that causes problems with LOTS of third-party libraries, including clipboard.js, so turning off
+    $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+
+    //copy data to clipboard: https://codemagik.wordpress.com/2015/10/09/copy-data-to-clipboard-using-javascript/#more-793
+    function copyData(data){
+      var textarea = document.createElement("textarea");
+    	textarea.style.position = 'fixed';
+    	textarea.value = data;
+    	document.body.appendChild(textarea);
+    	textarea.select();
+    	try {
+    		var isCopied = document.execCommand('copy');
+    		var msg = isCopied ? 'The link to this page was copied to the clipboard.':'Link could not be copied to the Clipboard.';
+       $.notify(msg, "info");
+    		console.log(msg);
+    	}
+    	catch (err) {
+    		console.log(err);
+        $.notify(err, "error");
+    	}
+    	document.body.removeChild(textarea);
+    }
+  </script>
+</div>
+<!-- END: Social Media Buttons -->
+
 <section id="modal-body">
   <div class="project-body-title color-hx">overview &amp; impact</div>
   <div class="project-body-description">When I began Circle Innovations the Internet looked like it could fizzle out at any moment. Stagnant, sluggish, and inactive web pages made up a landscape that was scattered among a vast Primordial Ocean of inter(web)space.  Truly exciting websites existed like treasures waiting to be found on new pristine islands in a mysterious new ocean.  Macromedia (now Adobe) Flash was a glimmer of what movement and interaction the Internet could be. Back in those days when the Internet had a little “i”, a "onmouseover" effect&mdash;or what we know now know as a “hover”&mdash;was a costly JavaScript endeavor. It was during those days when I crouched over my keyboard fixated on variables and functions for hours on end that I founded a web development firm together with <a href="https://www.linkedin.com/in/armando-bravo-4bb86865" target="_blank">Armando Bravo</a> and <a href="https://www.linkedin.com/in/luis-rivera-57a4149" target="_blank">Luis Rivera</a>. I didn't possess a formal education or professional training. I haxored my way. Every step was a hacking effort.

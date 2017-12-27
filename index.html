@@ -76,7 +76,6 @@
 
 	<body>
 
-
 	<!-- Loader -->
 	<div class="jcboom-loader"></div>
 
@@ -85,7 +84,7 @@
 			<div id="hero-container" class="container">
 				<div class="jcboom-intro js-fullheight">
 
-					<div class=""><!--I'm not sure why this needs to be here, but it places the nav menu to the right.  NEED TO CLEAN UP: Jonathan Calzada-->
+					<div><!--I'm not sure why this needs to be here, but it places the nav menu to the right.  NEED TO CLEAN UP: Jonathan Calzada-->
 						<div class="jcboom-right-position">
               <h2 class="animate-box"><span id="first-name"><!--Content being added in style.css --></span> <span id="last-name"><!--Content being added in style.css --></span></h2>
 							<h2><!-- <h2> makes the #Anthropologist text and others more visible --->
@@ -113,7 +112,7 @@
 			</div>
 			<div class="jcboom-learn-more animate-box">
 				<a href="#" class="scroll-btn">
-					<!-- <span class="text">Scroll on! Scroll on!</span> -->
+					<!-- <span class="text">...or all projects...</span> -->
 					<span class="arrow"><i class="icon-chevron-down"></i></span>
 				</a>
 			</div>
@@ -555,11 +554,9 @@
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
-
 	<!-- Notifyjs.com -->
 	<script src="js/notify.js"></script>
 	<script> $.notify.defaults({ className: "success" });</script>
-
 
 	<!-- when you start or end a touch, turn the class hover_effect on or off.-->
 	<script>
@@ -571,7 +568,6 @@
 	/* BEGIN: FUNCTION */
 	$(document).ready(function() {
   var modals = ['#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4']; //need to be dynamic Jonathan Calzada
-
   if (window.location.hash && ~modals.indexOf(window.location.hash)) {
 		var htmlContent = $('*[data-target="'+window.location.hash+'"]').attr("href");
 		if (htmlContent) {
@@ -592,33 +588,6 @@
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
-
-	<!--
-	INFO:
-	jQuery Cookie for Demo Purposes Only.
-	The code below is to toggle the layout to boxed or wide
-	-->
-	<script src="js/jquery.cookie.js"></script>
-	<script>
-		// $(function(){
-		//
-		// 	if ( $.cookie('layoutCookie') != '' ) {
-		// 		$('body').addClass($.cookie('layoutCookie'));
-		// 	}
-		//
-		// 	$('a[data-layout="boxed"]').click(function(event){
-		// 		event.preventDefault();
-		// 		$.cookie('layoutCookie', 'boxed', { expires: 7, path: '/'});
-		// 		$('body').addClass($.cookie('layoutCookie')); // the value is boxed.
-		// 	});
-		//
-		// 	$('a[data-layout="wide"]').click(function(event){
-		// 		event.preventDefault();
-		// 		$('body').removeClass($.cookie('layoutCookie')); // the value is boxed.
-		// 		$.removeCookie('layoutCookie', { path: '/' }); // remove the value of our cookie 'layoutCookie'
-		// 	});
-		// });
-	</script>
 
 	<!-- Button Navigation Behavior by Jonathan Calzada.  Using main.js.-->
  <script>
@@ -847,13 +816,6 @@ function resetMainMenu(){
  <script>
  var DEBUG = true;
 
- /*** Temporary solution to load the rest of the page if slider is activated ***/
- // function loadEntirePage() {
- //  $(".animate-box").addClass('item-animate');
- //  $(".animate-box").addClass('fadeInUp animated');
- //  $(".animate-box").removeClass('item-animate');
- // }
-
  /***************************************************************************************************************
  * Author: Jonathan Calzada
  * Purpose: This handles the filter and switch functionality. Google images like.
@@ -972,7 +934,6 @@ function resetMainMenu(){
  $(document).ready(function() {
  	/* Need to simplify the function below and create veriables so its not DRY (Don't Repeat Yourself) */
  	$("#slider-mech").click(function() {
-
  		if( $("#slider-mech").prop("checked") ) { //If swtich is toggled ON
 			toggleAll("on");
  		} else { //If switch is toggled off
@@ -980,6 +941,7 @@ function resetMainMenu(){
  		}
  	});
  });
+ /***************************************************************************************************************/
  </script>
 <!-- END of script -->
 

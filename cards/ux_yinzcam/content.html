@@ -19,22 +19,39 @@
 </section>
 
 <!-- Body -->
-<div id="social-buttons">
-<!-- Add font awesome icons -->
 
-<a href="#portfolioModal1" title="share on fb" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjonathan.jcboom.com%2F%23portfolioModal1&amp;src=sdkpreparse', '_blank', 'toolbar=no,scrollbars=yes,resizable=no,fullscreen=no,top=50,left=50,width=555,height=615')" class="fa fa-facebook"></a>
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" title="share on twitter" class="fa fa-twitter" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<a href="#portfolioModal1" onclick='myFunction()' class="fa fa-link" aria-hidden="true" title="permalink"></a><input type="hidden" value="http://jonathan.jcboom.com/#portfolioModal1" id="myInput">
-<!--<a href="#portfolioModal1" onclick="prompt('Press Ctrl + C, then Enter to copy to clipboard','#portfolioModal1')" class="fa fa-link" aria-hidden="true" title="permalink"></a>-->
-<script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  document.execCommand("Copy");
-  alert("Created permalink for this page. Please copy the URL to share: \n" + copyText.value);
-}
-</script>
+<!-- START: Social Media Buttons -->
+<div id="social-buttons">
+  <a href="#portfolioModal1" title="share on fb" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjonathan.jcboom.com%2F%23portfolioModal1&amp;src=sdkpreparse', '_blank', 'toolbar=no,scrollbars=yes,resizable=no,fullscreen=no,top=50,left=50,width=555,height=615')" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" title="share on twitter" class="fa fa-twitter" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <a href="#portfolioModal1" onclick="copyData(window.location.href)" class="fa fa-link" aria-hidden="true" title="permalink"></a>
+
+  <script type="text/javascript">
+    //Bootstrap's modal enforce focus for accessibility reasons but that causes problems with LOTS of third-party libraries, including clipboard.js, so turning off
+    $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+
+    //copy data to clipboard: https://codemagik.wordpress.com/2015/10/09/copy-data-to-clipboard-using-javascript/#more-793
+    function copyData(data){
+      var textarea = document.createElement("textarea");
+    	textarea.style.position = 'fixed';
+    	textarea.value = data;
+    	document.body.appendChild(textarea);
+    	textarea.select();
+    	try {
+    		var isCopied = document.execCommand('copy');
+    		var msg = isCopied ? 'The link to this page was copied to the clipboard.':'Link could not be copied to the Clipboard.';
+       $.notify(msg, "info");
+    		console.log(msg);
+    	}
+    	catch (err) {
+    		console.log(err);
+        $.notify(err, "error");
+    	}
+    	document.body.removeChild(textarea);
+    }
+  </script>
 </div>
+<!-- END: Social Media Buttons -->
 
 <section id="modal-body">
   <div class="project-body-title color-ux">overview &amp; impact</div>
