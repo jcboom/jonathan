@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jcboom.com &mdash; Jonathan Calzada</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Jonathan Calzada's Portfolio" />
+	<meta name="keywords" content="user experience research, user experience designer, anthropologist, academic" />
+	<meta name="author" content="FREEHTML5.CO modified by Jonathan Calzada" />
+
+
+<!-- From Bootsnip (Rotating Card) -->
+<link href="/vendor/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:100,200,300,400,500,700,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+
+
+<!-- Theme CSS -->
+<link href="/css/freelancer.css" rel="stylesheet">
+
+<!-- Button Pop Up Menu -->
+<link href="/css/button-popup-menu.css" rel="stylesheet" />
+
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content="Circle Innovations Startup"/>
+<meta property="og:image" content="cards/hx_ci/images/ci-website.png"/>
+<meta property="og:url" content=""/>
+<meta property="og:site_name" content="Jonathan Calzada's Portfolio"/>
+<meta property="og:description" content="HAXORING CIRCLE INNOVATIONS"/>
+<meta name="twitter:title" content="JonnyCalz Work" />
+<meta name="twitter:image" content="" />
+<meta name="twitter:url" content="" />
+<meta name="twitter:card" content="" />
+
+
+
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,600,400italic,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="/css/animate.css">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="/css/flexslider.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="/css/icomoon.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="/css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+
+	<!-- Stylesheet for main page -->
+	<link rel="stylesheet" href="/css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+
+  	<!-- jQuery -->
+  	<script src="/js/jquery.min.js"></script>
+  	<!-- jQuery Easing -->
+  	<script src="/js/jquery.easing.1.3.js"></script>
+  	<!-- Bootstrap -->
+  	<script src="/js/bootstrap.min.js"></script>
+  	<!-- Waypoints -->
+  	<script src="/js/jquery.waypoints.min.js"></script>
+  	<!-- Flexslider -->
+  	<script src="/js/jquery.flexslider-min.js"></script>
+  	<!-- Magnific Popup -->
+  	<script src="/js/jquery.magnific-popup.min.js"></script>
+  	<script src="/js/magnific-popup-options.js"></script>
+  	<!-- Notifyjs.com -->
+  	<script src="/js/notify.js"></script>
+  	<script> $.notify.defaults({ className: "success" });</script>
+
+	</head>
+
+<body>
+<div id="social-buttons2">
+  asdfjslf
+  <a href="#portfolioModal1" title="share on fb" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjonathan.jcboom.com%2F%23portfolioModal1&amp;src=sdkpreparse', '_blank', 'toolbar=no,scrollbars=yes,resizable=no,fullscreen=no,top=50,left=50,width=555,height=615')" class="fa fa-facebook">Share</a>
+  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" title="share on twitter" class="fa fa-twitter" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <a href="#portfolioModal1" onclick="copyData(window.location.href)" class="fa fa-link" aria-hidden="true" title="permalink"></a>
+
+  <script type="text/javascript">
+    //Bootstrap's modal enforce focus for accessibility reasons but that causes problems with LOTS of third-party libraries, including clipboard.js, so turning off
+    $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+
+    //copy data to clipboard: https://codemagik.wordpress.com/2015/10/09/copy-data-to-clipboard-using-javascript/#more-793
+    function copyData(data){
+      var textarea = document.createElement("textarea");
+    	textarea.style.position = 'fixed';
+    	textarea.value = data;
+    	document.body.appendChild(textarea);
+    	textarea.select();
+    	try {
+    		var isCopied = document.execCommand('copy');
+    		var msg = isCopied ? 'The link to this page was copied to the clipboard.':'Link could not be copied to the Clipboard.';
+       $.notify(msg, "info");
+    		console.log(msg);
+    	}
+    	catch (err) {
+    		console.log(err);
+        $.notify(err, "error");
+    	}
+    	document.body.removeChild(textarea);
+    }
+  </script>
+</div>
+</body>
+</html>
