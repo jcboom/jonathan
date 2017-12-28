@@ -1,0 +1,160 @@
+<script>
+/*** GLOBAL VARIABLES ***/
+var projectDirectory = "cards/ph_series1";
+var projectType = "type-ph";
+var projectTitle = "Inquiry Into the Role of Anthro in Software Design";
+var ribbonType = "jcboom-card-modal-ribbon-ph";
+var ribbonText = "Design Anthropology";
+var cornerText = "PH"
+
+</script>
+
+<!-- Header -->
+<section id="modal-hero" style="background-image: url(cards/ph_series1/images/hero.jpg);">
+  <div class="jcboom-card-modal-corner btn-close" data-dismiss="modal"><p class="jcboom-card-modal-corner-text color-ph">PH</p></div>
+  <div class="jcboom-card-modal-close btn-close" data-dismiss="modal"><p class="jcboom-card-modal-close-text color-ph">&times;</p></div>
+  <div class="modal-overlay type-ph"></div>
+  <div class="modal-title">Naturaleza</div>
+  <div class="jcboom-card-modal-ribbon color-ph bgcolor-white"><span class="jcboom-card-modal-ribbon-text">Series 1 - Photography</span></div>
+
+  <div class="project-meta-data-li">
+    <i class="fa fa-map-marker fa-lg fa-fw" aria-hidden="true" title="SoCal"></i> SoCal </br>
+    <i class="fa fa-info-circle fa-lg fa-fw" aria-hidden="true" title="Nature Series"></i> Nature Series</br>
+    <i class="fa fa-calendar fa-lg fa-fw" aria-hidden="true" title="Summer 2016"></i> 2016-2017</br>
+    <i class="fa fa-user-circle fa-lg fa-fw" aria-hidden="true" title="UX Designer + Design Researcher"></i> Shona Inspired</br>
+  </div>
+
+</section>
+
+<!-- Body -->
+<!-- START: Social Media Buttons -->
+<div id="social-buttons">
+  <a href="#portfolioModal3" title="share on fb" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fjonathan.jcboom.com%2Fcards%2Fph_series1%2Fsmbuttons.html&amp;src=sdkpreparse', '_blank', 'toolbar=no,scrollbars=yes,resizable=no,fullscreen=no,top=50,left=50,width=555,height=615')" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" title="share on twitter" class="fa fa-twitter" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <a href="#portfolioModal3" onclick="copyData(window.location.href)" class="fa fa-link" aria-hidden="true" title="permalink"></a>
+
+  <script type="text/javascript">
+    //Bootstrap's modal enforce focus for accessibility reasons but that causes problems with LOTS of third-party libraries, including clipboard.js, so turning off
+    $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+    //copy data to clipboard: https://codemagik.wordpress.com/2015/10/09/copy-data-to-clipboard-using-javascript/#more-793
+    function copyData(data){
+      var textarea = document.createElement("textarea");
+    	textarea.style.position = 'fixed';
+    	textarea.value = data;
+    	document.body.appendChild(textarea);
+    	textarea.select();
+    	try {
+    		var isCopied = document.execCommand('copy');
+    		var msg = isCopied ? 'Link copied to clipboard':'Link could not be copied to Clipboard.';
+        $(".fa-link").notify(msg, { position:"bottom right", style: 'smButtonTooltip'});
+    		console.log(msg);
+    	}
+    	catch (err) {
+    		console.log(err);
+        $.notify(err, "error");
+    	}
+    	document.body.removeChild(textarea);
+    }
+  </script>
+</div>
+<!-- END: Social Media Buttons -->
+
+<section style="margin-right: 60px;" id="modal-body">
+  <div class="project-body-title color-ph">label</div>
+  <div class="project-body-description">As a User Experience Designer, I Initiated and led the re-design of the YinzCam Content Management System (CMS).  Conducted contextual inquiries, user interviews and expert reviews of current system in order to inform the design of a new navigation paradigm, information architecture, interactions model, and design language.  This holistic approach resulted in concrete benefits including a potentially measurable increase in the usability and ‘learnability’ of YinzCam enterprise software.</div>
+
+
+<style>
+ #photo-grid * {
+    box-sizing: border-box;
+}
+
+
+#photo-grid .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+#photo-grid .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+#photo-grid .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    #photo-grid .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    #photo-grid .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+</style>
+
+<!-- Photo Grid -->
+<div id="photo-grid">
+  <div class="row">
+    <div class="column">
+      <img src="cards/ph_series1/w3images/wedding.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/rocks.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/falls2.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/paris.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/nature.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/mist.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/paris.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="cards/ph_series1/w3images/underwater.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/ocean.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/wedding.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/mountainskies.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/rocks.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/underwater.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="cards/ph_series1/w3images/wedding.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/rocks.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/falls2.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/paris.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/nature.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/mist.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/paris.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="cards/ph_series1/w3images/underwater.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/ocean.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/wedding.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/mountainskies.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/rocks.jpg" style="width:100%">
+      <img src="cards/ph_series1/w3images/underwater.jpg" style="width:100%">
+    </div>
+  </div>
+</div>
+</section>
+<br /><br />
+<section id="footer">
+  <div style="width:100%;"><button type="button" class="btn btn-default button-ph btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
+</section>
+
+<!-- START: Resets URL when closing modal -->
+<script>$(document).ready(function() {  $(".btn-close").click(function() { document.location.href = '#portfolio' }) });</script>
+<!-- END: Resets URL when closing modal -->
