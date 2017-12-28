@@ -1,5 +1,3 @@
-
-
 <!-- Typewritter Effect -->
 <script src="js/typewriter-effect.js"></script>
 <!-- Header -->
@@ -97,14 +95,5 @@
 </section>
 
 <!-- START: Resets URL when closing modal -->
-<script>
-$('#myModal').on('hidden.bs.modal', function () {
-  alert('me too');
-})
-$(document).ready(function() {
-  $(".btn-close").click(function() {
-      document.location.href = '#portfolio';
-  });
-});
-</script>
+<script>$(document).ready(function() {  $(".btn-close").click(function() { document.location.href = '#portfolio' }) });</script>
 <!-- END: Resets URL when closing modal -->

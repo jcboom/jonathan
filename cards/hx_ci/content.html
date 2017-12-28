@@ -24,8 +24,8 @@ var cornerText = "hx"
 
 <!-- Header -->
 <section id="modal-hero" style="background-image: url(cards/hx_ci/hero.jpg);">
-  <div class="jcboom-card-modal-corner" data-dismiss="modal"><p class="jcboom-card-modal-corner-text color-hx">hx</p></div>
-  <div class="jcboom-card-modal-close" data-dismiss="modal"><p class="jcboom-card-modal-close-text color-hx">&times;</p></div>
+  <div class="jcboom-card-modal-corner btn-close" data-dismiss="modal"><p class="jcboom-card-modal-corner-text color-hx">hx</p></div>
+  <div class="jcboom-card-modal-close btn-close" data-dismiss="modal"><p class="jcboom-card-modal-close-text color-hx">&times;</p></div>
 
   <!-- <div class="close-modal" data-dismiss="modal">
       <div class="lr">
@@ -131,5 +131,9 @@ var cornerText = "hx"
 </section>
 
 <section id="footer">
-  <div style="width:100%;"><button type="button" class="btn btn-default button-hx" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
+  <div style="width:100%;"><button type="button" class="btn btn-default button-hx btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></div>
 </section>
+
+<!-- START: Resets URL when closing modal -->
+<script>$(document).ready(function() {  $(".btn-close").click(function() { document.location.href = '#portfolio' }) });</script>
+<!-- END: Resets URL when closing modal -->
