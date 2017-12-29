@@ -354,9 +354,18 @@ hr.star-primary:after {
 @media screen and (max-width: 480px) {
   #modal-hero .modal-title {
     left: 5px;
-    width:90%;
+    width:93%;
   }
 }
+@media screen and (max-width: 330px) {
+  #modal-hero .modal-title {
+    left: 5px;
+    width:93%;
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+/* NOT SURE WHAT THIS GOES TO 12.28.2017; It may have been there in the old design but has since been taken off. */
 #modal-hero .modal-title-description {
   position: relative;
   color: #FFEDDC; /*#FFDFBE;*/
@@ -472,7 +481,20 @@ hr.star-primary:after {
 }
 @media screen and (max-width: 480px) {
   #modal-body .project-body-title {
-    font-size: 32px;
+    font-size: 30px;
+    line-height: 31px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right:20px;
+  }
+}
+@media screen and (max-width: 330px) {
+  #modal-body .project-body-title {
+    font-size: 26px;
+    line-height: 27px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right:20px;
   }
 }
 #modal-body .project-body-description {
@@ -521,7 +543,6 @@ hr.star-primary:after {
 .subsection-image-container img {
   max-width: 100%;
   height: auto;
-  display: table-cell;
 }
 @media screen and (max-width: 480px) {
   .subsection-image-container img, .divider, .subsection-divider-container {
@@ -542,6 +563,7 @@ hr.star-primary:after {
   width:50%;
   padding-right: 20px;
   height: 100%;
+  text-align:left;
   //border: 2px solid green; //Jonathan Calzada
 
 }
@@ -549,6 +571,13 @@ hr.star-primary:after {
   font-weight: bold;
   text-transform:uppercase;
   letter-spacing: .5px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+  .subsection-text-container h4 {
+    margin-bottom: 10px;
+  }
 }
 .subsection-text-container p {
   font-weight: 400;
