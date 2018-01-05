@@ -394,9 +394,8 @@ hr.star-primary:after {
   color: white; /* Needs to be dynamic */
 }
 
-#modal-hero .project-meta-data-li {
+#modal-hero .project-meta-data-li, .project-meta-data-li2 {
   position: absolute;
-  left:500px;
   color: #fff;
   top: 70px;
   z-index: 233;
@@ -405,11 +404,19 @@ hr.star-primary:after {
   font-weight: 100;
   display: block;
   white-space: nowrap;
-
+}
+#modal-hero .project-meta-data-li {
+  left:500px;
+}
+#modal-hero .project-meta-data-li2 {
+  left:850px;
 }
 @media screen and (max-width: 768px) {
   #modal-hero .project-meta-data-li {
     left:450px;
+  }
+  #modal-hero .project-meta-data-li2 {
+    visibility: none;
   }
 }
 .modal-container {
