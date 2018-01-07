@@ -162,7 +162,7 @@
 					</div>
 
 					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
-						<a href="cards/ph_series1/content.html" class="jcboom-project-item" data-toggle="modal" data-target="#portfolioModal3" class="jcboom-project-item">
+						<a href="cards/ph_series1/content.html" class="jcboom-project-item" data-toggle="modal" data-target="#portfolioModal3">
 							<img src="images/sunset-eyes.jpg" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
 							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Series 1 - Photography</span></div>
@@ -170,10 +170,18 @@
 					</div>
 
 					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-hx">
-						<a href="cards/hx_ci/content.html" class="jcboom-project-item" data-toggle="modal" data-target="#portfolioModal4" class="jcboom-project-item">
+						<a href="cards/hx_ci/content.html" class="jcboom-project-item" data-toggle="modal" data-target="#portfolioModal4">
 							<img src="cards/hx_ci/images/ci-website2.png" alt="" class="img-card-responsive" />
 							<div id="jcboom-card-corner-hx" class="jcboom-card-corner"><p class="jcboom-card-corner-text">Hx</p></div>
 							<div id="jcboom-card-ribbon-hx" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">HAXORING: CIRCLE INNOVATIONS</span></div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
+						<a href="cards/ux_cr/content.html" class="jcboom-project-item" class="jcboom-project-item" data-toggle="modal" data-target="#portfolioModal5">
+							<img src="cards/ux_cr/images/cardface2.png" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
+							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">UX Design Research @ CR</span></div>
 						</a>
 					</div>
 
@@ -190,14 +198,6 @@
 							<img src="images/design.png" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
 							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Design Anthropology @ SAP</span></div>
-						</a>
-					</div>
-
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
-						<a href="https://source.unsplash.com/random?architecture" class="jcboom-project-item">
-							<img src="https://source.unsplash.com/random?architecture" alt="Image" class="img-card-responsive" />
-							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
-							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">UX Design Work @ YinzCam</span></div>
 						</a>
 					</div>
 
@@ -598,7 +598,7 @@
 	*******************************************************************************/
 	/* BEGIN: FUNCTION */
 	$(document).ready(function() {
-	  var modals = ['#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4']; //need to be dynamic Jonathan Calzada
+	  var modals = ['#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4', '#portfolioModal5']; //need to be dynamic Jonathan Calzada
 	  if (window.location.hash && ~modals.indexOf(window.location.hash)) {
 			var htmlContent = $('*[data-target="'+window.location.hash+'"]').attr("href");
 			if (htmlContent) {
