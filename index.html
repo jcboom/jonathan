@@ -194,6 +194,13 @@
 					</div>
 
 					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
+						<a href="cards/ph_amsterdam/content.html" class="jcboom-project-item" data-toggle="modal" data-target="#portfolioModal7">
+							<img src="cards/ph_amsterdam/images/cardface.jpg" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
+							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Amsterdam</span></div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
 						<a href="images/lavender_forest.jpg" class="jcboom-project-item">
 							<img src="images/lavender_forest.jpg" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
@@ -606,7 +613,7 @@
 	*******************************************************************************/
 	/* BEGIN: FUNCTION */
 	$(document).ready(function() {
-	  var modals = ['#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4', '#portfolioModal5', '#portfolioModal6']; //need to be dynamic Jonathan Calzada
+	  var modals = ['#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4', '#portfolioModal5', '#portfolioModal6','#portfolioModal7']; //need to be dynamic Jonathan Calzada
 	  if (window.location.hash && ~modals.indexOf(window.location.hash)) {
 			var htmlContent = $('*[data-target="'+window.location.hash+'"]').attr("href");
 			if (htmlContent) {
