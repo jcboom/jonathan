@@ -144,9 +144,9 @@
 					<!--CARDS use: https://source.unsplash.com/random for random content -->
 					<div id="cards">
 
+
 					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
-						<!--<a href="#portfolioModal1" class="jcboom-project-item" data-toggle="modal"> For content in this page -->
-						<a href="cards/ux_yinzcam/content.html" data-toggle="modal" data-target="#portfolioModal1" tabindex="-1" data-keyboard="true" class="jcboom-project-item">
+						<a href="cards/ux_yinzcam/content.html" data-toggle="modal" data-target="#portfolioModal1" class="jcboom-project-item">
 							<img src="cards/ux_yinzcam/images/yinzcam_team.jpg" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">Ux</p></div>
 							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">UX Design @ YinzCam</span></div>
@@ -168,7 +168,7 @@
 							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Amsterdam</span></div>
 						</a>
 					</div>
-					
+
 					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-hx">
 						<a href="cards/hx_ci/content.html" class="jcboom-project-item" data-toggle="modal" data-target="#portfolioModal4">
 							<img src="cards/hx_ci/images/ci-website2.png" alt="" class="img-card-responsive" />
@@ -178,7 +178,7 @@
 					</div>
 
 					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
-						<a href="cards/ux_cr/content.html" class="jcboom-project-item" class="jcboom-project-item" data-toggle="modal" data-target="#portfolioModal5">
+						<a href="cards/ux_cr/content.html" class="jcboom-project-item" data-toggle="modal" data-target="#portfolioModal5">
 							<img src="cards/ux_cr/images/cardface2.png" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
 							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">UX Design Research @ CR</span></div>
@@ -186,7 +186,7 @@
 					</div>
 
 					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
-						<a href="cards/ux_edenos/content.html" class="jcboom-project-item" class="jcboom-project-item" data-toggle="modal" data-target="#portfolioModal6">
+						<a href="cards/ux_edenos/content.html" class="jcboom-project-item" data-toggle="modal" data-target="#portfolioModal6">
 							<img src="cards/ux_edenos/images/cardface.png" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
 							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text"> UX Research @ Edenos</span></div>
@@ -197,11 +197,11 @@
 						<a href="cards/ph_series1/content.html" class="jcboom-project-item" data-toggle="modal" data-target="#portfolioModal3">
 							<img src="images/sunset-eyes.jpg" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
-							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">Series 1 - Photography</span></div>
+							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">COMING SOON: NATURALEZA</span></div>
 						</a>
 					</div>
 
-					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
+					<!-- <div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
 						<a href="images/lavender_forest.jpg" class="jcboom-project-item">
 							<img src="images/lavender_forest.jpg" alt="Image" class="img-card-responsive" />
 							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
@@ -215,7 +215,7 @@
 							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">UX</p></div>
 							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">COMING SOON: Design ANTHRO II</span></div>
 						</a>
-					</div>
+					</div> -->
 
 <!--					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
 						<a href="https://source.unsplash.com/random?color" class="jcboom-project-item">
@@ -605,7 +605,6 @@
 
 	</script>
 
-	<!-- when you start or end a touch, turn the class hover_effect on or off.-->
 	<script>
 	/*******************************************************************************
 	* Author: Jonathan Calzada
@@ -621,9 +620,15 @@
 				$(window.location.hash).modal('show').find('.modal-content').load(htmlContent); ///Loads modal///
 			}
 		}
+		$(".jcboom-project-item").click(function() { 		/// Updates URL to include #porfolioModal# when opening cards ///
+			location.hash=$(this).attr("data-target");
+		});
 	})
  /* END FUCNTION */
+</script>
 
+<!-- when you start or end a touch, turn the class hover_effect on or off.-->
+<script>
 	$(document).ready(function() {
 			$('.hover').bind('touchstart', function(e) { /* OLD: $('.hover').bind('touchstart touchend', function(e) { */
 					/* e.preventDefault(); Commented this out because it prevents user from scrolling. */
