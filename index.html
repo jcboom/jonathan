@@ -211,14 +211,14 @@
 						</a>
 					</div>
 
-					<!-- <div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ph">
-						<a href="images/lavender_forest.jpg" class="jcboom-project-item">
-							<img src="images/lavender_forest.jpg" alt="Image" class="img-card-responsive" />
-							<div id="jcboom-card-corner-ph" class="jcboom-card-corner"><p class="jcboom-card-corner-text">PH</p></div>
-							<div id="jcboom-card-ribbon-ph" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">COMING SOON: SERIES II</span></div>
+					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
+						<a href="cards/ux_sap/content.html" data-toggle="modal" data-target="#portfolioModal8" class="jcboom-project-item">
+							<img src="cards/ux_sap/images/card.png" alt="Image" class="img-card-responsive" />
+							<div id="jcboom-card-corner-ux" class="jcboom-card-corner"><p class="jcboom-card-corner-text">Ux</p></div>
+							<div id="jcboom-card-ribbon-ux" class="jcboom-card-ribbon"><span class="jcboom-card-ribbon-text">UX Design @ SAP</span></div>
 						</a>
 					</div>
-
+<!--
 					<div class="col-md-4 col-sm-6 col-xxs-12 animate-box card-ux">
 						<a href="images/design.png" class="jcboom-project-item">
 							<img src="images/design.png" alt="Image" class="img-card-responsive" />
@@ -473,8 +473,8 @@
 						</div>
 						<div class="flexslider-controls">
 						   <ol class="flex-control-nav">
-						      <li class="animate-box"><img src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_100_100/AAEAAQAAAAAAAAnxAAAAJGI3MWMxYjk0LTdhNmUtNDk2NS1hY2IyLTM1NThiNTUxZjAzZg.jpg" alt="Rachel Lynch"></li>
-						      <li class="animate-box"><img src="https://media.licdn.com/mpr/mpr/shrinknp_100_100/AAEAAQAAAAAAAANGAAAAJGNhNjczYjA1LThjODQtNGJiOS1hZTQyLTI3Y2JiYWIxYzNjNA.jpg" alt="Kedar Shiroor"></li>
+						      <li class="animate-box"><img src="images/rachel.jpg" alt="Rachel Lynch"></li>
+						      <li class="animate-box"><img src="images/kedar.jpg" alt="Kedar Shiroor"></li>
 						      <li class="animate-box"><img src="images/stevejobs.jpg" alt="Free HTML5 Bootstrap Template by FREEHTML5.co"></li>
 						   </ol>
 						</div>
@@ -622,7 +622,7 @@
 	*******************************************************************************/
 	/* BEGIN: FUNCTION */
 	$(document).ready(function() {
-	  var modals = ['#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4', '#portfolioModal5', '#portfolioModal6','#portfolioModal7']; //need to be dynamic Jonathan Calzada
+	  var modals = ['#portfolioModal1', '#portfolioModal2', '#portfolioModal3', '#portfolioModal4', '#portfolioModal5', '#portfolioModal6','#portfolioModal7', '#portfolioModal8']; //need to be dynamic Jonathan Calzada
 	  if (window.location.hash && ~modals.indexOf(window.location.hash)) {
 			var htmlContent = $('*[data-target="'+window.location.hash+'"]').attr("href");
 			if (htmlContent) {
