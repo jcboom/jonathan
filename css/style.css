@@ -251,6 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .slider-text {
   font-style: italic;
+    font-size: 10pt;
 }
 .slider::before {
   position: absolute;
